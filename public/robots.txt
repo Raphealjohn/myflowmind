@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Disallow environment and config files
+Disallow: /.env
+Disallow: /.env.example
+Disallow: /.git/
+Disallow: /.htaccess
+
+Sitemap: https://myflowmind.com/sitemap.xml

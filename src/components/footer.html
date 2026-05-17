@@ -1,0 +1,59 @@
+<!--
+  Footer Component — MyFlowMind
+-->
+<footer class="site-footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <a href="/" class="nav-logo" aria-label="MyFlowMind — home">
+          <svg width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true" focusable="false">
+            <rect width="28" height="28" rx="7" fill="#6c63ff"/>
+            <path d="M8 14 Q14 6 20 14 Q14 22 8 14Z" fill="none" stroke="#fff" stroke-width="2"/>
+            <circle cx="14" cy="14" r="2.5" fill="#00d4aa"/>
+          </svg>
+          My<span>Flow</span>Mind
+        </a>
+        <p>We build intelligent automation systems that free your team to focus on what humans do best.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul role="list">
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul role="list">
+          <li><a href="/privacy.html">Privacy Policy</a></li>
+          <li><a href="/terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year">2026</span> MyFlowMind. All rights reserved.</p>
+      <p>Built with intention &amp; automation.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Update copyright year automatically
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+  // Mobile nav toggle
+  const toggle = document.querySelector('.nav-toggle');
+  const navLinks = document.getElementById('nav-links');
+  if (toggle && navLinks) {
+    toggle.addEventListener('click', function () {
+      const isOpen = navLinks.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+  }
+</script>

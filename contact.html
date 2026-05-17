@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>Contact MyFlowMind — Book a Free Strategy Call</title>
+  <meta name="description" content="Ready to automate your business? Get in touch with the MyFlowMind team or book a free 30-minute strategy call. We respond within one business day." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://myflowmind.com/contact.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://myflowmind.com/contact.html" />
+  <meta property="og:title" content="Contact MyFlowMind — Book a Free Strategy Call" />
+  <meta property="og:description" content="Ready to automate your business? Get in touch with the MyFlowMind team or book a free 30-minute strategy call. We respond within one business day." />
+  <meta property="og:image" content="https://myflowmind.com/public/og-contact.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="MyFlowMind" />
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact MyFlowMind — Book a Free Strategy Call" />
+  <meta name="twitter:description" content="Ready to automate your business? Get in touch with the MyFlowMind team." />
+  <meta name="twitter:image" content="https://myflowmind.com/public/og-contact.png" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+  <link rel="stylesheet" href="/src/styles/global.css" />
+
+  <style>
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: var(--spacing-2xl);
+      align-items: flex-start;
+    }
+    .contact-info {
+      position: sticky;
+      top: 100px;
+    }
+    .contact-info h2 {
+      margin-bottom: var(--spacing-md);
+    }
+    .contact-info p {
+      color: var(--color-text-muted);
+      margin-bottom: var(--spacing-lg);
+    }
+    .contact-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--spacing-md);
+      margin-bottom: var(--spacing-lg);
+    }
+    .contact-detail .icon {
+      width: 44px;
+      height: 44px;
+      background: rgba(108, 99, 255, 0.15);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .contact-detail strong {
+      display: block;
+      color: var(--color-text-heading);
+      margin-bottom: var(--spacing-xs);
+      font-size: 0.9rem;
+    }
+    .contact-detail a,
+    .contact-detail p {
+      color: var(--color-text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 0;
+    }
+    .form-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: var(--spacing-xl);
+    }
+    .form-card h2 {
+      margin-bottom: var(--spacing-xs);
+    }
+    .form-card > p {
+      color: var(--color-text-muted);
+      margin-bottom: var(--spacing-xl);
+      font-size: 0.95rem;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--spacing-md);
+    }
+    @media (max-width: 900px) {
+      .contact-layout {
+        grid-template-columns: 1fr;
+      }
+      .contact-info {
+        position: static;
+      }
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+    .success-message {
+      display: none;
+      background: rgba(0, 212, 170, 0.1);
+      border: 1px solid rgba(0, 212, 170, 0.3);
+      border-radius: var(--radius-md);
+      padding: var(--spacing-lg);
+      text-align: center;
+      color: var(--color-accent);
+      margin-top: var(--spacing-md);
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <nav class="site-nav" aria-label="Main navigation">
+      <div class="container nav-inner">
+        <a href="/" class="nav-logo" aria-label="MyFlowMind — home">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true" focusable="false">
+            <rect width="28" height="28" rx="7" fill="#6c63ff"/>
+            <path d="M8 14 Q14 6 20 14 Q14 22 8 14Z" fill="none" stroke="#fff" stroke-width="2"/>
+            <circle cx="14" cy="14" r="2.5" fill="#00d4aa"/>
+          </svg>
+          My<span>Flow</span>Mind
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">&#9776;</button>
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/contact.html" class="nav-cta" aria-current="page">Get Started</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <section class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: var(--spacing-2xl);">
+          <p class="hero-eyebrow">Get in Touch</p>
+          <h1 id="contact-heading">Start Your Automation Journey</h1>
+          <p>Fill in the form or send us an email. We respond to every enquiry within one business day.</p>
+        </div>
+
+        <div class="contact-layout">
+
+          <!-- Info sidebar -->
+          <aside class="contact-info" aria-label="Contact details">
+            <h2>We'd Love to Hear From You</h2>
+            <p>Whether you have a specific project in mind or just want to explore what's possible, our team is here to help you find the right automation approach for your business.</p>
+
+            <div class="contact-detail">
+              <div class="icon" aria-hidden="true">&#x1F4E7;</div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:hello@myflowmind.com">hello@myflowmind.com</a>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="icon" aria-hidden="true">&#x23F0;</div>
+              <div>
+                <strong>Response Time</strong>
+                <p>Within 1 business day</p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="icon" aria-hidden="true">&#x1F4F9;</div>
+              <div>
+                <strong>Free Strategy Call</strong>
+                <p>30 minutes — no pitch, no commitment. Just honest advice about what automation can do for you.</p>
+              </div>
+            </div>
+
+            <div class="card" style="margin-top: var(--spacing-xl); background: linear-gradient(135deg, rgba(108,99,255,0.1), rgba(0,212,170,0.05));">
+              <h3 style="margin-bottom: var(--spacing-sm); font-size: 1rem;">What to expect on a strategy call</h3>
+              <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 0.5rem; color: var(--color-text-muted); font-size: 0.9rem; padding-left: 1.25rem; position: relative;">
+                  <span style="position: absolute; left: 0; color: var(--color-accent);">&#x2714;</span>
+                  We map your most time-consuming workflows
+                </li>
+                <li style="margin-bottom: 0.5rem; color: var(--color-text-muted); font-size: 0.9rem; padding-left: 1.25rem; position: relative;">
+                  <span style="position: absolute; left: 0; color: var(--color-accent);">&#x2714;</span>
+                  You receive 2–3 actionable automation ideas
+                </li>
+                <li style="margin-bottom: 0.5rem; color: var(--color-text-muted); font-size: 0.9rem; padding-left: 1.25rem; position: relative;">
+                  <span style="position: absolute; left: 0; color: var(--color-accent);">&#x2714;</span>
+                  We provide a rough ROI estimate
+                </li>
+                <li style="color: var(--color-text-muted); font-size: 0.9rem; padding-left: 1.25rem; position: relative;">
+                  <span style="position: absolute; left: 0; color: var(--color-accent);">&#x2714;</span>
+                  No hard sell — ever
+                </li>
+              </ul>
+            </div>
+          </aside>
+
+          <!-- Contact form -->
+          <div class="form-card">
+            <h2>Send Us a Message</h2>
+            <p>Tell us about your business and what you'd like to automate. The more detail you share, the more useful our response will be.</p>
+
+            <!--
+              NOTE FOR DEPLOYMENT:
+              Connect this form to a backend service, e.g. Formspree, Netlify Forms,
+              or a custom endpoint. Update the `action` attribute accordingly.
+              Example Formspree: action="https://formspree.io/f/YOUR_FORM_ID"
+            -->
+            <form
+              id="contact-form"
+              action="#"
+              method="POST"
+              novalidate
+              aria-label="Contact form"
+            >
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name">First name <span aria-hidden="true">*</span></label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first_name"
+                    autocomplete="given-name"
+                    required
+                    aria-required="true"
+                    placeholder="Jane"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last name <span aria-hidden="true">*</span></label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last_name"
+                    autocomplete="family-name"
+                    required
+                    aria-required="true"
+                    placeholder="Smith"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Work email <span aria-hidden="true">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                  aria-required="true"
+                  placeholder="jane@company.com"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="company">Company name</label>
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  autocomplete="organization"
+                  placeholder="Acme Corp"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="service">Service of interest</label>
+                <select id="service" name="service">
+                  <option value="">Select a service…</option>
+                  <option value="workflow-automation">AI Workflow Automation</option>
+                  <option value="lead-gen">Lead Generation &amp; CRM Automation</option>
+                  <option value="chatbot">AI Chatbot / Virtual Assistant</option>
+                  <option value="reporting">Reporting &amp; Analytics Automation</option>
+                  <option value="custom">Custom Integration</option>
+                  <option value="not-sure">Not sure yet — need advice</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Tell us about your project <span aria-hidden="true">*</span></label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  aria-required="true"
+                  placeholder="Describe the workflow or process you'd like to automate, the tools you currently use, and any specific goals or metrics…"
+                ></textarea>
+                <p class="form-note">The more detail you provide, the more specific our reply can be.</p>
+              </div>
+
+              <!-- Honeypot field — hidden from users but catches bots -->
+              <div style="display:none;" aria-hidden="true">
+                <label for="website-url">Leave this blank</label>
+                <input type="text" id="website-url" name="_gotcha" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+                Send Message
+              </button>
+
+              <div class="success-message" id="success-msg" role="alert" aria-live="polite">
+                <strong>Message sent!</strong> We'll be in touch within one business day.
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="/" class="nav-logo" aria-label="MyFlowMind — home">
+            <svg width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true" focusable="false">
+              <rect width="28" height="28" rx="7" fill="#6c63ff"/>
+              <path d="M8 14 Q14 6 20 14 Q14 22 8 14Z" fill="none" stroke="#fff" stroke-width="2"/>
+              <circle cx="14" cy="14" r="2.5" fill="#00d4aa"/>
+            </svg>
+            My<span>Flow</span>Mind
+          </a>
+          <p>We build intelligent automation systems that free your team to focus on what humans do best.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul role="list">
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul role="list">
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+            <li><a href="/terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="footer-year">2026</span> MyFlowMind. All rights reserved.</p>
+        <p>Built with intention &amp; automation.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    if (toggle && navLinks) {
+      toggle.addEventListener('click', function () {
+        const isOpen = navLinks.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+
+    // Basic client-side form validation feedback
+    const form = document.getElementById('contact-form');
+    const successMsg = document.getElementById('success-msg');
+    if (form) {
+      form.addEventListener('submit', function (e) {
+        // If action is '#' (placeholder), show success UI for demo purposes.
+        // Remove this block and update form action for production.
+        if (form.getAttribute('action') === '#') {
+          e.preventDefault();
+          if (form.checkValidity()) {
+            form.reset();
+            successMsg.style.display = 'block';
+            successMsg.focus();
+          } else {
+            form.reportValidity();
+          }
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

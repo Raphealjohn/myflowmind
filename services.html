@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>AI Automation Services — MyFlowMind Agency</title>
+  <meta name="description" content="Explore MyFlowMind's AI automation services: workflow automation, AI chatbots, lead generation pipelines, reporting dashboards, and custom integrations for your business." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://myflowmind.com/services.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://myflowmind.com/services.html" />
+  <meta property="og:title" content="AI Automation Services — MyFlowMind Agency" />
+  <meta property="og:description" content="Explore MyFlowMind's AI automation services: workflow automation, AI chatbots, lead generation pipelines, reporting dashboards, and custom integrations for your business." />
+  <meta property="og:image" content="https://myflowmind.com/public/og-services.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="MyFlowMind" />
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AI Automation Services — MyFlowMind Agency" />
+  <meta name="twitter:description" content="Explore MyFlowMind's AI automation services: workflow automation, AI chatbots, lead generation, and more." />
+  <meta name="twitter:image" content="https://myflowmind.com/public/og-services.png" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+  <link rel="stylesheet" href="/src/styles/global.css" />
+
+  <style>
+    .service-detail {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--spacing-2xl);
+      align-items: center;
+      margin-bottom: var(--spacing-2xl);
+      padding-bottom: var(--spacing-2xl);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .service-detail:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .service-detail.reverse {
+      direction: rtl;
+    }
+    .service-detail.reverse > * {
+      direction: ltr;
+    }
+    .service-visual {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: var(--spacing-xl);
+      text-align: center;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: var(--spacing-md);
+    }
+    .service-visual .big-icon {
+      font-size: 4rem;
+    }
+    .service-visual .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--spacing-sm);
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+    }
+    .service-visual .tag-list li {
+      background: rgba(108, 99, 255, 0.15);
+      border: 1px solid rgba(108, 99, 255, 0.3);
+      color: var(--color-primary-light);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.25rem 0.75rem;
+      border-radius: 100px;
+    }
+    .service-content h2 {
+      margin-bottom: var(--spacing-md);
+    }
+    .service-content p {
+      color: var(--color-text-muted);
+      margin-bottom: var(--spacing-md);
+    }
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin-bottom: var(--spacing-lg);
+    }
+    .feature-list li {
+      padding-left: 1.5rem;
+      position: relative;
+      color: var(--color-text-muted);
+      margin-bottom: var(--spacing-sm);
+      font-size: 0.95rem;
+    }
+    .feature-list li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--color-accent);
+      font-weight: 700;
+    }
+    @media (max-width: 768px) {
+      .service-detail,
+      .service-detail.reverse {
+        grid-template-columns: 1fr;
+        direction: ltr;
+      }
+    }
+    .pricing-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: var(--spacing-xl);
+      text-align: center;
+      position: relative;
+    }
+    .pricing-card.featured {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 40px rgba(108, 99, 255, 0.2);
+    }
+    .pricing-badge {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--color-primary);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.3rem 1rem;
+      border-radius: 100px;
+      white-space: nowrap;
+    }
+    .price {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--color-text-heading);
+      letter-spacing: -0.04em;
+      margin: var(--spacing-md) 0 var(--spacing-sm);
+    }
+    .price span {
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--color-text-muted);
+    }
+    .pricing-features {
+      list-style: none;
+      padding: 0;
+      margin: var(--spacing-lg) 0;
+      text-align: left;
+    }
+    .pricing-features li {
+      padding: var(--spacing-sm) 0;
+      border-bottom: 1px solid var(--color-border);
+      color: var(--color-text-muted);
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+    }
+    .pricing-features li:last-child {
+      border-bottom: none;
+    }
+    .pricing-features li::before {
+      content: "✓";
+      color: var(--color-accent);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <nav class="site-nav" aria-label="Main navigation">
+      <div class="container nav-inner">
+        <a href="/" class="nav-logo" aria-label="MyFlowMind — home">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true" focusable="false">
+            <rect width="28" height="28" rx="7" fill="#6c63ff"/>
+            <path d="M8 14 Q14 6 20 14 Q14 22 8 14Z" fill="none" stroke="#fff" stroke-width="2"/>
+            <circle cx="14" cy="14" r="2.5" fill="#00d4aa"/>
+          </svg>
+          My<span>Flow</span>Mind
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">&#9776;</button>
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/services.html" aria-current="page">Services</a></li>
+          <li><a href="/contact.html" class="nav-cta">Get Started</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section class="section" aria-labelledby="services-hero-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="hero-eyebrow">What We Do</p>
+          <h1 id="services-hero-heading">Automation Services Built<br />Around Your Business</h1>
+          <p>We don't sell templates. Every system we build is custom-designed for your specific workflows, tools, and goals.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="section section--alt" aria-labelledby="service-list-heading">
+      <div class="container">
+        <h2 id="service-list-heading" class="sr-only">Service details</h2>
+
+        <div class="service-detail">
+          <div class="service-visual">
+            <div class="big-icon" aria-hidden="true">&#x1F916;</div>
+            <h3>AI Workflow Automation</h3>
+            <ul class="tag-list" role="list">
+              <li>Make.com</li>
+              <li>n8n</li>
+              <li>Zapier</li>
+              <li>GPT-4</li>
+              <li>Claude</li>
+            </ul>
+          </div>
+          <div class="service-content">
+            <h2>AI Workflow Automation</h2>
+            <p>Connect your entire tool stack and automate complex, multi-step processes that currently require human decision-making. We use large language models to handle nuanced tasks — not just simple if-then rules.</p>
+            <ul class="feature-list">
+              <li>Document processing, classification, and summarisation</li>
+              <li>Automated email triage and response drafting</li>
+              <li>Data extraction from PDFs, emails, and web pages</li>
+              <li>Multi-platform data sync and deduplication</li>
+              <li>Approval workflows with intelligent routing</li>
+            </ul>
+            <a href="/contact.html" class="btn btn-primary">Enquire About This Service</a>
+          </div>
+        </div>
+
+        <div class="service-detail reverse">
+          <div class="service-visual">
+            <div class="big-icon" aria-hidden="true">&#x1F4E5;</div>
+            <h3>Lead Generation &amp; CRM Automation</h3>
+            <ul class="tag-list" role="list">
+              <li>HubSpot</li>
+              <li>Salesforce</li>
+              <li>Pipedrive</li>
+              <li>LinkedIn</li>
+            </ul>
+          </div>
+          <div class="service-content">
+            <h2>Lead Generation &amp; CRM Automation</h2>
+            <p>Stop manually entering lead data and chasing follow-ups. We build end-to-end pipelines that capture, enrich, score, and nurture leads — automatically and at scale.</p>
+            <ul class="feature-list">
+              <li>Multi-channel lead capture and enrichment</li>
+              <li>AI-powered lead scoring and segmentation</li>
+              <li>Automated follow-up sequences triggered by behaviour</li>
+              <li>CRM data hygiene and deduplication workflows</li>
+              <li>Pipeline reporting delivered to your inbox weekly</li>
+            </ul>
+            <a href="/contact.html" class="btn btn-primary">Enquire About This Service</a>
+          </div>
+        </div>
+
+        <div class="service-detail">
+          <div class="service-visual">
+            <div class="big-icon" aria-hidden="true">&#x1F4AC;</div>
+            <h3>AI Chatbots &amp; Virtual Assistants</h3>
+            <ul class="tag-list" role="list">
+              <li>Custom RAG</li>
+              <li>Intercom</li>
+              <li>WhatsApp API</li>
+              <li>Slack</li>
+            </ul>
+          </div>
+          <div class="service-content">
+            <h2>AI Chatbots &amp; Virtual Assistants</h2>
+            <p>Deploy intelligent assistants trained on your knowledge base that can answer customer questions, book appointments, qualify leads, and escalate complex cases — 24/7 without fatigue.</p>
+            <ul class="feature-list">
+              <li>Custom-trained on your documentation and FAQs</li>
+              <li>Multi-channel deployment (web, WhatsApp, Slack, email)</li>
+              <li>Intelligent handoff to human agents when needed</li>
+              <li>Conversation analytics and continuous improvement</li>
+              <li>GDPR-compliant data handling</li>
+            </ul>
+            <a href="/contact.html" class="btn btn-primary">Enquire About This Service</a>
+          </div>
+        </div>
+
+        <div class="service-detail reverse">
+          <div class="service-visual">
+            <div class="big-icon" aria-hidden="true">&#x1F4CA;</div>
+            <h3>Reporting &amp; Analytics Automation</h3>
+            <ul class="tag-list" role="list">
+              <li>Google Sheets</li>
+              <li>Looker Studio</li>
+              <li>Notion</li>
+              <li>Airtable</li>
+            </ul>
+          </div>
+          <div class="service-content">
+            <h2>Reporting &amp; Analytics Automation</h2>
+            <p>Replace hours of weekly reporting with automated dashboards and scheduled summaries that pull data from every platform into one consistent view.</p>
+            <ul class="feature-list">
+              <li>Unified data pipelines from all your SaaS tools</li>
+              <li>Automated weekly/monthly reports to stakeholders</li>
+              <li>KPI dashboards with real-time updates</li>
+              <li>Anomaly detection alerts sent to Slack or email</li>
+              <li>Historical trend analysis with AI-generated insights</li>
+            </ul>
+            <a href="/contact.html" class="btn btn-primary">Enquire About This Service</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" aria-labelledby="pricing-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="pricing-heading">Simple, Transparent Pricing</h2>
+          <p>Fixed-price projects. No hourly billing surprises. Every plan includes free strategy consultation.</p>
+        </div>
+        <div class="grid-3" role="list">
+
+          <div class="pricing-card" role="listitem">
+            <h3>Starter</h3>
+            <div class="price">$2,500 <span>one-time</span></div>
+            <p class="text-muted" style="font-size:0.9rem;">For small teams with one specific process to automate.</p>
+            <ul class="pricing-features">
+              <li>1 automation workflow</li>
+              <li>Up to 3 tool integrations</li>
+              <li>2 weeks build time</li>
+              <li>30-day bug fix guarantee</li>
+              <li>Video walkthrough &amp; docs</li>
+            </ul>
+            <a href="/contact.html" class="btn btn-outline" style="width:100%;justify-content:center;">Get Started</a>
+          </div>
+
+          <div class="pricing-card featured" role="listitem">
+            <div class="pricing-badge">Most Popular</div>
+            <h3>Growth</h3>
+            <div class="price">$6,500 <span>one-time</span></div>
+            <p class="text-muted" style="font-size:0.9rem;">For growing businesses ready to automate their core operations.</p>
+            <ul class="pricing-features">
+              <li>Up to 5 automation workflows</li>
+              <li>Unlimited tool integrations</li>
+              <li>3 weeks build time</li>
+              <li>60-day bug fix guarantee</li>
+              <li>Team training session (2 hrs)</li>
+              <li>Priority support for 30 days</li>
+            </ul>
+            <a href="/contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Get Started</a>
+          </div>
+
+          <div class="pricing-card" role="listitem">
+            <h3>Enterprise</h3>
+            <div class="price">Custom</div>
+            <p class="text-muted" style="font-size:0.9rem;">For organisations with complex, company-wide automation needs.</p>
+            <ul class="pricing-features">
+              <li>Unlimited workflows</li>
+              <li>Dedicated project manager</li>
+              <li>Custom SLA &amp; support plan</li>
+              <li>Ongoing retainer available</li>
+              <li>Staff training programme</li>
+              <li>Quarterly optimisation reviews</li>
+            </ul>
+            <a href="/contact.html" class="btn btn-outline" style="width:100%;justify-content:center;">Contact Us</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="faq-heading">Frequently Asked Questions</h2>
+        </div>
+        <ul class="faq-list" role="list">
+          <li>
+            <details class="faq-item">
+              <summary>How long does a typical project take?</summary>
+              <div class="faq-answer">
+                Most Starter projects are live within two weeks. Growth projects typically take three weeks from the kickoff call to go-live. Enterprise timelines are scoped individually but we always aim to deliver value early through a phased approach.
+              </div>
+            </details>
+          </li>
+          <li>
+            <details class="faq-item">
+              <summary>Do I need technical knowledge to use the automations you build?</summary>
+              <div class="faq-answer">
+                No. We build every system with non-technical users in mind. We provide video walkthroughs, written documentation, and a live training session so your team can operate and understand the automations without any coding knowledge.
+              </div>
+            </details>
+          </li>
+          <li>
+            <details class="faq-item">
+              <summary>What tools and platforms do you work with?</summary>
+              <div class="faq-answer">
+                We work with the full ecosystem: Make.com, Zapier, n8n, HubSpot, Salesforce, Airtable, Notion, Google Workspace, Slack, and many more. We also build custom API integrations for tools with no off-the-shelf connector.
+              </div>
+            </details>
+          </li>
+          <li>
+            <details class="faq-item">
+              <summary>What happens if an automation breaks after launch?</summary>
+              <div class="faq-answer">
+                All plans include a bug fix guarantee — 30 days on Starter, 60 days on Growth. If a workflow breaks due to our implementation, we fix it at no charge. We also offer ongoing maintenance retainers for clients who want long-term peace of mind.
+              </div>
+            </details>
+          </li>
+          <li>
+            <details class="faq-item">
+              <summary>Is my data safe when you build these automations?</summary>
+              <div class="faq-answer">
+                Absolutely. We follow data minimisation principles, never store client data beyond what is necessary for building the system, use encrypted connections throughout, and can sign NDAs and DPAs on request. All AI integrations are configured with privacy settings that prevent your data from being used for model training.
+              </div>
+            </details>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" aria-labelledby="services-cta-heading">
+      <div class="container">
+        <div class="cta-banner">
+          <h2 id="services-cta-heading">Not Sure Which Service You Need?</h2>
+          <p>Book a free strategy call and we'll map out the highest-impact automation opportunities for your specific situation.</p>
+          <a href="/contact.html" class="btn btn-accent">Book a Free Call</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="/" class="nav-logo" aria-label="MyFlowMind — home">
+            <svg width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true" focusable="false">
+              <rect width="28" height="28" rx="7" fill="#6c63ff"/>
+              <path d="M8 14 Q14 6 20 14 Q14 22 8 14Z" fill="none" stroke="#fff" stroke-width="2"/>
+              <circle cx="14" cy="14" r="2.5" fill="#00d4aa"/>
+            </svg>
+            My<span>Flow</span>Mind
+          </a>
+          <p>We build intelligent automation systems that free your team to focus on what humans do best.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul role="list">
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul role="list">
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+            <li><a href="/terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="footer-year">2026</span> MyFlowMind. All rights reserved.</p>
+        <p>Built with intention &amp; automation.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    if (toggle && navLinks) {
+      toggle.addEventListener('click', function () {
+        const isOpen = navLinks.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+  </script>
+
+</body>
+</html>

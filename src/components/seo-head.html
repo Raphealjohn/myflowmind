@@ -1,0 +1,43 @@
+<!--
+  SEO Head Component — MyFlowMind
+  Usage: copy into the <head> of each page and customise the meta variables.
+  Variables to replace per-page:
+    {{PAGE_TITLE}}        — 50–60 chars
+    {{PAGE_DESCRIPTION}}  — 150–160 chars
+    {{PAGE_URL}}          — full canonical URL, e.g. https://myflowmind.com/about
+    {{OG_IMAGE}}          — absolute URL to social image (1200×630 recommended)
+    {{PAGE_ROBOTS}}       — e.g. "index, follow" or "noindex, nofollow"
+-->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<!-- Primary SEO -->
+<title>{{PAGE_TITLE}}</title>
+<meta name="description" content="{{PAGE_DESCRIPTION}}" />
+<meta name="robots" content="{{PAGE_ROBOTS}}" />
+<link rel="canonical" href="{{PAGE_URL}}" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{PAGE_URL}}" />
+<meta property="og:title" content="{{PAGE_TITLE}}" />
+<meta property="og:description" content="{{PAGE_DESCRIPTION}}" />
+<meta property="og:image" content="{{OG_IMAGE}}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="MyFlowMind" />
+<meta property="og:locale" content="en_US" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="{{PAGE_URL}}" />
+<meta name="twitter:title" content="{{PAGE_TITLE}}" />
+<meta name="twitter:description" content="{{PAGE_DESCRIPTION}}" />
+<meta name="twitter:image" content="{{OG_IMAGE}}" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+
+<!-- Stylesheet -->
+<link rel="stylesheet" href="/src/styles/global.css" />
