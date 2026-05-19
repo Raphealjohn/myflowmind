@@ -1,0 +1,24 @@
+name: Deploy to GoDaddy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy via rsync over SSH
+        uses: burnett01/rsync-deployments@7.0.1
+        with:
+          switches: -avzr --delete --exclude='.git' --exclude='.github' --exclude='.env'
+          path: ./
+          remote_path: /home/zaf7q26jxj77/public_html/
+          remote_host: ${{ secrets.GODADDY_HOST }}
+          remote_user: zaf7q26jxj77
+          remote_key: ${{ secrets.GODADDY_SSH_KEY }}
