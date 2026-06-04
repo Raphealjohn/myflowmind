@@ -34,10 +34,12 @@
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="/src/styles/global.css" />
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <!-- Structured Data: ProfessionalService + LocalBusiness -->
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -46,503 +48,700 @@
     "name": "MyFlowMind Automation Agency",
     "alternateName": "MyFlowMind",
     "url": "https://myflowmind.com",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://myflowmind.com/public/favicon.ico",
-      "width": 400,
-      "height": 400
-    },
+    "logo": { "@type": "ImageObject", "url": "https://myflowmind.com/public/favicon.ico" },
     "image": "https://myflowmind.com/public/og-home.png",
     "description": "MyFlowMind is an AI-powered automation agency helping small businesses, SaaS founders, and e-commerce brands eliminate repetitive tasks, capture more leads, and scale operations with intelligent workflow automation.",
     "slogan": "Automate Smarter. Scale Faster.",
     "foundingDate": "2024",
     "email": "contact@myflowmind.com",
-    "serviceType": [
-      "AI Workflow Automation",
-      "Business Process Automation",
-      "AI Chatbot Development",
-      "CRM Automation",
-      "Lead Generation Automation",
-      "n8n Workflow Development",
-      "Zapier Automation",
-      "Digital Product Creation"
-    ],
+    "serviceType": ["AI Workflow Automation","Business Process Automation","AI Chatbot Development","CRM Automation","Lead Generation Automation","n8n Workflow Development","Zapier Automation","Digital Product Creation"],
     "sameAs": [
-      "https://raphealmind.gumroad.com",
-      "https://www.etsy.com/shop/Myflowmind",
-      "https://www.linkedin.com/company/myflowmind",
-      "https://twitter.com/myflowmind"
+      "https://www.facebook.com/Myflowmindautomation",
+      "https://www.tiktok.com/@Myflowmindautomation",
+      "https://www.instagram.com/Myflowmindautomation",
+      "https://www.youtube.com/@Myflowmindautomation"
     ],
     "priceRange": "$$"
   }
   </script>
 
-  <!-- Structured Data: WebSite (enables Sitelinks Search Box) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "MyFlowMind Automation Agency",
-    "url": "https://myflowmind.com",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://myflowmind.com/?s={search_term_string}"
-      },
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
+  <style>
+    /* ── Design Tokens ─────────────────────────────────────────── */
+    :root {
+      --bg:            #060811;
+      --bg-alt:        #0b0e1a;
+      --surface:       rgba(255,255,255,0.04);
+      --surface-hover: rgba(255,255,255,0.07);
+      --border:        rgba(255,255,255,0.08);
+      --border-glow:   rgba(108,99,255,0.4);
 
-  <!-- Structured Data: Digital Products (ItemList) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "MyFlowMind Digital Products",
-    "description": "Agency-grade automation tools, templates, and prompt libraries for entrepreneurs and small businesses.",
-    "url": "https://myflowmind.com/#products",
-    "numberOfItems": 8,
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "item": {
-          "@type": "Product",
-          "name": "Automation Audit Template",
-          "description": "Interactive HTML tool that walks you through a 7-part business audit, automatically calculates your automation ROI, and gives you a readiness score. Works in any browser, no software needed.",
-          "url": "https://raphealmind.gumroad.com/l/hknjpz",
-          "brand": {"@type": "Brand", "name": "MyFlowMind"},
-          "offers": {
-            "@type": "Offer",
-            "price": "27.00",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
-            "url": "https://raphealmind.gumroad.com/l/hknjpz",
-            "seller": {"@type": "Organization", "name": "MyFlowMind"}
-          }
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "item": {
-          "@type": "Product",
-          "name": "n8n Workflow Bundle",
-          "description": "5 battle-tested n8n workflow JSON files from real client projects. Import, connect credentials, and deploy in minutes. Works with n8n Cloud and self-hosted.",
-          "url": "https://raphealmind.gumroad.com/l/xhpysq",
-          "brand": {"@type": "Brand", "name": "MyFlowMind"},
-          "offers": {
-            "@type": "Offer",
-            "price": "97.00",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
-            "url": "https://raphealmind.gumroad.com/l/xhpysq",
-            "seller": {"@type": "Organization", "name": "MyFlowMind"}
-          }
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "item": {
-          "@type": "Product",
-          "name": "AI Prompt Library",
-          "description": "150+ curated business prompts across 15 categories — tested and ready to copy-paste into Claude, ChatGPT, Gemini, or any AI tool.",
-          "url": "https://raphealmind.gumroad.com/l/guatbx",
-          "brand": {"@type": "Brand", "name": "MyFlowMind"},
-          "offers": {
-            "@type": "Offer",
-            "price": "49.00",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
-            "url": "https://raphealmind.gumroad.com/l/guatbx",
-            "seller": {"@type": "Organization", "name": "MyFlowMind"}
-          }
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "item": {
-          "@type": "Product",
-          "name": "AI Email Templates Pack",
-          "description": "25 ready-to-send email templates across 6 categories: leads, proposals, onboarding, delivery, invoicing, and referrals. Written for service businesses.",
-          "url": "https://raphealmind.gumroad.com/l/xrpcen",
-          "brand": {"@type": "Brand", "name": "MyFlowMind"},
-          "offers": {
-            "@type": "Offer",
-            "price": "37.00",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
-            "url": "https://raphealmind.gumroad.com/l/xrpcen",
-            "seller": {"@type": "Organization", "name": "MyFlowMind"}
-          }
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 5,
-        "item": {
-          "@type": "Product",
-          "name": "Zapier Starter Bundle",
-          "description": "8 step-by-step Zapier automation guides for small businesses. Screenshot-by-screenshot walkthroughs, no coding required. Works with free and paid Zapier plans.",
-          "url": "https://raphealmind.gumroad.com/l/miohbp",
-          "brand": {"@type": "Brand", "name": "MyFlowMind"},
-          "offers": {
-            "@type": "Offer",
-            "price": "67.00",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
-            "url": "https://raphealmind.gumroad.com/l/miohbp",
-            "seller": {"@type": "Organization", "name": "MyFlowMind"}
-          }
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 6,
-        "item": {
-          "@type": "Product",
-          "name": "AI Content Calendar Template",
-          "description": "90 days of social media post ideas with 16 AI caption prompts and a built-in scheduling tracker. Works across Instagram, LinkedIn, TikTok, Facebook, and X.",
-          "url": "https://raphealmind.gumroad.com/l/uldbts",
-          "brand": {"@type": "Brand", "name": "MyFlowMind"},
-          "offers": {
-            "@type": "Offer",
-            "price": "37.00",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
-            "url": "https://raphealmind.gumroad.com/l/uldbts",
-            "seller": {"@type": "Organization", "name": "MyFlowMind"}
-          }
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 7,
-        "item": {
-          "@type": "Product",
-          "name": "Client Proposal Pack",
-          "description": "5 fully editable proposal templates for automation, consulting, web design, digital marketing, and coaching. Professional design, open in any browser.",
-          "url": "https://raphealmind.gumroad.com/l/epsded",
-          "brand": {"@type": "Brand", "name": "MyFlowMind"},
-          "offers": {
-            "@type": "Offer",
-            "price": "47.00",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
-            "url": "https://raphealmind.gumroad.com/l/epsded",
-            "seller": {"@type": "Organization", "name": "MyFlowMind"}
-          }
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 8,
-        "item": {
-          "@type": "Product",
-          "name": "Monthly Automation Club",
-          "description": "2 new n8n workflows per month, a monthly prompt pack, live Q&A with Rapheal, private community access, and all previous archives. Cancel anytime.",
-          "url": "https://raphealmind.gumroad.com/l/qqubw",
-          "brand": {"@type": "Brand", "name": "MyFlowMind"},
-          "offers": {
-            "@type": "Offer",
-            "price": "29.00",
-            "priceCurrency": "USD",
-            "priceSpecification": {
-              "@type": "UnitPriceSpecification",
-              "price": "29.00",
-              "priceCurrency": "USD",
-              "referenceQuantity": {
-                "@type": "QuantitativeValue",
-                "value": "1",
-                "unitCode": "MON"
-              }
-            },
-            "availability": "https://schema.org/InStock",
-            "url": "https://raphealmind.gumroad.com/l/qqubw",
-            "seller": {"@type": "Organization", "name": "MyFlowMind"}
-          }
-        }
-      }
-    ]
-  }
-  </script>
+      --primary:   #6c63ff;
+      --primary-2: #8b84ff;
+      --accent:    #00d4aa;
+
+      --grad:      linear-gradient(135deg, #6c63ff 0%, #00d4aa 100%);
+      --grad-hero: linear-gradient(135deg, rgba(108,99,255,0.14) 0%, rgba(0,212,170,0.07) 100%);
+      --glow:      0 0 60px rgba(108,99,255,0.25);
+      --glow-a:    0 0 60px rgba(0,212,170,0.2);
+
+      --text:        #e8eaf0;
+      --text-muted:  #8b90a0;
+      --text-bright: #ffffff;
+
+      --font: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --r-sm: 8px; --r-md: 16px; --r-lg: 24px; --r-xl: 32px;
+      --z-nav: 100;
+      --ease: 220ms cubic-bezier(0.4,0,0.2,1);
+      --max-w: 1200px;
+    }
+
+    /* ── Reset ─────────────────────────────────────────────────── */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{font-size:16px;scroll-behavior:smooth}
+    body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    img{display:block;max-width:100%}
+    a{color:inherit;text-decoration:none}
+    button{font-family:inherit;cursor:pointer;border:none;background:none}
+    ul{list-style:none}
+    ::-webkit-scrollbar{width:5px}
+    ::-webkit-scrollbar-track{background:var(--bg-alt)}
+    ::-webkit-scrollbar-thumb{background:var(--primary);border-radius:3px}
+
+    /* ── Background orbs ───────────────────────────────────────── */
+    .bg-orbs{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+    .bg-orbs::before{content:'';position:absolute;top:-20%;left:-10%;width:700px;height:700px;background:radial-gradient(circle,rgba(108,99,255,.12) 0%,transparent 70%);border-radius:50%;animation:drift1 20s ease-in-out infinite alternate}
+    .bg-orbs::after{content:'';position:absolute;bottom:-20%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(0,212,170,.1) 0%,transparent 70%);border-radius:50%;animation:drift2 25s ease-in-out infinite alternate}
+    @keyframes drift1{from{transform:translate(0,0) scale(1)}to{transform:translate(80px,60px) scale(1.15)}}
+    @keyframes drift2{from{transform:translate(0,0) scale(1)}to{transform:translate(-60px,-80px) scale(1.1)}}
+
+    /* ── Layout ────────────────────────────────────────────────── */
+    .container{max-width:var(--max-w);margin:0 auto;padding:0 24px}
+    section{position:relative;z-index:1}
+
+    /* ── Navbar ────────────────────────────────────────────────── */
+    .nav{position:fixed;top:16px;left:16px;right:16px;z-index:var(--z-nav);background:rgba(6,8,17,.6);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border:1px solid var(--border);border-radius:var(--r-lg);transition:var(--ease)}
+    .nav.scrolled{background:rgba(6,8,17,.88);box-shadow:0 8px 32px rgba(0,0,0,.4),0 0 0 1px rgba(108,99,255,.12)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 24px}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem;color:var(--text-bright)}
+    .logo-icon{width:36px;height:36px;background:var(--grad);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .nav-links{display:flex;align-items:center;gap:28px}
+    .nav-links a{font-size:.9rem;font-weight:500;color:var(--text-muted);transition:color var(--ease)}
+    .nav-links a:hover{color:var(--text-bright)}
+    .nav-end{display:flex;align-items:center;gap:10px}
+
+    /* ── Buttons ───────────────────────────────────────────────── */
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 22px;border-radius:12px;font-size:.88rem;font-weight:600;cursor:pointer;transition:all var(--ease);white-space:nowrap}
+    .btn-ghost{color:var(--text-muted);border:1px solid var(--border)}
+    .btn-ghost:hover{color:var(--text-bright);border-color:var(--border-glow);background:var(--surface-hover)}
+    .btn-primary{background:var(--grad);color:#fff;box-shadow:0 4px 20px rgba(108,99,255,.35)}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(108,99,255,.5)}
+    .btn-primary:active{transform:translateY(0)}
+    .btn-outline{border:1px solid var(--border-glow);color:var(--primary-2)}
+    .btn-outline:hover{background:rgba(108,99,255,.1);border-color:var(--primary)}
+    .btn-lg{padding:15px 34px;font-size:1rem;border-radius:14px}
+    .hamburger{display:none;flex-direction:column;gap:5px;width:24px;cursor:pointer;padding:4px}
+    .hamburger span{display:block;height:2px;background:var(--text);border-radius:2px;transition:var(--ease)}
+
+    /* ── Hero ──────────────────────────────────────────────────── */
+    .hero{min-height:100vh;display:flex;align-items:center;padding:140px 0 80px;position:relative;overflow:hidden}
+    .hero-grid{position:absolute;inset:0;z-index:0;background-image:linear-gradient(rgba(108,99,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(108,99,255,.035) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 80% 60% at 50% 40%,black 40%,transparent 100%)}
+    .hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+    .badge{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;background:rgba(108,99,255,.1);border:1px solid rgba(108,99,255,.25);border-radius:999px;font-size:.75rem;font-weight:600;color:var(--primary-2);margin-bottom:24px;width:fit-content}
+    .badge-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px var(--accent);animation:blink 2s ease-in-out infinite}
+    @keyframes blink{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.75)}}
+    .hero h1{font-size:clamp(2.4rem,5vw,3.8rem);font-weight:800;line-height:1.12;color:var(--text-bright);letter-spacing:-.02em;margin-bottom:24px}
+    .grad-text{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .hero-desc{font-size:1.08rem;line-height:1.75;color:var(--text-muted);max-width:500px;margin-bottom:40px}
+    .hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+    .hero-proof{margin-top:48px;display:flex;align-items:center;gap:16px}
+    .avatars{display:flex}
+    .av{width:36px;height:36px;border-radius:50%;border:2px solid var(--bg);background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:.62rem;font-weight:700;color:#fff;margin-left:-10px}
+    .av:first-child{margin-left:0}
+    .proof-text{font-size:.82rem;color:var(--text-muted)}
+    .proof-text strong{color:var(--text-bright)}
+    .stars-gold{color:#f59e0b;font-size:.75rem;letter-spacing:1px}
+
+    /* Dashboard mockup */
+    .hero-visual{position:relative}
+    .dash-card{background:rgba(255,255,255,.045);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;box-shadow:0 24px 80px rgba(0,0,0,.5),var(--glow);animation:floatY 6s ease-in-out infinite}
+    @keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+    .dash-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+    .dash-title{font-size:.82rem;font-weight:600;color:var(--text-bright)}
+    .live-badge{display:flex;align-items:center;gap:5px;font-size:.68rem;font-weight:600;color:var(--accent);background:rgba(0,212,170,.1);border:1px solid rgba(0,212,170,.2);padding:3px 10px;border-radius:999px}
+    .live-dot{width:5px;height:5px;border-radius:50%;background:var(--accent);animation:blink 1.5s ease-in-out infinite}
+    .metric-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}
+    .mc{background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;padding:12px 10px;text-align:center}
+    .mc-val{font-size:1.4rem;font-weight:800;color:var(--text-bright);line-height:1;margin-bottom:3px}
+    .mc-val.green{color:var(--accent)}
+    .mc-val.purple{color:var(--primary-2)}
+    .mc-label{font-size:.6rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.05em}
+    .wf-list{display:flex;flex-direction:column;gap:7px}
+    .wf{display:flex;align-items:center;gap:9px;padding:9px 11px;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:7px}
+    .wd{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+    .wd.on{background:var(--accent);box-shadow:0 0 6px var(--accent)}
+    .wd.run{background:var(--primary);box-shadow:0 0 6px var(--primary);animation:blink 1.5s infinite}
+    .wd.off{background:#374151}
+    .wn{font-size:.75rem;color:var(--text);flex:1}
+    .wt{font-size:.68rem;color:var(--text-muted)}
+    .float-chip{position:absolute;background:rgba(255,255,255,.07);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:11px;padding:11px 15px;font-size:.75rem}
+    .float-chip.f1{top:-22px;left:-38px;animation:floatY 5s ease-in-out infinite}
+    .float-chip.f2{bottom:-18px;right:-28px;animation:floatY 7s ease-in-out infinite reverse}
+    .chip-label{color:var(--text-muted);font-size:.62rem;margin-bottom:2px}
+    .chip-val{color:var(--text-bright);font-weight:700}
+    .chip-val.green{color:var(--accent)}
+
+    /* ── Stats bar ─────────────────────────────────────────────── */
+    .stats-bar{padding:56px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);position:relative;z-index:1}
+    .stats-row{display:grid;grid-template-columns:repeat(4,1fr)}
+    .stat{text-align:center;padding:20px;border-right:1px solid var(--border)}
+    .stat:last-child{border-right:none}
+    .stat-n{font-size:2.6rem;font-weight:800;line-height:1;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:6px}
+    .stat-l{font-size:.82rem;color:var(--text-muted)}
+
+    /* ── Section shared ────────────────────────────────────────── */
+    .s-label{display:inline-flex;align-items:center;gap:8px;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--primary-2);margin-bottom:14px}
+    .s-label::before{content:'';display:block;width:22px;height:2px;background:var(--grad);border-radius:1px}
+    .s-head{font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;line-height:1.2;color:var(--text-bright);letter-spacing:-.02em;margin-bottom:14px}
+    .s-sub{font-size:1.02rem;color:var(--text-muted);line-height:1.7;max-width:560px}
+    .sec-hdr{margin-bottom:52px}
+    .sec-hdr.c{text-align:center}
+    .sec-hdr.c .s-label{margin:0 auto 14px}
+    .sec-hdr.c .s-sub{margin:0 auto}
+
+    /* ── Services ──────────────────────────────────────────────── */
+    .services{padding:100px 0}
+    .sv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .sv-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);padding:30px 26px;position:relative;overflow:hidden;cursor:default;transition:all 300ms cubic-bezier(.4,0,.2,1)}
+    .sv-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--grad);opacity:0;transition:opacity 280ms}
+    .sv-card:hover{border-color:var(--border-glow);background:var(--surface-hover);transform:translateY(-4px);box-shadow:0 20px 60px rgba(0,0,0,.4),var(--glow)}
+    .sv-card:hover::before{opacity:1}
+    .sv-icon{width:50px;height:50px;border-radius:13px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;background:rgba(108,99,255,.1);border:1px solid rgba(108,99,255,.2);transition:all 280ms}
+    .sv-card:hover .sv-icon{background:rgba(108,99,255,.18);box-shadow:0 0 20px rgba(108,99,255,.3)}
+    .sv-icon svg{width:22px;height:22px}
+    .sv-card h3{font-size:1.05rem;font-weight:700;color:var(--text-bright);margin-bottom:10px}
+    .sv-card p{font-size:.875rem;color:var(--text-muted);line-height:1.65;margin-bottom:18px}
+    .sv-tag{display:inline-flex;align-items:center;gap:4px;font-size:.7rem;font-weight:600;color:var(--accent);background:rgba(0,212,170,.08);border:1px solid rgba(0,212,170,.2);padding:4px 10px;border-radius:999px}
+
+    /* ── How it works ──────────────────────────────────────────── */
+    .how{padding:100px 0;background:linear-gradient(180deg,transparent,rgba(108,99,255,.04),transparent)}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;position:relative}
+    .steps::before{content:'';position:absolute;top:27px;left:12.5%;right:12.5%;height:1px;background:linear-gradient(90deg,transparent,var(--primary),var(--accent),transparent)}
+    .step{text-align:center;position:relative}
+    .step-n{width:54px;height:54px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:800;color:#fff;margin:0 auto 18px;box-shadow:0 0 30px rgba(108,99,255,.4);position:relative;z-index:1}
+    .step h3{font-size:.98rem;font-weight:700;color:var(--text-bright);margin-bottom:9px}
+    .step p{font-size:.83rem;color:var(--text-muted);line-height:1.6}
+
+    /* ── Testimonials ──────────────────────────────────────────── */
+    .proof-sec{padding:100px 0}
+    .tm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .tm-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);padding:26px;transition:all 280ms}
+    .tm-card:hover{border-color:var(--border-glow);transform:translateY(-3px);box-shadow:0 16px 48px rgba(0,0,0,.4)}
+    .tm-stars{color:#f59e0b;font-size:.82rem;margin-bottom:12px;letter-spacing:2px}
+    .tm-card blockquote{font-size:.88rem;line-height:1.7;color:var(--text);margin-bottom:18px;font-style:italic}
+    .tm-author{display:flex;align-items:center;gap:11px}
+    .tm-av{width:40px;height:40px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;color:#fff;flex-shrink:0}
+    .tm-name{font-size:.88rem;font-weight:700;color:var(--text-bright)}
+    .tm-role{font-size:.75rem;color:var(--text-muted)}
+
+    /* ── Pricing ───────────────────────────────────────────────── */
+    .pricing-sec{padding:100px 0}
+    .pr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .pr-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);padding:34px 26px;position:relative;overflow:hidden;transition:all 280ms}
+    .pr-card.feat{background:linear-gradient(145deg,rgba(108,99,255,.11),rgba(0,212,170,.05));border-color:rgba(108,99,255,.35);box-shadow:var(--glow)}
+    .pr-card:hover{transform:translateY(-4px)}
+    .pr-badge{display:inline-block;margin-bottom:18px;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--bg);background:var(--grad);padding:4px 12px;border-radius:999px}
+    .pr-name{font-size:1.05rem;font-weight:700;color:var(--text-bright);margin-bottom:6px}
+    .pr-price{font-size:2.6rem;font-weight:800;color:var(--text-bright);line-height:1;margin-bottom:3px}
+    .pr-price span{font-size:.95rem;font-weight:400;color:var(--text-muted)}
+    .pr-desc{font-size:.83rem;color:var(--text-muted);margin-bottom:24px;line-height:1.6}
+    .pr-feats{display:flex;flex-direction:column;gap:11px;margin-bottom:28px}
+    .pf{display:flex;align-items:flex-start;gap:9px;font-size:.85rem;color:var(--text)}
+    .pf-check{width:17px;height:17px;border-radius:50%;flex-shrink:0;margin-top:1px;background:rgba(0,212,170,.12);border:1px solid rgba(0,212,170,.28);display:flex;align-items:center;justify-content:center}
+    .pf-check svg{width:9px;height:9px;color:var(--accent)}
+
+    /* ── CTA Section ───────────────────────────────────────────── */
+    .cta-sec{padding:100px 0;position:relative;z-index:1}
+    .cta-glass{background:rgba(255,255,255,.04);backdrop-filter:blur(40px);-webkit-backdrop-filter:blur(40px);border:1px solid var(--border);border-radius:var(--r-xl);padding:80px 60px;text-align:center;position:relative;overflow:hidden}
+    .cta-glass::before{content:'';position:absolute;inset:0;background:var(--grad-hero);z-index:0}
+    .cta-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:500px;height:300px;background:radial-gradient(ellipse,rgba(108,99,255,.2) 0%,transparent 70%);pointer-events:none;z-index:0}
+    .cta-glass>*{position:relative;z-index:1}
+    .cta-glass h2{font-size:clamp(1.8rem,4vw,3rem);font-weight:800;color:var(--text-bright);letter-spacing:-.02em;margin-bottom:14px}
+    .cta-glass p{font-size:1.02rem;color:var(--text-muted);margin:0 auto 36px;max-width:500px}
+    .cta-btns{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+
+    /* ── Footer ────────────────────────────────────────────────── */
+    footer{border-top:1px solid var(--border);padding:56px 0 30px;position:relative;z-index:1}
+    .ft-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:44px;margin-bottom:44px}
+    .ft-brand p{font-size:.85rem;color:var(--text-muted);line-height:1.7;margin:14px 0 20px;max-width:270px}
+    .socials{display:flex;gap:10px}
+    .soc{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:var(--surface);border:1px solid var(--border);color:var(--text-muted);transition:all var(--ease);cursor:pointer}
+    .soc:hover{background:var(--surface-hover);border-color:var(--border-glow);color:var(--text-bright);transform:translateY(-2px)}
+    .soc svg{width:17px;height:17px}
+    .ft-col h4{font-size:.8rem;font-weight:700;color:var(--text-bright);margin-bottom:14px;text-transform:uppercase;letter-spacing:.06em}
+    .ft-col ul{display:flex;flex-direction:column;gap:9px}
+    .ft-col ul a{font-size:.85rem;color:var(--text-muted);transition:color var(--ease)}
+    .ft-col ul a:hover{color:var(--text-bright)}
+    .ft-bottom{border-top:1px solid var(--border);padding-top:22px;display:flex;align-items:center;justify-content:space-between;font-size:.78rem;color:var(--text-muted)}
+    .ft-bottom a{color:var(--primary-2)}
+
+    /* ── Reveal animation ──────────────────────────────────────── */
+    .rv{opacity:0;transform:translateY(26px);transition:opacity 580ms cubic-bezier(.4,0,.2,1),transform 580ms cubic-bezier(.4,0,.2,1)}
+    .rv.in{opacity:1;transform:translateY(0)}
+    .d1{transition-delay:100ms}.d2{transition-delay:200ms}.d3{transition-delay:300ms}.d4{transition-delay:400ms}.d5{transition-delay:500ms}
+
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+    /* ── Responsive ────────────────────────────────────────────── */
+    @media(max-width:1024px){
+      .hero-inner{grid-template-columns:1fr}
+      .hero-visual{display:none}
+      .sv-grid{grid-template-columns:repeat(2,1fr)}
+      .steps{grid-template-columns:repeat(2,1fr)}
+      .steps::before{display:none}
+      .tm-grid{grid-template-columns:repeat(2,1fr)}
+      .pr-grid{grid-template-columns:1fr;max-width:400px;margin:0 auto}
+      .ft-grid{grid-template-columns:1fr 1fr}
+      .stats-row{grid-template-columns:repeat(2,1fr)}
+      .stat:nth-child(2){border-right:none}
+      .stat:nth-child(3){border-right:1px solid var(--border);border-top:1px solid var(--border)}
+      .stat:nth-child(4){border-top:1px solid var(--border)}
+    }
+    @media(max-width:768px){
+      .nav-links,.nav-end{display:none}
+      .hamburger{display:flex}
+      .hero{padding:120px 0 60px}
+      .sv-grid,.tm-grid,.steps{grid-template-columns:1fr}
+      .ft-grid{grid-template-columns:1fr}
+      .stats-row{grid-template-columns:repeat(2,1fr)}
+      .cta-glass{padding:44px 22px}
+      .ft-bottom{flex-direction:column;gap:10px;text-align:center}
+    }
+    @media(max-width:480px){
+      .stats-row{grid-template-columns:1fr}
+      .stat{border-right:none;border-bottom:1px solid var(--border)}
+      .stat:last-child{border-bottom:none}
+      .hero-actions{flex-direction:column}
+      .btn-lg{width:100%}
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Skip link + Header -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+<div class="bg-orbs" aria-hidden="true"></div>
 
-  <header>
-    <nav class="site-nav" aria-label="Main navigation">
-      <div class="container nav-inner">
-        <a href="/" class="nav-logo" aria-label="MyFlowMind — home">
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true" focusable="false">
-            <rect width="28" height="28" rx="7" fill="#6c63ff"/>
-            <path d="M8 14 Q14 6 20 14 Q14 22 8 14Z" fill="none" stroke="#fff" stroke-width="2"/>
-            <circle cx="14" cy="14" r="2.5" fill="#00d4aa"/>
-          </svg>
-          My<span>Flow</span>Mind
-        </a>
-        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">&#9776;</button>
-        <ul class="nav-links" id="nav-links" role="list">
-          <li><a href="/" aria-current="page">Home</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/services.html">Services</a></li>
-          <li><a href="/contact.html" class="nav-cta">Get Started</a></li>
+<!-- ── Navbar ─────────────────────────────────────────────── -->
+<nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="logo" aria-label="MyFlowMind home">
+      <div class="logo-icon" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      </div>
+      MyFlowMind
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#how">Process</a></li>
+      <li><a href="#proof">Results</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+    </ul>
+    <div class="nav-end">
+      <a href="/about.html" class="btn btn-ghost">About</a>
+      <a href="/contact.html" class="btn btn-primary">Book a Call</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── Hero ───────────────────────────────────────────────── -->
+<section class="hero" id="top">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-inner">
+
+      <!-- Copy -->
+      <div>
+        <div class="badge rv">
+          <span class="badge-dot" aria-hidden="true"></span>
+          AI-Powered Automation Agency
+        </div>
+        <h1 class="rv d1">Automate Smarter.<br/><span class="grad-text">Scale Faster.</span></h1>
+        <p class="hero-desc rv d2">We build custom AI automation systems that eliminate repetitive work, save your team <strong>15+ hours every week</strong>, and let you focus on what actually grows your business.</p>
+        <div class="hero-actions rv d3">
+          <a href="/contact.html" class="btn btn-primary btn-lg">Book a Free Strategy Call</a>
+          <a href="#services" class="btn btn-outline btn-lg">See Our Services</a>
+        </div>
+        <div class="hero-proof rv d4" aria-label="Trusted by 200+ businesses with 5-star rating">
+          <div class="avatars" aria-hidden="true">
+            <div class="av">JM</div><div class="av">SR</div><div class="av">TK</div><div class="av">AL</div>
+          </div>
+          <div>
+            <div class="stars-gold" aria-hidden="true">★★★★★</div>
+            <p class="proof-text">Trusted by <strong>200+ businesses</strong> worldwide</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard mockup -->
+      <div class="hero-visual rv d2" aria-hidden="true">
+        <div class="float-chip f1">
+          <div class="chip-label">Time Saved</div>
+          <div class="chip-val green">+18 hrs/wk</div>
+        </div>
+        <div class="dash-card">
+          <div class="dash-head">
+            <span class="dash-title">Automation Dashboard</span>
+            <span class="live-badge"><span class="live-dot"></span>Live</span>
+          </div>
+          <div class="metric-row">
+            <div class="mc"><div class="mc-val green">98.2%</div><div class="mc-label">Uptime</div></div>
+            <div class="mc"><div class="mc-val purple">1,847</div><div class="mc-label">Tasks/Day</div></div>
+            <div class="mc"><div class="mc-val">$4.2k</div><div class="mc-label">Saved</div></div>
+          </div>
+          <div class="wf-list">
+            <div class="wf"><span class="wd on"></span><span class="wn">Lead Capture → CRM Sync</span><span class="wt">2s ago</span></div>
+            <div class="wf"><span class="wd run"></span><span class="wn">Email Sequence Trigger</span><span class="wt">Running</span></div>
+            <div class="wf"><span class="wd on"></span><span class="wn">Invoice Auto-Generation</span><span class="wt">12s ago</span></div>
+            <div class="wf"><span class="wd off"></span><span class="wn">Weekly Report Builder</span><span class="wt">Idle</span></div>
+          </div>
+        </div>
+        <div class="float-chip f2">
+          <div class="chip-label">Workflows Active</div>
+          <div class="chip-val">24 running</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Stats ───────────────────────────────────────────────── -->
+<div class="stats-bar">
+  <div class="container">
+    <div class="stats-row" id="stats">
+      <div class="stat rv"><div class="stat-n">200+</div><div class="stat-l">Businesses Automated</div></div>
+      <div class="stat rv d1"><div class="stat-n">15hrs</div><div class="stat-l">Saved Per Week, Per Client</div></div>
+      <div class="stat rv d2"><div class="stat-n">98%</div><div class="stat-l">Client Satisfaction Rate</div></div>
+      <div class="stat rv d3"><div class="stat-n">48hr</div><div class="stat-l">Average Delivery Time</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Services ────────────────────────────────────────────── -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="sec-hdr rv">
+      <div class="s-label">What We Do</div>
+      <h2 class="s-head">Automation built for growth</h2>
+      <p class="s-sub">From lead capture to invoicing, we automate the workflows that drain your team's time — so you can grow without hiring more staff.</p>
+    </div>
+    <div class="sv-grid">
+
+      <div class="sv-card rv">
+        <div class="sv-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#6c63ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h3>Workflow Automation</h3>
+        <p>End-to-end n8n and Zapier flows that connect your tools, trigger on the right events, and run 24/7 without you.</p>
+        <span class="sv-tag">n8n · Zapier · Make</span>
+      </div>
+
+      <div class="sv-card rv d1">
+        <div class="sv-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#6c63ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3>AI Chatbots &amp; Assistants</h3>
+        <p>Custom GPT-powered bots that handle support, qualify leads, and answer FAQs across your website, WhatsApp, or Slack.</p>
+        <span class="sv-tag">GPT-4 · Claude · Voiceflow</span>
+      </div>
+
+      <div class="sv-card rv d2">
+        <div class="sv-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#6c63ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>CRM &amp; Lead Automation</h3>
+        <p>Automatically capture, score, tag, and nurture every lead inside HubSpot, GoHighLevel, or Notion — zero manual entry.</p>
+        <span class="sv-tag">HubSpot · GoHighLevel · Notion</span>
+      </div>
+
+      <div class="sv-card rv d1">
+        <div class="sv-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#6c63ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3H8a2 2 0 0 0-2 2v2h12V5a2 2 0 0 0-2-2z"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+        </div>
+        <h3>E-Commerce Automation</h3>
+        <p>Order confirmations, inventory alerts, abandoned cart flows, and review requests — all automated, all on brand.</p>
+        <span class="sv-tag">Shopify · WooCommerce · Stripe</span>
+      </div>
+
+      <div class="sv-card rv d2">
+        <div class="sv-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#6c63ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3>Reporting &amp; Analytics</h3>
+        <p>Automatic weekly reports, live dashboards, and KPI alerts delivered to your inbox or Slack — no spreadsheets needed.</p>
+        <span class="sv-tag">Google Sheets · Airtable · Slack</span>
+      </div>
+
+      <div class="sv-card rv d3">
+        <div class="sv-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#6c63ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+        </div>
+        <h3>Digital Products &amp; Templates</h3>
+        <p>Ready-to-deploy n8n workflow bundles, AI prompt libraries, and automation templates available instantly on Gumroad.</p>
+        <span class="sv-tag">Gumroad · Etsy · Instant Download</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── How It Works ─────────────────────────────────────────── -->
+<section class="how" id="how">
+  <div class="container">
+    <div class="sec-hdr c rv">
+      <div class="s-label">The Process</div>
+      <h2 class="s-head">From call to running in 4 steps</h2>
+      <p class="s-sub">Most clients have their first automation live within 48 hours of their strategy call.</p>
+    </div>
+    <div class="steps">
+      <div class="step rv"><div class="step-n" aria-label="Step 1">1</div><h3>Discovery Call</h3><p>We map your workflows, identify the highest-leverage tasks to automate first, and define clear success metrics.</p></div>
+      <div class="step rv d1"><div class="step-n" aria-label="Step 2">2</div><h3>Custom Build</h3><p>Our team designs and builds your automation system, fully configured to your tools, data, and business logic.</p></div>
+      <div class="step rv d2"><div class="step-n" aria-label="Step 3">3</div><h3>Test &amp; Handoff</h3><p>We test every edge case, walk you through the system live, and hand over full documentation so you're always in control.</p></div>
+      <div class="step rv d3"><div class="step-n" aria-label="Step 4">4</div><h3>Ongoing Support</h3><p>Monthly check-ins, 48-hour support SLA, and proactive optimizations as your business scales and evolves.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Testimonials ─────────────────────────────────────────── -->
+<section class="proof-sec" id="proof">
+  <div class="container">
+    <div class="sec-hdr c rv">
+      <div class="s-label">Real Results</div>
+      <h2 class="s-head">Businesses that flow on autopilot</h2>
+      <p class="s-sub">Don't take our word for it — here's what clients say after we automate their operations.</p>
+    </div>
+    <div class="tm-grid">
+
+      <div class="tm-card rv">
+        <div class="tm-stars" aria-label="5 stars">★★★★★</div>
+        <blockquote>"MyFlowMind automated our entire onboarding process. What used to take our team 3 hours per client now happens instantly. We've onboarded 4× more clients without hiring anyone."</blockquote>
+        <div class="tm-author">
+          <div class="tm-av" aria-hidden="true">JM</div>
+          <div><div class="tm-name">James M.</div><div class="tm-role">Founder, SaaS Startup</div></div>
+        </div>
+      </div>
+
+      <div class="tm-card rv d1">
+        <div class="tm-stars" aria-label="5 stars">★★★★★</div>
+        <blockquote>"The lead automation they built pays for itself every single week. Leads go from form to booked call in under 2 minutes, with zero manual work from my team."</blockquote>
+        <div class="tm-author">
+          <div class="tm-av" aria-hidden="true">SR</div>
+          <div><div class="tm-name">Sarah R.</div><div class="tm-role">CEO, Digital Agency</div></div>
+        </div>
+      </div>
+
+      <div class="tm-card rv d2">
+        <div class="tm-stars" aria-label="5 stars">★★★★★</div>
+        <blockquote>"I was spending 15 hours a week on admin. MyFlowMind cut that to under 2. I finally have time to work on the business instead of in it. Best investment I've made."</blockquote>
+        <div class="tm-author">
+          <div class="tm-av" aria-hidden="true">TK</div>
+          <div><div class="tm-name">Temi K.</div><div class="tm-role">E-Commerce Store Owner</div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Pricing ──────────────────────────────────────────────── -->
+<section class="pricing-sec" id="pricing">
+  <div class="container">
+    <div class="sec-hdr c rv">
+      <div class="s-label">Pricing</div>
+      <h2 class="s-head">Transparent, results-driven pricing</h2>
+      <p class="s-sub">No retainers you don't need. Pick the plan that matches where your business is right now.</p>
+    </div>
+    <div class="pr-grid">
+
+      <!-- Starter -->
+      <div class="pr-card rv">
+        <div class="pr-name">Starter</div>
+        <div class="pr-price">$497<span>/project</span></div>
+        <p class="pr-desc">Perfect for solopreneurs and small teams automating their first key workflow.</p>
+        <ul class="pr-feats">
+          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00d4aa" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>1 custom workflow built &amp; deployed</li>
+          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00d4aa" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>n8n or Zapier (your choice)</li>
+          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00d4aa" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>48-hour delivery</li>
+          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00d4aa" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>30-day support included</li>
         </ul>
+        <a href="/contact.html" class="btn btn-outline" style="width:100%;justify-content:center;">Get Started</a>
       </div>
-    </nav>
-  </header>
 
-  <main id="main-content">
-
-    <!-- Hero -->
-    <section class="hero section" aria-labelledby="hero-heading">
-      <div class="container">
-        <p class="hero-eyebrow">AI-Powered Automation Agency</p>
-        <h1 class="hero-title" id="hero-heading">
-          Work Smarter With<br />
-          <span class="highlight">Intelligent Automation</span>
-        </h1>
-        <p class="hero-description">
-          MyFlowMind designs and deploys custom AI automation systems that eliminate
-          time-consuming manual work — so your team can focus on growth, creativity,
-          and the decisions only humans can make.
-        </p>
-        <div class="hero-actions">
-          <a href="/contact.html" class="btn btn-primary">Book a Free Strategy Call</a>
-          <a href="/services.html" class="btn btn-outline">Explore Services</a>
-        </div>
-        <p class="hero-social-proof">
-          Trusted by <strong>50+ businesses</strong> to automate over
-          <strong>120,000 hours</strong> of manual work annually.
-        </p>
+      <!-- Growth (featured) -->
+      <div class="pr-card feat rv d1">
+        <div class="pr-badge">Most Popular</div>
+        <div class="pr-name">Growth</div>
+        <div class="pr-price">$1,497<span>/month</span></div>
+        <p class="pr-desc">For growing businesses ready to automate across all their core operations.</p>
+        <ul class="pr-feats">
+          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00d4aa" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>Up to 5 workflows per month</li>
+          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00d4aa" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>AI chatbot build included</li>
+          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00d4aa" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>CRM &amp; lead automation</li>
+          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00d4aa" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>Weekly performance reports</li>
+          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00d4aa" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>48-hr priority support SLA</li>
+        </ul>
+        <a href="/contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Start Growing</a>
       </div>
-    </section>
 
-    <!-- Services Overview -->
-    <section class="section section--alt" aria-labelledby="services-heading">
-      <div class="container">
-        <div class="section-header">
-          <h2 id="services-heading">What We Build For You</h2>
-          <p>End-to-end automation solutions tailored to your workflows — from lead generation to reporting.</p>
-        </div>
-        <div class="grid-3" role="list">
-
-          <article class="card" role="listitem">
-            <div class="card-icon" aria-hidden="true">&#x1F916;</div>
-            <h3>AI Workflow Automation</h3>
-            <p>Connect your tools and automate multi-step business processes using large language models and custom logic.</p>
-          </article>
-
-          <article class="card" role="listitem">
-            <div class="card-icon" aria-hidden="true">&#x1F4E5;</div>
-            <h3>Lead Generation & CRM</h3>
-            <p>Automatically capture, score, and nurture leads across channels — delivered straight into your CRM without manual data entry.</p>
-          </article>
-
-          <article class="card" role="listitem">
-            <div class="card-icon" aria-hidden="true">&#x1F4CA;</div>
-            <h3>Reporting & Analytics</h3>
-            <p>Automated dashboards and scheduled reports pull data from every platform so you always have a single source of truth.</p>
-          </article>
-
-          <article class="card" role="listitem">
-            <div class="card-icon" aria-hidden="true">&#x1F4AC;</div>
-            <h3>AI Chatbots & Assistants</h3>
-            <p>Deploy intelligent chat assistants trained on your knowledge base to handle customer queries around the clock.</p>
-          </article>
-
-          <article class="card" role="listitem">
-            <div class="card-icon" aria-hidden="true">&#x1F4E7;</div>
-            <h3>Email & Content Flows</h3>
-            <p>Trigger personalised email sequences, generate content drafts, and schedule posts — all on autopilot.</p>
-          </article>
-
-          <article class="card" role="listitem">
-            <div class="card-icon" aria-hidden="true">&#x1F527;</div>
-            <h3>Custom Integrations</h3>
-            <p>We connect any combination of SaaS tools — even those without native integrations — using API, Zapier, Make, or n8n.</p>
-          </article>
-
-        </div>
-        <div class="text-center mt-lg">
-          <a href="/services.html" class="btn btn-outline">View All Services</a>
-        </div>
+      <!-- Scale -->
+      <div class="pr-card rv d2">
+        <div class="pr-name">Scale</div>
+        <div class="pr-price" style="font-size:2rem;">Custom</div>
+        <p class="pr-desc">Enterprise-grade automation for teams with complex, multi-system requirements.</p>
+        <ul class="pr-feats">
+          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00d4aa" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>Unlimited workflows</li>
+          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00d4aa" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>Dedicated automation engineer</li>
+          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00d4aa" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>Custom API integrations</li>
+          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00d4aa" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>4-hr emergency support SLA</li>
+          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00d4aa" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>Quarterly strategy sessions</li>
+        </ul>
+        <a href="/contact.html" class="btn btn-outline" style="width:100%;justify-content:center;">Contact Us</a>
       </div>
-    </section>
 
-    <!-- How It Works -->
-    <section class="section" aria-labelledby="process-heading">
-      <div class="container">
-        <div class="section-header">
-          <h2 id="process-heading">How It Works</h2>
-          <p>A clear, four-step process from discovery to a running automation — in weeks, not months.</p>
-        </div>
-        <div class="steps" role="list">
+    </div>
+  </div>
+</section>
 
-          <div class="step" role="listitem">
-            <div class="step-number" aria-hidden="true">1</div>
-            <div class="step-content">
-              <h3>Discovery Call</h3>
-              <p>We map your current workflows, identify the highest-impact automation opportunities, and agree on measurable goals.</p>
-            </div>
-          </div>
-
-          <div class="step" role="listitem">
-            <div class="step-number" aria-hidden="true">2</div>
-            <div class="step-content">
-              <h3>Blueprint & Proposal</h3>
-              <p>You receive a detailed automation blueprint with timelines, tech stack choices, and a fixed-price proposal — no surprises.</p>
-            </div>
-          </div>
-
-          <div class="step" role="listitem">
-            <div class="step-number" aria-hidden="true">3</div>
-            <div class="step-content">
-              <h3>Build & Test</h3>
-              <p>Our team builds, tests, and refines each automation in a staging environment with your real data and edge cases.</p>
-            </div>
-          </div>
-
-          <div class="step" role="listitem">
-            <div class="step-number" aria-hidden="true">4</div>
-            <div class="step-content">
-              <h3>Launch & Optimise</h3>
-              <p>We go live, monitor performance, and fine-tune the system. Ongoing maintenance plans keep everything running smoothly.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="section section--alt" aria-labelledby="testimonials-heading">
-      <div class="container">
-        <div class="section-header">
-          <h2 id="testimonials-heading">What Our Clients Say</h2>
-          <p>Real results from businesses that made the switch to intelligent automation.</p>
-        </div>
-        <div class="grid-3">
-
-          <div class="testimonial">
-            <blockquote>MyFlowMind cut our invoice-processing time from three days to under four hours. The ROI in the first month alone covered the entire project cost.</blockquote>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar" aria-hidden="true">SB</div>
-              <div class="testimonial-meta">
-                <strong>Sarah B.</strong>
-                <span>COO, Meridian Logistics</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial">
-            <blockquote>We went from manually qualifying leads for six hours a week to having a fully automated pipeline that scores and routes them instantly. Game-changing.</blockquote>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar" aria-hidden="true">DK</div>
-              <div class="testimonial-meta">
-                <strong>David K.</strong>
-                <span>Head of Sales, Vantage SaaS</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial">
-            <blockquote>The AI chatbot they built handles 70% of our customer support tickets without any human involvement. Our team now focuses on complex, high-value cases.</blockquote>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar" aria-hidden="true">AM</div>
-              <div class="testimonial-meta">
-                <strong>Aisha M.</strong>
-                <span>Customer Success Lead, Helio Retail</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="section" aria-labelledby="cta-heading">
-      <div class="container">
-        <div class="cta-banner">
-          <h2 id="cta-heading">Ready to Reclaim Your Time?</h2>
-          <p>Book a free 30-minute strategy call and discover which automations will have the biggest impact on your business — no commitment required.</p>
-          <a href="/contact.html" class="btn btn-accent">Book Your Free Call</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer" aria-label="Site footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <a href="/" class="nav-logo" aria-label="MyFlowMind — home">
-            <svg width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true" focusable="false">
-              <rect width="28" height="28" rx="7" fill="#6c63ff"/>
-              <path d="M8 14 Q14 6 20 14 Q14 22 8 14Z" fill="none" stroke="#fff" stroke-width="2"/>
-              <circle cx="14" cy="14" r="2.5" fill="#00d4aa"/>
-            </svg>
-            My<span>Flow</span>Mind
-          </a>
-          <p>We build intelligent automation systems that free your team to focus on what humans do best.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Company</h4>
-          <ul role="list">
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/services.html">Services</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Digital Products</h4>
-          <ul role="list">
-            <li><a href="https://raphealmind.gumroad.com" target="_blank" rel="noopener">Gumroad Store</a></li>
-            <li><a href="https://www.etsy.com/shop/Myflowmind" target="_blank" rel="noopener">Etsy Shop</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Connect</h4>
-          <ul role="list">
-            <li><a href="https://www.linkedin.com/company/myflowmind" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="https://twitter.com/myflowmind" target="_blank" rel="noopener">Twitter / X</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Legal</h4>
-          <ul role="list">
-            <li><a href="/privacy.html">Privacy Policy</a></li>
-            <li><a href="/terms.html">Terms of Service</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; <span id="footer-year">2026</span> MyFlowMind. All rights reserved.</p>
-        <p>Built with intention &amp; automation.</p>
+<!-- ── CTA ──────────────────────────────────────────────────── -->
+<section class="cta-sec">
+  <div class="container">
+    <div class="cta-glass rv">
+      <div class="cta-glow" aria-hidden="true"></div>
+      <div class="s-label" style="justify-content:center;margin-bottom:18px;">Free Strategy Call</div>
+      <h2>Ready to stop doing it manually?</h2>
+      <p>Book a free 30-minute strategy call. We'll map your biggest automation wins and show you exactly what's possible — no commitment, no pressure.</p>
+      <div class="cta-btns">
+        <a href="/contact.html" class="btn btn-primary btn-lg">Book Your Free Call</a>
+        <a href="/services.html" class="btn btn-outline btn-lg">View All Services</a>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script>
-    document.getElementById('footer-year').textContent = new Date().getFullYear();
-    const toggle = document.querySelector('.nav-toggle');
-    const navLinks = document.getElementById('nav-links');
-    if (toggle && navLinks) {
-      toggle.addEventListener('click', function () {
-        const isOpen = navLinks.classList.toggle('is-open');
-        toggle.setAttribute('aria-expanded', String(isOpen));
-      });
-    }
-  </script>
+<!-- ── Footer ───────────────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="ft-grid">
 
+      <div class="ft-brand">
+        <a href="/" class="logo" aria-label="MyFlowMind home">
+          <div class="logo-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          MyFlowMind
+        </a>
+        <p>AI-powered automation systems for small businesses, SaaS founders, and e-commerce brands. Automate smarter. Scale faster.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/Myflowmindautomation" class="soc" target="_blank" rel="noopener noreferrer" aria-label="Follow MyFlowMind on Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@Myflowmindautomation" class="soc" target="_blank" rel="noopener noreferrer" aria-label="Follow MyFlowMind on TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.85a8.18 8.18 0 0 0 4.78 1.52V6.9a4.85 4.85 0 0 1-1.01-.21z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/Myflowmindautomation" class="soc" target="_blank" rel="noopener noreferrer" aria-label="Follow MyFlowMind on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@Myflowmindautomation" class="soc" target="_blank" rel="noopener noreferrer" aria-label="Follow MyFlowMind on YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#060811"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="ft-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/services.html">Workflow Automation</a></li>
+          <li><a href="/services.html">AI Chatbots</a></li>
+          <li><a href="/services.html">CRM Automation</a></li>
+          <li><a href="/services.html">E-Commerce Flows</a></li>
+          <li><a href="/services.html">Digital Products</a></li>
+        </ul>
+      </div>
+
+      <div class="ft-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="#proof">Results</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="ft-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="https://raphealmind.gumroad.com" target="_blank" rel="noopener noreferrer">Gumroad Templates</a></li>
+          <li><a href="https://www.etsy.com/shop/Myflowmind" target="_blank" rel="noopener noreferrer">Etsy Shop</a></li>
+          <li><a href="mailto:contact@myflowmind.com">contact@myflowmind.com</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="ft-bottom">
+      <span>© 2024 MyFlowMind Automation Agency. All rights reserved.</span>
+      <span>Built with <a href="https://myflowmind.com">MyFlowMind</a> · <a href="/privacy.html">Privacy</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Navbar scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 40), { passive: true });
+
+  // Reveal on scroll
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Animated stat counters
+  function countTo(el, end, suffix, dur = 1800) {
+    const start = performance.now();
+    const isNum = !isNaN(parseFloat(end));
+    const numEnd = parseFloat(end);
+    (function tick(now) {
+      const p = Math.min((now - start) / dur, 1);
+      const ease = 1 - Math.pow(1 - p, 3);
+      el.textContent = (isNum ? Math.round(ease * numEnd) : end) + suffix;
+      if (p < 1) requestAnimationFrame(tick);
+    })(start);
+  }
+
+  const statsIo = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const nums = e.target.querySelectorAll('.stat-n');
+      const cfg = [
+        { end: 200, suffix: '+' },
+        { end: '15', suffix: 'hrs' },
+        { end: 98, suffix: '%' },
+        { end: 48, suffix: 'hr' }
+      ];
+      nums.forEach((el, i) => countTo(el, cfg[i].end, cfg[i].suffix));
+      statsIo.unobserve(e.target);
+    });
+  }, { threshold: 0.5 });
+  const sg = document.getElementById('stats');
+  if (sg) statsIo.observe(sg);
+
+  // Hamburger toggle
+  document.getElementById('hamburger').addEventListener('click', function () {
+    const ex = this.getAttribute('aria-expanded') === 'true';
+    this.setAttribute('aria-expanded', String(!ex));
+  });
+</script>
 </body>
 </html>
