@@ -26,22 +26,24 @@ The home page (`index.html`) is a self-contained, conversion-focused single page
 
 `privacy.html` and `terms.html` are solid **starter templates, not legal advice**.
 They're safe to keep published (a clear policy beats none), but a human/lawyer
-should confirm the following before they're considered final:
+should confirm the remaining items before they're considered final.
 
-**Fill in real values:**
-- Registered **legal entity name** (+ company number, if incorporated)
-- **Governing law / jurisdiction** for disputes (terms §9–10)
-- **Business / registered address**
-- **Refund policy** specifics — confirm they match Gumroad/Etsy reality and any
-  statutory digital-goods refund rights (e.g. UK/EU 14-day rules)
+**Resolved (current setup):**
+- Operator: **Rapheal John, sole proprietor, trading as "MyFlowMind"** (Des Moines, Iowa, US)
+- Governing law / jurisdiction: **State of Iowa & the United States** (terms §11)
+- Contact: **email-only** (`contact@myflowmind.com`) — no physical address published
 
-**Confirm these match how MyFlowMind actually operates:**
-- Cookies/analytics disclosure — if Google Analytics (or similar) is added later,
-  add a cookie banner + consent and name the tools. (Google Fonts is loaded today.)
-- AI data-handling claim ("not used to train third-party models") — privacy §5
-- Age requirement (currently 18) — terms §2
-- Liability cap (currently 12 months' fees) — terms §9
-- GDPR framing — included for international clients; simplify if not UK/EU-facing
+**Still to confirm / watch:**
+- **Mailing address** — email-only is fine today. If you start sending marketing
+  emails, US CAN-SPAM requires a valid physical postal address in the email — get a
+  cheap PO box / virtual mailbox then and add it.
+- **Refund policy** specifics (terms §4) — confirm they match Gumroad/Etsy reality.
+- **Cookies/analytics** — if Google Analytics (or similar) is added later, add a
+  cookie notice and name the tools. (Google Fonts is loaded today.)
+- **AI data-handling** claim ("not used to train third-party models") — privacy §5
+- Age requirement (18, terms §2) and liability cap (12 months' fees, terms §9)
+- **Future:** consider forming an LLC for personal-liability protection; then swap
+  the sole-proprietor line for the entity name + registered address.
 
 
 ## Stack
