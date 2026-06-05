@@ -22,6 +22,28 @@ The home page (`index.html`) is a self-contained, conversion-focused single page
 > Jakarta Sans (body); violet→cyan→mint gradient spectrum with pink/amber accents;
 > restrained glassmorphism on nav/cards/modals per 2026 best practice.
 
+## Legal pages — punch list before treating as final
+
+`privacy.html` and `terms.html` are solid **starter templates, not legal advice**.
+They're safe to keep published (a clear policy beats none), but a human/lawyer
+should confirm the following before they're considered final:
+
+**Fill in real values:**
+- Registered **legal entity name** (+ company number, if incorporated)
+- **Governing law / jurisdiction** for disputes (terms §9–10)
+- **Business / registered address**
+- **Refund policy** specifics — confirm they match Gumroad/Etsy reality and any
+  statutory digital-goods refund rights (e.g. UK/EU 14-day rules)
+
+**Confirm these match how MyFlowMind actually operates:**
+- Cookies/analytics disclosure — if Google Analytics (or similar) is added later,
+  add a cookie banner + consent and name the tools. (Google Fonts is loaded today.)
+- AI data-handling claim ("not used to train third-party models") — privacy §5
+- Age requirement (currently 18) — terms §2
+- Liability cap (currently 12 months' fees) — terms §9
+- GDPR framing — included for international clients; simplify if not UK/EU-facing
+
+
 ## Stack
 
 - Plain HTML5 / CSS3 / vanilla JS (no framework, no build step)
