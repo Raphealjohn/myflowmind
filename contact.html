@@ -312,20 +312,69 @@
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.rv').forEach(el => io.observe(el));
 
-    // Client-side form feedback (placeholder action only)
+    // ── Contact form submission ───────────────────────────────────────
+    // TO GO LIVE: create a form at https://formspree.io, copy your endpoint
+    // (it looks like https://formspree.io/f/abcdwxyz) and paste it below.
+    // Until then the form runs in safe "demo mode" and sends nothing.
+    const FORMSPREE_ENDPOINT = ""; // <-- paste your Formspree URL here
+
     const form = document.getElementById('contact-form');
     const successMsg = document.getElementById('success-msg');
+    const submitBtn = form ? form.querySelector('button[type="submit"]') : null;
+
+    function showError(msg) {
+      successMsg.style.background = 'rgba(255,93,177,.1)';
+      successMsg.style.borderColor = 'rgba(255,93,177,.3)';
+      successMsg.style.color = '#ff5db1';
+      successMsg.textContent = msg;
+      successMsg.style.display = 'block';
+      successMsg.focus();
+    }
+    function showSuccess(html) {
+      successMsg.style.background = '';
+      successMsg.style.borderColor = '';
+      successMsg.style.color = '';
+      successMsg.innerHTML = html;
+      successMsg.style.display = 'block';
+      successMsg.focus();
+    }
+
     if (form) {
-      form.addEventListener('submit', function (e) {
-        if (form.getAttribute('action') === '#') {
-          e.preventDefault();
-          if (form.checkValidity()) {
+      // Keep the no-JS fallback in sync if an endpoint is configured
+      if (FORMSPREE_ENDPOINT) form.setAttribute('action', FORMSPREE_ENDPOINT);
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        if (!form.checkValidity()) { form.reportValidity(); return; }
+
+        // No endpoint yet → demo mode (nothing is actually sent)
+        if (!FORMSPREE_ENDPOINT) {
+          form.reset();
+          showSuccess("<strong>Looks good!</strong> (Demo mode — add your Formspree endpoint to receive real messages.)");
+          return;
+        }
+
+        const original = submitBtn.textContent;
+        submitBtn.disabled = true; submitBtn.textContent = 'Sending…';
+        try {
+          const res = await fetch(FORMSPREE_ENDPOINT, {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: new FormData(form)
+          });
+          if (res.ok) {
             form.reset();
-            successMsg.style.display = 'block';
-            successMsg.focus();
+            showSuccess("<strong>Message sent!</strong> We'll be in touch within one business day.");
           } else {
-            form.reportValidity();
+            const data = await res.json().catch(() => ({}));
+            const msg = (data.errors && data.errors.map(x => x.message).join(', '))
+              || 'Something went wrong — please email contact@myflowmind.com.';
+            showError(msg);
           }
+        } catch (err) {
+          showError('Network error — please email contact@myflowmind.com.');
+        } finally {
+          submitBtn.disabled = false; submitBtn.textContent = original;
         }
       });
     }
