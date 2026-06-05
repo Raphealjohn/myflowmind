@@ -1,6 +1,50 @@
 # myflowmind.com
 
-Static website for **MyFlowMind** — an AI automation agency.
+Static website for **MyFlowMind** — an AI automation studio & digital product storefront.
+
+## Homepage sections (redesigned)
+
+The home page (`index.html`) is a self-contained, conversion-focused single page:
+
+1. **Hero** — kinetic display headline, animated aurora background, glass "Studio" mockup.
+2. **Logo marquee** — the tools MyFlowMind builds on.
+3. **Stats bar** — animated count-up metrics.
+4. **Services (bento grid)** — automation offering with cursor-follow glow.
+5. **Content Studio** — a premium creator-dashboard *upload hub*. Drag-and-drop
+   promo assets (client-side preview only — no backend yet), compose a campaign
+   with live caption preview, and schedule/publish. Wire it to a real backend to
+   make uploads persist.
+6. **Digital Products** — storefront showcase with live category filtering + search.
+   Cards link to the Gumroad store.
+7. **Process · Testimonials · Pricing · CTA · Footer.**
+
+> Visual direction: futuristic + fun + premium. Space Grotesk (display) + Plus
+> Jakarta Sans (body); violet→cyan→mint gradient spectrum with pink/amber accents;
+> restrained glassmorphism on nav/cards/modals per 2026 best practice.
+
+## Legal pages — punch list before treating as final
+
+`privacy.html` and `terms.html` are solid **starter templates, not legal advice**.
+They're safe to keep published (a clear policy beats none), but a human/lawyer
+should confirm the remaining items before they're considered final.
+
+**Resolved (current setup):**
+- Operator: **Rapheal John, sole proprietor, trading as "MyFlowMind"** (Des Moines, Iowa, US)
+- Governing law / jurisdiction: **State of Iowa & the United States** (terms §11)
+- Contact: **email-only** (`contact@myflowmind.com`) — no physical address published
+
+**Still to confirm / watch:**
+- **Mailing address** — email-only is fine today. If you start sending marketing
+  emails, US CAN-SPAM requires a valid physical postal address in the email — get a
+  cheap PO box / virtual mailbox then and add it.
+- **Refund policy** specifics (terms §4) — confirm they match Gumroad/Etsy reality.
+- **Cookies/analytics** — if Google Analytics (or similar) is added later, add a
+  cookie notice and name the tools. (Google Fonts is loaded today.)
+- **AI data-handling** claim ("not used to train third-party models") — privacy §5
+- Age requirement (18, terms §2) and liability cap (12 months' fees, terms §9)
+- **Future:** consider forming an LLC for personal-liability protection; then swap
+  the sole-proprietor line for the entity name + registered address.
+
 
 ## Stack
 
