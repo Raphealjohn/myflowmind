@@ -10,6 +10,7 @@
   <meta name="robots" content="index, follow" />
   <meta name="author" content="MyFlowMind Automation Agency" />
   <meta name="keywords" content="contact MyFlowMind, book automation strategy call, hire automation agency, AI automation consultation, free strategy call" />
+  <meta name="theme-color" content="#06070f" />
   <link rel="canonical" href="https://myflowmind.com/contact.html" />
 
   <meta property="og:type" content="website" />
@@ -28,6 +29,12 @@
   <meta name="twitter:image" content="https://myflowmind.com/public/og-contact.png" />
 
   <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+
+  <!-- Fonts: Space Grotesk (display) + Plus Jakarta Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="/src/styles/global.css" />
 
   <!-- Structured Data -->
@@ -43,91 +50,27 @@
   </script>
 
   <style>
-    .contact-layout {
-      display: grid;
-      grid-template-columns: 1fr 1.4fr;
-      gap: var(--spacing-2xl);
-      align-items: flex-start;
-    }
-    .contact-info {
-      position: sticky;
-      top: 100px;
-    }
-    .contact-info h2 {
-      margin-bottom: var(--spacing-md);
-    }
-    .contact-info p {
-      color: var(--color-text-muted);
-      margin-bottom: var(--spacing-lg);
-    }
-    .contact-detail {
-      display: flex;
-      align-items: flex-start;
-      gap: var(--spacing-md);
-      margin-bottom: var(--spacing-lg);
-    }
-    .contact-detail .icon {
-      width: 44px;
-      height: 44px;
-      background: rgba(108, 99, 255, 0.15);
-      border-radius: var(--radius-md);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
-      flex-shrink: 0;
-    }
-    .contact-detail strong {
-      display: block;
-      color: var(--color-text-heading);
-      margin-bottom: var(--spacing-xs);
-      font-size: 0.9rem;
-    }
-    .contact-detail a,
-    .contact-detail p {
-      color: var(--color-text-muted);
-      font-size: 0.95rem;
-      margin-bottom: 0;
-    }
-    .form-card {
-      background: var(--color-surface);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-xl);
-      padding: var(--spacing-xl);
-    }
-    .form-card h2 {
-      margin-bottom: var(--spacing-xs);
-    }
-    .form-card > p {
-      color: var(--color-text-muted);
-      margin-bottom: var(--spacing-xl);
-      font-size: 0.95rem;
-    }
-    .form-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--spacing-md);
-    }
-    @media (max-width: 900px) {
-      .contact-layout {
-        grid-template-columns: 1fr;
-      }
-      .contact-info {
-        position: static;
-      }
-      .form-row {
-        grid-template-columns: 1fr;
-      }
-    }
-    .success-message {
-      display: none;
-      background: rgba(0, 212, 170, 0.1);
-      border: 1px solid rgba(0, 212, 170, 0.3);
-      border-radius: var(--radius-md);
-      padding: var(--spacing-lg);
-      text-align: center;
-      color: var(--color-accent);
-      margin-top: var(--spacing-md);
+    /* Page-specific layout for the contact page */
+    .contact-layout{display:grid;grid-template-columns:1fr 1.4fr;gap:48px;align-items:flex-start}
+    .contact-info{position:sticky;top:100px}
+    .contact-info h2{font-size:1.6rem;margin-bottom:14px}
+    .contact-info>p{color:var(--text-muted);margin-bottom:26px;line-height:1.7}
+    .contact-detail{display:flex;align-items:flex-start;gap:14px;margin-bottom:22px}
+    .contact-detail .icon{width:46px;height:46px;background:rgba(124,108,255,.12);border:1px solid rgba(124,108,255,.24);border-radius:13px;display:flex;align-items:center;justify-content:center;font-size:1.15rem;flex-shrink:0}
+    .contact-detail strong{display:block;color:var(--text-bright);margin-bottom:4px;font-size:.92rem;font-family:var(--display)}
+    .contact-detail a,.contact-detail p{color:var(--text-muted);font-size:.92rem;margin-bottom:0}
+    .contact-detail a:hover{color:var(--violet-2)}
+    .info-card{margin-top:30px;background:var(--grad-soft);border:1px solid rgba(124,108,255,.22);border-radius:var(--r-lg);padding:24px}
+    .info-card h3{font-size:1rem;margin-bottom:14px}
+    .info-card ul{display:flex;flex-direction:column;gap:10px}
+    .info-card li{color:var(--text);font-size:.88rem;padding-left:26px;position:relative;line-height:1.5}
+    .info-card li::before{content:'';position:absolute;left:0;top:7px;width:13px;height:8px;border-left:2px solid var(--mint);border-bottom:2px solid var(--mint);transform:rotate(-45deg)}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .success-message{display:none;background:rgba(0,230,184,.1);border:1px solid rgba(0,230,184,.3);border-radius:var(--r-md);padding:18px;text-align:center;color:var(--mint);margin-top:16px}
+    @media(max-width:900px){
+      .contact-layout{grid-template-columns:1fr}
+      .contact-info{position:static}
+      .form-row{grid-template-columns:1fr}
     }
   </style>
 </head>
@@ -135,35 +78,51 @@
 
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
+  <div class="aurora" aria-hidden="true"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
+  <div class="noise" aria-hidden="true"></div>
+
   <header>
-    <nav class="site-nav" aria-label="Main navigation">
-      <div class="container nav-inner">
-        <a href="/" class="nav-logo" aria-label="MyFlowMind — home">
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true" focusable="false">
-            <rect width="28" height="28" rx="7" fill="#6c63ff"/>
-            <path d="M8 14 Q14 6 20 14 Q14 22 8 14Z" fill="none" stroke="#fff" stroke-width="2"/>
-            <circle cx="14" cy="14" r="2.5" fill="#00d4aa"/>
-          </svg>
-          My<span>Flow</span>Mind
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="/" class="logo" aria-label="MyFlowMind home">
+          <span class="logo-icon" aria-hidden="true">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#06070f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </span>
+          MyFlowMind
         </a>
-        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">&#9776;</button>
-        <ul class="nav-links" id="nav-links" role="list">
+        <ul class="nav-links" role="list">
           <li><a href="/">Home</a></li>
-          <li><a href="/about.html">About</a></li>
           <li><a href="/services.html">Services</a></li>
-          <li><a href="/contact.html" class="nav-cta" aria-current="page">Get Started</a></li>
+          <li><a href="/#studio">Studio</a></li>
+          <li><a href="/#store">Products</a></li>
+          <li><a href="/about.html">About</a></li>
         </ul>
+        <div class="nav-end">
+          <a href="/contact.html" class="btn btn-primary btn-sm" aria-current="page">Book a Call</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="/">Home</a>
+      <a href="/services.html">Services</a>
+      <a href="/#studio">Content Studio</a>
+      <a href="/#store">Digital Products</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html" class="btn btn-primary">Book a Free Call</a>
+    </div>
   </header>
 
   <main id="main-content">
 
-    <section class="section" aria-labelledby="contact-heading">
+    <section class="section page-hero" aria-labelledby="contact-heading">
+      <div class="hero-grid" aria-hidden="true"></div>
       <div class="container">
-        <div class="section-header" style="margin-bottom: var(--spacing-2xl);">
+        <div class="section-header" style="margin-bottom:48px">
           <p class="hero-eyebrow">Get in Touch</p>
-          <h1 id="contact-heading">Start Your Automation Journey</h1>
+          <h1 id="contact-heading">Start your <span class="grad-text">automation journey</span></h1>
           <p>Fill in the form or send us an email. We respond to every enquiry within one business day.</p>
         </div>
 
@@ -171,7 +130,7 @@
 
           <!-- Info sidebar -->
           <aside class="contact-info" aria-label="Contact details">
-            <h2>We'd Love to Hear From You</h2>
+            <h2>We'd love to hear from you</h2>
             <p>Whether you have a specific project in mind or just want to explore what's possible, our team is here to help you find the right automation approach for your business.</p>
 
             <div class="contact-detail">
@@ -179,7 +138,7 @@
               <div>
                 <strong>Email</strong>
                 <a href="mailto:Raphealjohn@myflowmind.com">Raphealjohn@myflowmind.com</a>
-                <a href="mailto:contact@myflowmind.com" style="display:block; margin-top: 0.25rem;">contact@myflowmind.com</a>
+                <a href="mailto:contact@myflowmind.com" style="display:block;margin-top:.25rem">contact@myflowmind.com</a>
               </div>
             </div>
 
@@ -199,32 +158,20 @@
               </div>
             </div>
 
-            <div class="card" style="margin-top: var(--spacing-xl); background: linear-gradient(135deg, rgba(108,99,255,0.1), rgba(0,212,170,0.05));">
-              <h3 style="margin-bottom: var(--spacing-sm); font-size: 1rem;">What to expect on a strategy call</h3>
-              <ul style="list-style: none; padding: 0;">
-                <li style="margin-bottom: 0.5rem; color: var(--color-text-muted); font-size: 0.9rem; padding-left: 1.25rem; position: relative;">
-                  <span style="position: absolute; left: 0; color: var(--color-accent);">&#x2714;</span>
-                  We map your most time-consuming workflows
-                </li>
-                <li style="margin-bottom: 0.5rem; color: var(--color-text-muted); font-size: 0.9rem; padding-left: 1.25rem; position: relative;">
-                  <span style="position: absolute; left: 0; color: var(--color-accent);">&#x2714;</span>
-                  You receive 2–3 actionable automation ideas
-                </li>
-                <li style="margin-bottom: 0.5rem; color: var(--color-text-muted); font-size: 0.9rem; padding-left: 1.25rem; position: relative;">
-                  <span style="position: absolute; left: 0; color: var(--color-accent);">&#x2714;</span>
-                  We provide a rough ROI estimate
-                </li>
-                <li style="color: var(--color-text-muted); font-size: 0.9rem; padding-left: 1.25rem; position: relative;">
-                  <span style="position: absolute; left: 0; color: var(--color-accent);">&#x2714;</span>
-                  No hard sell — ever
-                </li>
+            <div class="info-card">
+              <h3>What to expect on a strategy call</h3>
+              <ul>
+                <li>We map your most time-consuming workflows</li>
+                <li>You receive 2–3 actionable automation ideas</li>
+                <li>We provide a rough ROI estimate</li>
+                <li>No hard sell — ever</li>
               </ul>
             </div>
           </aside>
 
           <!-- Contact form -->
           <div class="form-card">
-            <h2>Send Us a Message</h2>
+            <h2>Send us a message</h2>
             <p>Tell us about your business and what you'd like to automate. The more detail you share, the more useful our response will be.</p>
 
             <!--
@@ -233,62 +180,26 @@
               or a custom endpoint. Update the `action` attribute accordingly.
               Example Formspree: action="https://formspree.io/f/YOUR_FORM_ID"
             -->
-            <form
-              id="contact-form"
-              action="#"
-              method="POST"
-              novalidate
-              aria-label="Contact form"
-            >
+            <form id="contact-form" action="#" method="POST" novalidate aria-label="Contact form">
               <div class="form-row">
                 <div class="form-group">
                   <label for="first-name">First name <span aria-hidden="true">*</span></label>
-                  <input
-                    type="text"
-                    id="first-name"
-                    name="first_name"
-                    autocomplete="given-name"
-                    required
-                    aria-required="true"
-                    placeholder="Jane"
-                  />
+                  <input type="text" id="first-name" name="first_name" autocomplete="given-name" required aria-required="true" placeholder="Jane" />
                 </div>
                 <div class="form-group">
                   <label for="last-name">Last name <span aria-hidden="true">*</span></label>
-                  <input
-                    type="text"
-                    id="last-name"
-                    name="last_name"
-                    autocomplete="family-name"
-                    required
-                    aria-required="true"
-                    placeholder="Smith"
-                  />
+                  <input type="text" id="last-name" name="last_name" autocomplete="family-name" required aria-required="true" placeholder="Smith" />
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="email">Work email <span aria-hidden="true">*</span></label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  autocomplete="email"
-                  required
-                  aria-required="true"
-                  placeholder="jane@company.com"
-                />
+                <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" placeholder="jane@company.com" />
               </div>
 
               <div class="form-group">
                 <label for="company">Company name</label>
-                <input
-                  type="text"
-                  id="company"
-                  name="company"
-                  autocomplete="organization"
-                  placeholder="Acme Corp"
-                />
+                <input type="text" id="company" name="company" autocomplete="organization" placeholder="Acme Corp" />
               </div>
 
               <div class="form-group">
@@ -299,6 +210,7 @@
                   <option value="lead-gen">Lead Generation &amp; CRM Automation</option>
                   <option value="chatbot">AI Chatbot / Virtual Assistant</option>
                   <option value="reporting">Reporting &amp; Analytics Automation</option>
+                  <option value="digital-products">Digital Products &amp; Templates</option>
                   <option value="custom">Custom Integration</option>
                   <option value="not-sure">Not sure yet — need advice</option>
                 </select>
@@ -306,27 +218,19 @@
 
               <div class="form-group">
                 <label for="message">Tell us about your project <span aria-hidden="true">*</span></label>
-                <textarea
-                  id="message"
-                  name="message"
-                  required
-                  aria-required="true"
-                  placeholder="Describe the workflow or process you'd like to automate, the tools you currently use, and any specific goals or metrics…"
-                ></textarea>
+                <textarea id="message" name="message" required aria-required="true" placeholder="Describe the workflow or process you'd like to automate, the tools you currently use, and any specific goals or metrics…"></textarea>
                 <p class="form-note">The more detail you provide, the more specific our reply can be.</p>
               </div>
 
               <!-- Honeypot field — hidden from users but catches bots -->
-              <div style="display:none;" aria-hidden="true">
+              <div style="display:none" aria-hidden="true">
                 <label for="website-url">Leave this blank</label>
                 <input type="text" id="website-url" name="_gotcha" tabindex="-1" autocomplete="off" />
               </div>
 
-              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
-                Send Message
-              </button>
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%">Send Message</button>
 
-              <div class="success-message" id="success-msg" role="alert" aria-live="polite">
+              <div class="success-message" id="success-msg" role="alert" aria-live="polite" tabindex="-1">
                 <strong>Message sent!</strong> We'll be in touch within one business day.
               </div>
             </form>
@@ -342,13 +246,11 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          <a href="/" class="nav-logo" aria-label="MyFlowMind — home">
-            <svg width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true" focusable="false">
-              <rect width="28" height="28" rx="7" fill="#6c63ff"/>
-              <path d="M8 14 Q14 6 20 14 Q14 22 8 14Z" fill="none" stroke="#fff" stroke-width="2"/>
-              <circle cx="14" cy="14" r="2.5" fill="#00d4aa"/>
-            </svg>
-            My<span>Flow</span>Mind
+          <a href="/" class="logo" aria-label="MyFlowMind home">
+            <span class="logo-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06070f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </span>
+            MyFlowMind
           </a>
           <p>We build intelligent automation systems that free your team to focus on what humans do best.</p>
         </div>
@@ -391,23 +293,30 @@
 
   <script>
     document.getElementById('footer-year').textContent = new Date().getFullYear();
-
-    const toggle = document.querySelector('.nav-toggle');
-    const navLinks = document.getElementById('nav-links');
-    if (toggle && navLinks) {
-      toggle.addEventListener('click', function () {
-        const isOpen = navLinks.classList.toggle('is-open');
-        toggle.setAttribute('aria-expanded', String(isOpen));
+    const nav = document.getElementById('nav');
+    addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 40), { passive: true });
+    const burger = document.getElementById('hamburger');
+    const menu = document.getElementById('mobileMenu');
+    if (burger && menu) {
+      burger.addEventListener('click', () => {
+        const open = burger.classList.toggle('open');
+        menu.classList.toggle('show', open);
+        burger.setAttribute('aria-expanded', String(open));
       });
+      menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+        burger.classList.remove('open'); menu.classList.remove('show'); burger.setAttribute('aria-expanded', 'false');
+      }));
     }
+    const io = new IntersectionObserver(es => {
+      es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.rv').forEach(el => io.observe(el));
 
-    // Basic client-side form validation feedback
+    // Client-side form feedback (placeholder action only)
     const form = document.getElementById('contact-form');
     const successMsg = document.getElementById('success-msg');
     if (form) {
       form.addEventListener('submit', function (e) {
-        // If action is '#' (placeholder), show success UI for demo purposes.
-        // Remove this block and update form action for production.
         if (form.getAttribute('action') === '#') {
           e.preventDefault();
           if (form.checkValidity()) {
