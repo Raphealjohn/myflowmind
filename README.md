@@ -1,6 +1,26 @@
 # myflowmind.com
 
-Static website for **MyFlowMind** — an AI automation agency.
+Static website for **MyFlowMind** — an AI automation studio & digital product storefront.
+
+## Homepage sections (redesigned)
+
+The home page (`index.html`) is a self-contained, conversion-focused single page:
+
+1. **Hero** — kinetic display headline, animated aurora background, glass "Studio" mockup.
+2. **Logo marquee** — the tools MyFlowMind builds on.
+3. **Stats bar** — animated count-up metrics.
+4. **Services (bento grid)** — automation offering with cursor-follow glow.
+5. **Content Studio** — a premium creator-dashboard *upload hub*. Drag-and-drop
+   promo assets (client-side preview only — no backend yet), compose a campaign
+   with live caption preview, and schedule/publish. Wire it to a real backend to
+   make uploads persist.
+6. **Digital Products** — storefront showcase with live category filtering + search.
+   Cards link to the Gumroad store.
+7. **Process · Testimonials · Pricing · CTA · Footer.**
+
+> Visual direction: futuristic + fun + premium. Space Grotesk (display) + Plus
+> Jakarta Sans (body); violet→cyan→mint gradient spectrum with pink/amber accents;
+> restrained glassmorphism on nav/cards/modals per 2026 best practice.
 
 ## Stack
 
