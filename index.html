@@ -5,20 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- Primary SEO -->
-  <title>MyFlowMind — AI Automation Studio & Digital Product Storefront</title>
+  <title>MyFlowMind — AI Automation Studio &amp; Digital Product Storefront</title>
   <meta name="description" content="MyFlowMind is the AI automation studio for growing brands — build custom workflows, launch promo campaigns from a sleek content studio, and shop ready-to-deploy digital products. Automate smarter. Scale faster." />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="MyFlowMind Automation Agency" />
   <meta name="p:domain_verify" content="1d4775a137de4586a3ef8c96a95bd715" />
   <meta name="keywords" content="AI automation agency, workflow automation, n8n workflows, Zapier automation, digital products, creator studio, AI prompt library, automation templates, content studio, small business automation" />
-  <meta name="theme-color" content="#06070f" />
+  <meta name="theme-color" content="#f5f8fd" />
   <link rel="canonical" href="https://myflowmind.com/" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://myflowmind.com/" />
-  <meta property="og:title" content="MyFlowMind — AI Automation Studio & Digital Product Storefront" />
+  <meta property="og:title" content="MyFlowMind — AI Automation Studio &amp; Digital Product Storefront" />
   <meta property="og:description" content="Build custom AI automations, launch promo campaigns from a sleek content studio, and shop ready-to-deploy digital products. Automate smarter. Scale faster." />
   <meta property="og:image" content="https://myflowmind.com/public/og-home.png" />
   <meta property="og:image:width" content="1200" />
@@ -26,36 +24,35 @@
   <meta property="og:site_name" content="MyFlowMind" />
   <meta property="og:locale" content="en_US" />
 
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="MyFlowMind — AI Automation Studio & Digital Product Storefront" />
-  <meta name="twitter:description" content="Build custom AI automations, launch promo campaigns, and shop ready-to-deploy digital products. Automate smarter. Scale faster." />
+  <meta name="twitter:title" content="MyFlowMind — AI Automation Studio &amp; Digital Product Storefront" />
+  <meta name="twitter:description" content="Build custom AI automations, launch promo campaigns, and shop ready-to-deploy digital products." />
   <meta name="twitter:image" content="https://myflowmind.com/public/og-home.png" />
 
-  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/public/favicon.ico" />
 
-  <!-- Google Fonts: Space Grotesk (display) + Plus Jakarta Sans (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <!-- Structured Data -->
+  <link rel="stylesheet" href="/src/styles/global.css" />
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["ProfessionalService", "LocalBusiness"],
+    "@type": ["ProfessionalService","LocalBusiness"],
     "@id": "https://myflowmind.com/#organization",
     "name": "MyFlowMind Automation Agency",
     "alternateName": "MyFlowMind",
     "url": "https://myflowmind.com",
-    "logo": { "@type": "ImageObject", "url": "https://myflowmind.com/public/favicon.ico" },
+    "logo": "https://myflowmind.com/public/og-home.png",
     "image": "https://myflowmind.com/public/og-home.png",
     "description": "MyFlowMind is an AI-powered automation studio helping small businesses, SaaS founders, and e-commerce brands eliminate repetitive tasks, launch promo campaigns, and sell digital products.",
     "slogan": "Automate Smarter. Scale Faster.",
     "foundingDate": "2024",
     "email": "contact@myflowmind.com",
-    "serviceType": ["AI Workflow Automation","Business Process Automation","AI Chatbot Development","CRM Automation","Lead Generation Automation","n8n Workflow Development","Zapier Automation","Digital Product Creation"],
+    "founder": {"@type":"Person","name":"Rapheal John","jobTitle":"Founder & CEO","image":"https://myflowmind.com/public/ceo-rapheal.jpg"},
+    "address": {"@type":"PostalAddress","addressLocality":"Des Moines","addressRegion":"IA","addressCountry":"US"},
     "sameAs": [
       "https://www.facebook.com/Myflowmindautomation",
       "https://www.tiktok.com/@Myflowmindautomation",
@@ -67,507 +64,269 @@
   </script>
 
   <style>
-    /* ═══════════════════════════════════════════════════════════════
-       MYFLOWMIND — DESIGN SYSTEM
-       Futuristic · Fun · Premium · Conversion-first
-    ═══════════════════════════════════════════════════════════════ */
-    :root {
-      /* Surfaces */
-      --bg:            #06070f;
-      --bg-alt:        #0a0c1a;
-      --surface:       rgba(255,255,255,0.045);
-      --surface-2:     rgba(255,255,255,0.065);
-      --surface-hover: rgba(255,255,255,0.09);
-      --border:        rgba(255,255,255,0.09);
-      --border-glow:   rgba(124,108,255,0.45);
-
-      /* Brand spectrum (energetic neon) */
-      --violet:  #7c6cff;
-      --violet-2:#9d8bff;
-      --mint:    #00e6b8;
-      --cyan:    #38d7ff;
-      --pink:    #ff5db1;
-      --amber:   #ffb84d;
-
-      /* Gradients */
-      --grad:        linear-gradient(120deg, #7c6cff 0%, #38d7ff 55%, #00e6b8 100%);
-      --grad-warm:   linear-gradient(120deg, #ff5db1 0%, #7c6cff 100%);
-      --grad-soft:   linear-gradient(135deg, rgba(124,108,255,0.16) 0%, rgba(0,230,184,0.08) 100%);
-      --glow:        0 0 60px rgba(124,108,255,0.28);
-      --glow-mint:   0 0 60px rgba(0,230,184,0.22);
-
-      /* Text */
-      --text:        #e9eaf3;
-      --text-muted:  #9094a8;
-      --text-dim:    #6b6f85;
-      --text-bright: #ffffff;
-
-      /* Type */
-      --font:    'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      --display: 'Space Grotesk', var(--font);
-
-      /* Shape & motion */
-      --r-sm: 10px; --r-md: 16px; --r-lg: 22px; --r-xl: 30px; --r-2xl: 40px;
-      --z-nav: 100;
-      --ease: 240ms cubic-bezier(0.4,0,0.2,1);
-      --spring: 420ms cubic-bezier(0.34,1.56,0.64,1);
-      --max-w: 1220px;
-    }
-
-    /* ── Reset ─────────────────────────────────────────────────── */
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{font-size:16px;scroll-behavior:smooth}
-    body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-    img{display:block;max-width:100%}
-    a{color:inherit;text-decoration:none}
-    button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
-    ul{list-style:none}
-    :focus-visible{outline:2px solid var(--violet-2);outline-offset:3px;border-radius:6px}
-    ::selection{background:rgba(124,108,255,0.35);color:#fff}
-    ::-webkit-scrollbar{width:6px}
-    ::-webkit-scrollbar-track{background:var(--bg-alt)}
-    ::-webkit-scrollbar-thumb{background:linear-gradient(var(--violet),var(--mint));border-radius:3px}
-
-    .skip{position:absolute;left:-999px;top:0;z-index:999;background:var(--violet);color:#fff;padding:10px 18px;border-radius:0 0 10px 0;font-weight:600}
-    .skip:focus{left:0}
-
-    /* ── Animated aurora background ─────────────────────────────── */
-    .aurora{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
-    .aurora span{position:absolute;border-radius:50%;filter:blur(60px);opacity:.5;mix-blend-mode:screen}
-    .aurora .a1{top:-15%;left:-8%;width:620px;height:620px;background:radial-gradient(circle,rgba(124,108,255,.5),transparent 65%);animation:drift1 22s ease-in-out infinite alternate}
-    .aurora .a2{bottom:-20%;right:-10%;width:560px;height:560px;background:radial-gradient(circle,rgba(0,230,184,.42),transparent 65%);animation:drift2 27s ease-in-out infinite alternate}
-    .aurora .a3{top:35%;right:18%;width:420px;height:420px;background:radial-gradient(circle,rgba(255,93,177,.32),transparent 65%);animation:drift3 19s ease-in-out infinite alternate}
-    @keyframes drift1{from{transform:translate(0,0) scale(1)}to{transform:translate(90px,70px) scale(1.18)}}
-    @keyframes drift2{from{transform:translate(0,0) scale(1)}to{transform:translate(-70px,-90px) scale(1.12)}}
-    @keyframes drift3{from{transform:translate(0,0) scale(1)}to{transform:translate(-50px,60px) scale(1.2)}}
-    .noise{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-
-    /* ── Layout ─────────────────────────────────────────────────── */
-    .container{max-width:var(--max-w);margin:0 auto;padding:0 24px}
-    section{position:relative;z-index:2}
-
-    /* ── Buttons ────────────────────────────────────────────────── */
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:11px 24px;border-radius:13px;font-size:.9rem;font-weight:600;cursor:pointer;transition:transform var(--spring),box-shadow var(--ease),background var(--ease),border-color var(--ease),color var(--ease);white-space:nowrap;position:relative;overflow:hidden}
-    .btn svg{width:17px;height:17px}
-    .btn-ghost{color:var(--text-muted);border:1px solid var(--border)}
-    .btn-ghost:hover{color:var(--text-bright);border-color:var(--border-glow);background:var(--surface-hover)}
-    .btn-primary{background:var(--grad);color:#06070f;box-shadow:0 6px 24px rgba(124,108,255,.4)}
-    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(124,108,255,.55)}
-    .btn-primary:active{transform:translateY(0)}
-    .btn-primary::after{content:'';position:absolute;top:0;left:-120%;width:60%;height:100%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);transition:left .7s}
-    .btn-primary:hover::after{left:140%}
-    .btn-outline{border:1px solid var(--border-glow);color:var(--violet-2);background:rgba(124,108,255,.06)}
-    .btn-outline:hover{background:rgba(124,108,255,.14);border-color:var(--violet);transform:translateY(-2px)}
-    .btn-lg{padding:16px 36px;font-size:1rem;border-radius:15px}
-    .btn-sm{padding:8px 16px;font-size:.82rem;border-radius:10px}
-
-    /* ── Navbar ─────────────────────────────────────────────────── */
-    .nav{position:fixed;top:16px;left:16px;right:16px;z-index:var(--z-nav);background:rgba(6,7,15,.55);backdrop-filter:blur(22px) saturate(180%);-webkit-backdrop-filter:blur(22px) saturate(180%);border:1px solid var(--border);border-radius:var(--r-lg);transition:var(--ease)}
-    .nav.scrolled{background:rgba(6,7,15,.9);box-shadow:0 8px 34px rgba(0,0,0,.45),0 0 0 1px rgba(124,108,255,.14)}
-    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:13px 22px}
-    .logo{display:flex;align-items:center;gap:11px;font-weight:700;font-size:1.06rem;color:var(--text-bright);font-family:var(--display)}
-    .logo-icon{width:38px;height:38px;background:var(--grad);border-radius:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 16px rgba(124,108,255,.45)}
-    .nav-links{display:flex;align-items:center;gap:6px}
-    .nav-links a{font-size:.9rem;font-weight:500;color:var(--text-muted);transition:color var(--ease),background var(--ease);padding:8px 14px;border-radius:10px}
-    .nav-links a:hover{color:var(--text-bright);background:var(--surface)}
-    .nav-end{display:flex;align-items:center;gap:10px}
-    .hamburger{display:none;flex-direction:column;gap:5px;width:26px;cursor:pointer;padding:5px}
-    .hamburger span{display:block;height:2px;background:var(--text);border-radius:2px;transition:var(--ease)}
-    .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-    .hamburger.open span:nth-child(2){opacity:0}
-    .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-    .mobile-menu{display:none;position:fixed;top:78px;left:16px;right:16px;z-index:99;background:rgba(10,12,26,.97);backdrop-filter:blur(22px);border:1px solid var(--border);border-radius:var(--r-lg);padding:18px;flex-direction:column;gap:6px;box-shadow:0 24px 60px rgba(0,0,0,.6)}
-    .mobile-menu.show{display:flex;animation:fadeDown .3s ease}
-    @keyframes fadeDown{from{opacity:0;transform:translateY(-12px)}to{opacity:1;transform:translateY(0)}}
-    .mobile-menu a{padding:13px 16px;border-radius:12px;font-weight:500;color:var(--text);transition:var(--ease)}
-    .mobile-menu a:hover{background:var(--surface)}
-    .mobile-menu .btn{margin-top:8px}
-
-    /* ── Section headers ────────────────────────────────────────── */
-    .s-label{display:inline-flex;align-items:center;gap:9px;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--violet-2);margin-bottom:16px}
-    .s-label::before{content:'';display:block;width:24px;height:2px;background:var(--grad);border-radius:1px}
-    .s-head{font-family:var(--display);font-size:clamp(1.9rem,3.6vw,2.9rem);font-weight:700;line-height:1.15;color:var(--text-bright);letter-spacing:-.02em;margin-bottom:16px}
-    .s-sub{font-size:1.04rem;color:var(--text-muted);line-height:1.7;max-width:580px}
-    .sec-hdr{margin-bottom:54px}
-    .sec-hdr.c{text-align:center}
-    .sec-hdr.c .s-label{margin-left:auto;margin-right:auto}
-    .sec-hdr.c .s-sub{margin-left:auto;margin-right:auto}
-    .grad-text{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-    .grad-text-warm{background:var(--grad-warm);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-
-    /* ── Hero ───────────────────────────────────────────────────── */
-    .hero{min-height:100vh;display:flex;align-items:center;padding:150px 0 80px;position:relative;overflow:hidden}
-    .hero-grid{position:absolute;inset:0;z-index:0;background-image:linear-gradient(rgba(124,108,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(124,108,255,.04) 1px,transparent 1px);background-size:62px 62px;mask-image:radial-gradient(ellipse 75% 60% at 50% 38%,#000 38%,transparent 100%);-webkit-mask-image:radial-gradient(ellipse 75% 60% at 50% 38%,#000 38%,transparent 100%)}
-    .hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
-    .badge{display:inline-flex;align-items:center;gap:9px;padding:7px 16px;background:rgba(124,108,255,.1);border:1px solid rgba(124,108,255,.28);border-radius:999px;font-size:.76rem;font-weight:600;color:var(--violet-2);margin-bottom:26px;width:fit-content}
-    .badge-dot{width:7px;height:7px;border-radius:50%;background:var(--mint);box-shadow:0 0 9px var(--mint);animation:blink 2s ease-in-out infinite}
+    .hero{padding:150px 0 70px;position:relative;overflow:hidden}
+    .hero-grid{position:absolute;inset:0;z-index:0;background-image:linear-gradient(rgba(31,79,214,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(31,79,214,.05) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 75% 60% at 50% 35%,#000 36%,transparent 100%);-webkit-mask-image:radial-gradient(ellipse 75% 60% at 50% 35%,#000 36%,transparent 100%)}
+    .hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+    .badge{display:inline-flex;align-items:center;gap:9px;padding:7px 15px;background:#fff;border:1px solid var(--border);border-radius:999px;font-size:.78rem;font-weight:700;color:var(--cobalt);margin-bottom:24px;box-shadow:var(--sh-sm)}
+    .badge-dot{width:7px;height:7px;border-radius:50%;background:var(--emerald);box-shadow:0 0 8px var(--emerald);animation:blink 2s ease-in-out infinite}
     @keyframes blink{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.7)}}
-    .hero h1{font-family:var(--display);font-size:clamp(2.5rem,5.4vw,4.1rem);font-weight:700;line-height:1.08;color:var(--text-bright);letter-spacing:-.025em;margin-bottom:24px}
+    .hero h1{font-family:var(--display);font-size:clamp(2.5rem,5.2vw,4rem);font-weight:800;line-height:1.06;color:var(--navy);letter-spacing:-.025em;margin-bottom:22px}
     .hero h1 .line{display:block;overflow:hidden}
     .hero h1 .line>span{display:inline-block;animation:riseIn .9s cubic-bezier(.22,1,.36,1) both}
-    .hero h1 .line:nth-child(2)>span{animation-delay:.12s}
-    .hero h1 .line:nth-child(3)>span{animation-delay:.24s}
+    .hero h1 .line:nth-child(2)>span{animation-delay:.1s}
+    .hero h1 .line:nth-child(3)>span{animation-delay:.2s}
     @keyframes riseIn{from{transform:translateY(110%);opacity:0}to{transform:translateY(0);opacity:1}}
-    .hero-desc{font-size:1.1rem;line-height:1.75;color:var(--text-muted);max-width:510px;margin-bottom:36px}
-    .hero-desc strong{color:var(--text);font-weight:700}
-    .hero-actions{display:flex;gap:15px;flex-wrap:wrap}
-    .hero-proof{margin-top:42px;display:flex;align-items:center;gap:16px}
+    .hero-desc{font-size:1.12rem;line-height:1.75;color:var(--slate);max-width:520px;margin-bottom:34px}
+    .hero-desc strong{color:var(--navy);font-weight:700}
+    .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+    .hero-proof{margin-top:40px;display:flex;align-items:center;gap:16px}
     .avatars{display:flex}
-    .av{width:38px;height:38px;border-radius:50%;border:2px solid var(--bg);background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:.64rem;font-weight:700;color:#06070f;margin-left:-11px}
+    .av{width:40px;height:40px;border-radius:50%;border:2px solid #fff;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:.66rem;font-weight:700;color:#fff;margin-left:-11px;box-shadow:var(--sh-sm)}
     .av:first-child{margin-left:0}
-    .proof-text{font-size:.84rem;color:var(--text-muted)}
-    .proof-text strong{color:var(--text-bright)}
-    .stars-gold{color:var(--amber);font-size:.78rem;letter-spacing:1px}
-
-    /* Hero studio mock */
+    .proof-text{font-size:.86rem;color:var(--slate)}
+    .proof-text strong{color:var(--navy)}
+    .stars-gold{color:var(--gold);font-size:.82rem;letter-spacing:1px}
     .hero-visual{position:relative}
-    .glass-card{background:rgba(255,255,255,.05);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);border:1px solid var(--border);border-radius:var(--r-lg);box-shadow:0 26px 80px rgba(0,0,0,.55),var(--glow)}
-    .dash-card{padding:26px;animation:floatY 6s ease-in-out infinite}
-    @keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-13px)}}
-    .dash-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
-    .dash-title{font-size:.86rem;font-weight:700;color:var(--text-bright);font-family:var(--display)}
-    .live-badge{display:flex;align-items:center;gap:6px;font-size:.68rem;font-weight:600;color:var(--mint);background:rgba(0,230,184,.1);border:1px solid rgba(0,230,184,.22);padding:4px 11px;border-radius:999px}
-    .live-dot{width:6px;height:6px;border-radius:50%;background:var(--mint);box-shadow:0 0 6px var(--mint);animation:blink 1.5s ease-in-out infinite}
-    .metric-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}
-    .mc{background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:11px;padding:13px 10px;text-align:center}
-    .mc-val{font-family:var(--display);font-size:1.45rem;font-weight:700;color:var(--text-bright);line-height:1;margin-bottom:4px}
-    .mc-val.green{color:var(--mint)}.mc-val.purple{color:var(--violet-2)}.mc-val.pink{color:var(--pink)}
-    .mc-label{font-size:.6rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:.05em}
+    .glass-card{background:rgba(255,255,255,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--border);border-radius:var(--r-xl);box-shadow:var(--sh-lg)}
+    .dash-card{padding:24px;animation:floatY 6s ease-in-out infinite}
+    @keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+    .dash-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+    .dash-title{font-size:.88rem;font-weight:800;color:var(--navy);font-family:var(--display)}
+    .live-badge{display:flex;align-items:center;gap:6px;font-size:.68rem;font-weight:700;color:var(--emerald);background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.25);padding:4px 11px;border-radius:999px}
+    .live-dot{width:6px;height:6px;border-radius:50%;background:var(--emerald);box-shadow:0 0 6px var(--emerald);animation:blink 1.5s ease-in-out infinite}
+    .metric-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}
+    .mc{background:var(--surface-2);border:1px solid var(--border);border-radius:12px;padding:13px 10px;text-align:center}
+    .mc-val{font-family:var(--display);font-size:1.4rem;font-weight:700;color:var(--navy);line-height:1;margin-bottom:4px}
+    .mc-val.green{color:var(--emerald)}.mc-val.blue{color:var(--cobalt)}.mc-val.gold{color:var(--gold)}
+    .mc-label{font-size:.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
     .wf-list{display:flex;flex-direction:column;gap:8px}
-    .wf{display:flex;align-items:center;gap:10px;padding:10px 12px;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:10px}
+    .wf{display:flex;align-items:center;gap:10px;padding:11px 12px;background:var(--surface-2);border:1px solid var(--border);border-radius:11px}
     .wd{width:8px;height:8px;border-radius:50%;flex-shrink:0}
-    .wd.on{background:var(--mint);box-shadow:0 0 7px var(--mint)}
-    .wd.run{background:var(--violet);box-shadow:0 0 7px var(--violet);animation:blink 1.5s infinite}
-    .wd.off{background:#374151}
-    .wn{font-size:.78rem;color:var(--text);flex:1}
-    .wt{font-size:.68rem;color:var(--text-dim)}
-    .float-chip{position:absolute;background:rgba(255,255,255,.08);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid var(--border);border-radius:13px;padding:12px 16px;font-size:.75rem;box-shadow:0 12px 40px rgba(0,0,0,.4)}
-    .float-chip.f1{top:-24px;left:-40px;animation:floatY 5s ease-in-out infinite}
-    .float-chip.f2{bottom:-20px;right:-30px;animation:floatY 7s ease-in-out infinite reverse}
-    .chip-label{color:var(--text-dim);font-size:.62rem;margin-bottom:3px}
-    .chip-val{color:var(--text-bright);font-weight:700;font-family:var(--display)}
-    .chip-val.green{color:var(--mint)}
-
-    /* ── Logo marquee ───────────────────────────────────────────── */
-    .marquee-wrap{padding:38px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
-    .marquee-label{text-align:center;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text-dim);margin-bottom:24px}
-    .marquee{display:flex;gap:56px;width:max-content;animation:scrollX 30s linear infinite}
+    .wd.on{background:var(--emerald);box-shadow:0 0 7px var(--emerald)}
+    .wd.run{background:var(--cobalt);box-shadow:0 0 7px var(--cobalt);animation:blink 1.5s infinite}
+    .wd.off{background:#c5cde0}
+    .wn{font-size:.8rem;color:var(--navy);flex:1;font-weight:500}
+    .wt{font-size:.68rem;color:var(--muted)}
+    .float-chip{position:absolute;background:#fff;border:1px solid var(--border);border-radius:14px;padding:12px 16px;font-size:.75rem;box-shadow:var(--sh)}
+    .float-chip.f1{top:-22px;left:-34px;animation:floatY 5s ease-in-out infinite}
+    .float-chip.f2{bottom:-18px;right:-26px;animation:floatY 7s ease-in-out infinite reverse}
+    .chip-label{color:var(--muted);font-size:.62rem;margin-bottom:3px;font-weight:600}
+    .chip-val{color:var(--navy);font-weight:800;font-family:var(--display)}
+    .chip-val.green{color:var(--emerald)}
+    .marquee-wrap{padding:34px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden;background:var(--surface);-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+    .marquee-label{text-align:center;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:22px;font-weight:700}
+    .marquee{display:flex;gap:54px;width:max-content;animation:scrollX 32s linear infinite}
     .marquee:hover{animation-play-state:paused}
-    .marquee span{font-family:var(--display);font-weight:600;font-size:1.25rem;color:var(--text-dim);white-space:nowrap;display:flex;align-items:center;gap:10px;transition:color var(--ease)}
-    .marquee span:hover{color:var(--text)}
+    .marquee span{font-family:var(--display);font-weight:700;font-size:1.2rem;color:#9aa6bd;white-space:nowrap;transition:color var(--ease)}
+    .marquee span:hover{color:var(--cobalt)}
     @keyframes scrollX{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-
-    /* ── Stats ──────────────────────────────────────────────────── */
-    .stats-bar{padding:56px 0}
-    .stats-row{display:grid;grid-template-columns:repeat(4,1fr)}
-    .stat{text-align:center;padding:18px;border-right:1px solid var(--border)}
-    .stat:last-child{border-right:none}
-    .stat-n{font-family:var(--display);font-size:2.7rem;font-weight:700;line-height:1;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:7px}
-    .stat-l{font-size:.83rem;color:var(--text-muted)}
-
-    /* ── Bento services ─────────────────────────────────────────── */
-    .services{padding:104px 0}
-    .bento{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .bento{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
     .bento .sv-card.wide{grid-column:span 2}
-    .sv-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:30px 28px;position:relative;overflow:hidden;transition:transform var(--spring),border-color var(--ease),background var(--ease),box-shadow var(--ease)}
-    .sv-card::before{content:'';position:absolute;inset:0;background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%),rgba(124,108,255,.13),transparent 60%);opacity:0;transition:opacity .35s}
-    .sv-card:hover{border-color:var(--border-glow);background:var(--surface-hover);transform:translateY(-5px);box-shadow:0 22px 60px rgba(0,0,0,.42),var(--glow)}
-    .sv-card:hover::before{opacity:1}
-    .sv-icon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;background:rgba(124,108,255,.12);border:1px solid rgba(124,108,255,.24);transition:var(--ease)}
-    .sv-card:hover .sv-icon{box-shadow:0 0 22px rgba(124,108,255,.35);transform:scale(1.06) rotate(-4deg)}
-    .sv-icon svg{width:24px;height:24px}
-    .sv-card h3{font-family:var(--display);font-size:1.12rem;font-weight:600;color:var(--text-bright);margin-bottom:10px}
-    .sv-card p{font-size:.88rem;color:var(--text-muted);line-height:1.66;margin-bottom:18px;position:relative}
-    .sv-tag{display:inline-flex;align-items:center;gap:5px;font-size:.7rem;font-weight:600;color:var(--mint);background:rgba(0,230,184,.08);border:1px solid rgba(0,230,184,.2);padding:5px 11px;border-radius:999px;position:relative}
-
-    /* ═══ CONTENT STUDIO (upload hub) ═══════════════════════════ */
-    .studio{padding:104px 0}
-    .studio-shell{background:linear-gradient(160deg,rgba(255,255,255,.055),rgba(255,255,255,.02));border:1px solid var(--border);border-radius:var(--r-2xl);padding:14px;box-shadow:0 30px 90px rgba(0,0,0,.5);position:relative;overflow:hidden}
-    .studio-shell::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(124,108,255,.7),rgba(0,230,184,.7),transparent)}
-    .studio-topbar{display:flex;align-items:center;gap:14px;padding:14px 18px}
+    .sv-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:30px 28px;box-shadow:var(--sh-sm);transition:transform var(--spring),border-color var(--ease),box-shadow var(--ease);position:relative;overflow:hidden}
+    .sv-card:hover{transform:translateY(-6px);border-color:rgba(37,99,235,.3);box-shadow:var(--sh-lg)}
+    .sv-icon{width:54px;height:54px;border-radius:15px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;background:var(--ice);border:1px solid rgba(37,99,235,.18);transition:var(--ease)}
+    .sv-card:hover .sv-icon{background:var(--grad);box-shadow:var(--sh-blue)}
+    .sv-card:hover .sv-icon svg{stroke:#fff}
+    .sv-icon svg{width:24px;height:24px;stroke:var(--cobalt);transition:var(--ease)}
+    .sv-card h3{font-family:var(--display);font-size:1.14rem;font-weight:700;color:var(--navy);margin-bottom:10px}
+    .sv-card p{font-size:.9rem;color:var(--slate);line-height:1.65;margin-bottom:18px}
+    .sv-tag{display:inline-flex;align-items:center;gap:5px;font-size:.72rem;font-weight:700;color:var(--cobalt);background:var(--ice);border:1px solid rgba(37,99,235,.18);padding:5px 11px;border-radius:999px}
+    .store-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:30px;flex-wrap:wrap}
+    .filters{display:flex;gap:8px;flex-wrap:wrap}
+    .fchip{padding:9px 17px;border-radius:11px;font-size:.83rem;font-weight:700;color:var(--slate);background:var(--surface);border:1px solid var(--border);transition:var(--ease)}
+    .fchip:hover{color:var(--cobalt);border-color:rgba(37,99,235,.3)}
+    .fchip.active{background:var(--grad);color:#fff;border-color:transparent;box-shadow:var(--sh-blue)}
+    .store-search{display:flex;align-items:center;gap:9px;background:var(--surface);border:1px solid var(--border);border-radius:11px;padding:9px 14px;min-width:220px}
+    .store-search svg{width:16px;height:16px;color:var(--muted)}
+    .store-search input{background:none;border:none;outline:none;color:var(--navy);font-family:var(--font);font-size:.86rem;width:100%}
+    .prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .prod{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-sm);transition:transform var(--spring),border-color var(--ease),box-shadow var(--ease)}
+    .prod:hover{transform:translateY(-6px);border-color:rgba(37,99,235,.3);box-shadow:var(--sh-lg)}
+    .prod-media{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--ice)}
+    .prod-media img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+    .prod:hover .prod-media img{transform:scale(1.04)}
+    .prod-tagrow{position:absolute;top:12px;right:12px;display:flex;gap:7px}
+    .ptag{font-size:.64rem;font-weight:800;text-transform:uppercase;letter-spacing:.04em;padding:5px 10px;border-radius:7px;background:rgba(255,255,255,.92);backdrop-filter:blur(6px);color:var(--cobalt);border:1px solid var(--border)}
+    .ptag.hot{background:var(--grad-gold);color:#3a2c06;border:none}
+    .prod-body{padding:20px;display:flex;flex-direction:column;flex:1}
+    .prod-cat{font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--cobalt);margin-bottom:8px}
+    .prod h3{font-family:var(--display);font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:8px;line-height:1.3}
+    .prod p{font-size:.85rem;color:var(--slate);line-height:1.6;margin-bottom:14px}
+    .prod-meta{display:flex;align-items:center;gap:14px;font-size:.74rem;color:var(--muted);margin-bottom:16px}
+    .prod-meta span{display:flex;align-items:center;gap:5px}
+    .prod-meta svg{width:13px;height:13px;color:var(--emerald)}
+    .prod-foot{display:flex;align-items:center;justify-content:space-between;margin-top:auto;gap:12px}
+    .prod-price{font-family:var(--display);font-weight:700;font-size:1.3rem;color:var(--navy)}
+    .prod-price s{font-size:.85rem;color:var(--muted);font-weight:400;margin-right:6px}
+    .prod-rating{font-size:.74rem;color:var(--gold);margin-top:3px}
+    .store-cta-row{text-align:center;margin-top:40px}
+    .empty-msg{grid-column:1/-1;text-align:center;padding:50px;color:var(--muted);font-size:.95rem;display:none}
+    .studio-shell{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-2xl);padding:14px;box-shadow:var(--sh-lg);position:relative;overflow:hidden}
+    .studio-topbar{display:flex;align-items:center;gap:14px;padding:12px 16px}
     .traffic{display:flex;gap:7px}
     .traffic i{width:11px;height:11px;border-radius:50%;display:block}
     .traffic i:nth-child(1){background:#ff5f57}.traffic i:nth-child(2){background:#febc2e}.traffic i:nth-child(3){background:#28c840}
-    .studio-url{flex:1;background:rgba(0,0,0,.3);border:1px solid var(--border);border-radius:9px;padding:7px 14px;font-size:.78rem;color:var(--text-dim);display:flex;align-items:center;gap:8px}
-    .studio-url svg{width:13px;height:13px;color:var(--mint)}
+    .studio-url{flex:1;background:var(--surface-2);border:1px solid var(--border);border-radius:9px;padding:7px 14px;font-size:.78rem;color:var(--muted);display:flex;align-items:center;gap:8px}
+    .studio-url svg{width:13px;height:13px;color:var(--emerald)}
     .studio-body{display:grid;grid-template-columns:200px 1fr;gap:14px;padding:6px 6px 8px}
-    .studio-side{background:rgba(0,0,0,.25);border:1px solid var(--border);border-radius:var(--r-md);padding:16px 12px;display:flex;flex-direction:column;gap:5px}
-    .side-group{font-size:.64rem;text-transform:uppercase;letter-spacing:.12em;color:var(--text-dim);padding:12px 12px 6px}
-    .side-item{display:flex;align-items:center;gap:11px;padding:10px 12px;border-radius:10px;font-size:.85rem;color:var(--text-muted);cursor:pointer;transition:var(--ease)}
+    .studio-side{background:var(--surface-2);border:1px solid var(--border);border-radius:var(--r-md);padding:16px 12px;display:flex;flex-direction:column;gap:5px}
+    .side-group{font-size:.64rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);padding:12px 12px 6px;font-weight:700}
+    .side-item{display:flex;align-items:center;gap:11px;padding:10px 12px;border-radius:10px;font-size:.85rem;color:var(--slate);cursor:pointer;transition:var(--ease);font-weight:500}
     .side-item svg{width:17px;height:17px;flex-shrink:0}
-    .side-item:hover{background:var(--surface);color:var(--text)}
-    .side-item.active{background:rgba(124,108,255,.16);color:var(--text-bright);border:1px solid rgba(124,108,255,.3)}
-    .side-pro{margin-top:auto;background:var(--grad-soft);border:1px solid rgba(124,108,255,.25);border-radius:13px;padding:14px;text-align:center}
-    .side-pro p{font-size:.74rem;color:var(--text-muted);margin-bottom:10px;line-height:1.5}
-
-    .studio-main{background:rgba(0,0,0,.22);border:1px solid var(--border);border-radius:var(--r-md);padding:22px;min-height:430px}
+    .side-item:hover{background:var(--ice);color:var(--cobalt)}
+    .side-item.active{background:var(--grad);color:#fff}
+    .side-pro{margin-top:auto;background:var(--ice);border:1px solid rgba(37,99,235,.18);border-radius:13px;padding:14px;text-align:center}
+    .side-pro p{font-size:.74rem;color:var(--slate);margin-bottom:10px;line-height:1.5}
+    .studio-main{background:var(--surface-2);border:1px solid var(--border);border-radius:var(--r-md);padding:22px;min-height:430px}
     .studio-tabs{display:flex;gap:6px;margin-bottom:20px;flex-wrap:wrap}
-    .stab{padding:8px 16px;border-radius:10px;font-size:.82rem;font-weight:600;color:var(--text-muted);background:var(--surface);border:1px solid transparent;transition:var(--ease)}
-    .stab:hover{color:var(--text)}
-    .stab.active{background:var(--grad);color:#06070f;box-shadow:0 4px 16px rgba(124,108,255,.4)}
+    .stab{padding:8px 16px;border-radius:10px;font-size:.82rem;font-weight:700;color:var(--slate);background:var(--surface);border:1px solid var(--border);transition:var(--ease)}
+    .stab:hover{color:var(--cobalt)}
+    .stab.active{background:var(--grad);color:#fff;border-color:transparent;box-shadow:var(--sh-blue)}
     .spanel{display:none;animation:fadeDown .35s ease}
     .spanel.show{display:block}
-
-    /* Dropzone */
-    .dropzone{border:2px dashed rgba(124,108,255,.4);border-radius:var(--r-md);padding:34px 24px;text-align:center;transition:var(--ease);cursor:pointer;background:rgba(124,108,255,.04);margin-bottom:20px}
-    .dropzone:hover,.dropzone.drag{border-color:var(--mint);background:rgba(0,230,184,.07);transform:scale(1.005)}
-    .dz-icon{width:58px;height:58px;border-radius:16px;background:var(--grad);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;box-shadow:0 8px 26px rgba(124,108,255,.45);animation:floatY 5s ease-in-out infinite}
-    .dz-icon svg{width:26px;height:26px;color:#06070f}
-    .dropzone h4{font-family:var(--display);font-size:1.05rem;color:var(--text-bright);margin-bottom:6px}
-    .dropzone p{font-size:.84rem;color:var(--text-muted)}
+    .dropzone{border:2px dashed rgba(37,99,235,.4);border-radius:var(--r-md);padding:32px 24px;text-align:center;transition:var(--ease);cursor:pointer;background:var(--ice);margin-bottom:20px}
+    .dropzone:hover,.dropzone.drag{border-color:var(--cobalt);background:#eaf2ff;transform:scale(1.005)}
+    .dz-icon{width:58px;height:58px;border-radius:16px;background:var(--grad);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;box-shadow:var(--sh-blue);animation:floatY 5s ease-in-out infinite}
+    .dz-icon svg{width:26px;height:26px;color:#fff}
+    .dropzone h4{font-family:var(--display);font-size:1.05rem;color:var(--navy);margin-bottom:6px}
+    .dropzone p{font-size:.84rem;color:var(--slate)}
     .dz-types{display:flex;gap:8px;justify-content:center;margin-top:14px;flex-wrap:wrap}
-    .dz-types span{font-size:.68rem;font-weight:600;color:var(--text-dim);background:var(--surface);border:1px solid var(--border);padding:4px 10px;border-radius:7px}
-
+    .dz-types span{font-size:.68rem;font-weight:700;color:var(--muted);background:var(--surface);border:1px solid var(--border);padding:4px 10px;border-radius:7px}
     .asset-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
-    .asset-head h4{font-family:var(--display);font-size:.96rem;color:var(--text-bright)}
-    .asset-count{font-size:.74rem;color:var(--text-dim)}
+    .asset-head h4{font-family:var(--display);font-size:.96rem;color:var(--navy)}
+    .asset-count{font-size:.74rem;color:var(--muted)}
     .asset-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-    .asset{position:relative;border-radius:13px;overflow:hidden;aspect-ratio:1;border:1px solid var(--border);background:var(--bg-alt);transition:transform var(--spring),box-shadow var(--ease)}
-    .asset:hover{transform:translateY(-4px) scale(1.02);box-shadow:0 14px 36px rgba(0,0,0,.5)}
+    .asset{position:relative;border-radius:13px;overflow:hidden;aspect-ratio:1;border:1px solid var(--border);background:var(--surface);transition:transform var(--spring),box-shadow var(--ease)}
+    .asset:hover{transform:translateY(-4px) scale(1.02);box-shadow:var(--sh)}
     .asset img{width:100%;height:100%;object-fit:cover}
-    .asset .ph{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:700;font-size:.9rem;color:#06070f}
-    .asset .meta{position:absolute;left:0;right:0;bottom:0;padding:8px 10px;background:linear-gradient(transparent,rgba(0,0,0,.85));display:flex;align-items:center;justify-content:space-between}
+    .asset .meta{position:absolute;left:0;right:0;bottom:0;padding:8px 10px;background:linear-gradient(transparent,rgba(11,26,59,.82));display:flex;align-items:center;justify-content:space-between}
     .asset .tname{font-size:.66rem;color:#fff;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:74%}
-    .asset .ttype{font-size:.56rem;font-weight:700;padding:2px 6px;border-radius:5px;background:rgba(255,255,255,.18);color:#fff;text-transform:uppercase}
-    .asset.add{display:flex;align-items:center;justify-content:center;border:1.5px dashed rgba(124,108,255,.4);cursor:pointer;color:var(--violet-2);transition:var(--ease)}
-    .asset.add:hover{background:rgba(124,108,255,.08);border-color:var(--mint);color:var(--mint)}
+    .asset .ttype{font-size:.56rem;font-weight:800;padding:2px 6px;border-radius:5px;background:rgba(255,255,255,.22);color:#fff;text-transform:uppercase}
+    .asset.add{display:flex;align-items:center;justify-content:center;border:1.5px dashed rgba(37,99,235,.4);cursor:pointer;color:var(--cobalt);transition:var(--ease)}
+    .asset.add:hover{background:var(--ice);border-color:var(--cobalt)}
     .asset.add svg{width:26px;height:26px}
-
-    /* Compose panel */
     .compose{display:grid;grid-template-columns:1fr .85fr;gap:18px}
     .field{margin-bottom:14px}
-    .field label{display:block;font-size:.74rem;font-weight:600;color:var(--text-muted);margin-bottom:7px;text-transform:uppercase;letter-spacing:.05em}
-    .field input,.field textarea,.field select{width:100%;background:rgba(0,0,0,.3);border:1px solid var(--border);border-radius:11px;padding:12px 14px;color:var(--text);font-family:var(--font);font-size:.88rem;transition:var(--ease);resize:vertical}
-    .field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--violet);box-shadow:0 0 0 3px rgba(124,108,255,.18)}
+    .field label{display:block;font-size:.74rem;font-weight:700;color:var(--navy);margin-bottom:7px;text-transform:uppercase;letter-spacing:.05em}
+    .field input,.field textarea,.field select{width:100%;background:var(--surface);border:1.5px solid var(--border);border-radius:11px;padding:12px 14px;color:var(--navy);font-family:var(--font);font-size:.88rem;transition:var(--ease);resize:vertical}
+    .field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--cobalt);box-shadow:0 0 0 4px rgba(37,99,235,.12)}
     .field textarea{min-height:96px}
     .chan-row{display:flex;gap:8px;flex-wrap:wrap}
-    .chan{display:flex;align-items:center;gap:7px;padding:8px 13px;border-radius:10px;font-size:.8rem;font-weight:600;color:var(--text-muted);background:var(--surface);border:1px solid var(--border);cursor:pointer;transition:var(--ease)}
-    .chan svg{width:15px;height:15px}
-    .chan.on{color:var(--text-bright);border-color:var(--border-glow);background:rgba(124,108,255,.14)}
-    .preview-card{background:linear-gradient(160deg,rgba(124,108,255,.1),rgba(0,230,184,.05));border:1px solid var(--border);border-radius:var(--r-md);padding:18px;display:flex;flex-direction:column}
-    .pv-label{font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text-dim);margin-bottom:12px}
-    .pv-banner{border-radius:12px;aspect-ratio:16/9;background:var(--grad);display:flex;align-items:center;justify-content:center;margin-bottom:12px;position:relative;overflow:hidden}
-    .pv-banner span{font-family:var(--display);font-weight:700;color:#06070f;font-size:1.1rem;letter-spacing:-.02em}
-    .pv-cap{font-size:.82rem;color:var(--text);line-height:1.55;margin-bottom:auto}
-    .pv-foot{display:flex;align-items:center;gap:8px;margin-top:14px;font-size:.72rem;color:var(--text-dim)}
-    .ai-pill{display:inline-flex;align-items:center;gap:6px;font-size:.7rem;font-weight:700;color:var(--mint);background:rgba(0,230,184,.1);border:1px solid rgba(0,230,184,.25);padding:4px 10px;border-radius:999px;margin-bottom:14px}
+    .chan{display:flex;align-items:center;gap:7px;padding:8px 13px;border-radius:10px;font-size:.8rem;font-weight:700;color:var(--slate);background:var(--surface);border:1px solid var(--border);cursor:pointer;transition:var(--ease)}
+    .chan.on{color:var(--cobalt);border-color:rgba(37,99,235,.35);background:var(--ice)}
+    .preview-card{background:var(--ice);border:1px solid rgba(37,99,235,.16);border-radius:var(--r-md);padding:18px;display:flex;flex-direction:column}
+    .pv-label{font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:12px;font-weight:700}
+    .pv-banner{border-radius:12px;aspect-ratio:16/9;overflow:hidden;margin-bottom:12px;border:1px solid var(--border)}
+    .pv-banner img{width:100%;height:100%;object-fit:cover}
+    .pv-cap{font-size:.82rem;color:var(--navy);line-height:1.55;margin-bottom:auto}
+    .pv-foot{display:flex;align-items:center;gap:8px;margin-top:14px;font-size:.72rem;color:var(--muted)}
+    .ai-pill{display:inline-flex;align-items:center;gap:6px;font-size:.7rem;font-weight:800;color:var(--cobalt);background:var(--ice);border:1px solid rgba(37,99,235,.22);padding:4px 10px;border-radius:999px;margin-bottom:14px}
     .ai-pill svg{width:13px;height:13px}
     .compose-actions{display:flex;gap:10px;margin-top:6px;flex-wrap:wrap}
-    .studio-note{font-size:.76rem;color:var(--text-dim);text-align:center;margin-top:18px}
-
-    /* ═══ DIGITAL PRODUCTS SHOWCASE ════════════════════════════ */
-    .store{padding:104px 0;background:linear-gradient(180deg,transparent,rgba(124,108,255,.04),transparent)}
-    .store-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:30px;flex-wrap:wrap}
-    .filters{display:flex;gap:8px;flex-wrap:wrap}
-    .fchip{padding:9px 17px;border-radius:11px;font-size:.83rem;font-weight:600;color:var(--text-muted);background:var(--surface);border:1px solid var(--border);transition:var(--ease)}
-    .fchip:hover{color:var(--text);border-color:var(--border-glow)}
-    .fchip.active{background:var(--grad);color:#06070f;box-shadow:0 4px 16px rgba(124,108,255,.4)}
-    .store-search{display:flex;align-items:center;gap:9px;background:var(--surface);border:1px solid var(--border);border-radius:11px;padding:9px 14px;min-width:210px}
-    .store-search svg{width:16px;height:16px;color:var(--text-dim)}
-    .store-search input{background:none;border:none;outline:none;color:var(--text);font-family:var(--font);font-size:.85rem;width:100%}
-
-    .prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-    .prod{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;transition:transform var(--spring),border-color var(--ease),box-shadow var(--ease);position:relative}
-    .prod:hover{transform:translateY(-6px);border-color:var(--border-glow);box-shadow:0 26px 64px rgba(0,0,0,.45),var(--glow)}
-    .prod-media{aspect-ratio:16/10;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
-    .prod-media .glyph{width:62px;height:62px;color:#fff;opacity:.95;filter:drop-shadow(0 6px 18px rgba(0,0,0,.4))}
-    .pm-v{background:linear-gradient(135deg,#7c6cff,#38d7ff)}
-    .pm-p{background:linear-gradient(135deg,#ff5db1,#7c6cff)}
-    .pm-t{background:linear-gradient(135deg,#00e6b8,#38d7ff)}
-    .pm-b{background:linear-gradient(135deg,#ffb84d,#ff5db1)}
-    .prod-media::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 70% 20%,rgba(255,255,255,.25),transparent 55%);mix-blend-mode:overlay}
-    .prod-tagrow{position:absolute;top:12px;left:12px;display:flex;gap:7px;z-index:2}
-    .ptag{font-size:.64rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:5px 10px;border-radius:7px;background:rgba(6,7,15,.6);backdrop-filter:blur(8px);color:#fff;border:1px solid rgba(255,255,255,.14)}
-    .ptag.hot{background:var(--grad-warm);color:#fff;border:none}
-    .prod-body{padding:20px;display:flex;flex-direction:column;flex:1}
-    .prod-cat{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--violet-2);margin-bottom:8px}
-    .prod h3{font-family:var(--display);font-size:1.1rem;font-weight:600;color:var(--text-bright);margin-bottom:8px;line-height:1.3}
-    .prod p{font-size:.85rem;color:var(--text-muted);line-height:1.6;margin-bottom:14px}
-    .prod-meta{display:flex;align-items:center;gap:12px;font-size:.74rem;color:var(--text-dim);margin-bottom:16px}
-    .prod-meta span{display:flex;align-items:center;gap:5px}
-    .prod-meta svg{width:13px;height:13px;color:var(--mint)}
-    .prod-foot{display:flex;align-items:center;justify-content:space-between;margin-top:auto;gap:12px}
-    .prod-price{font-family:var(--display);font-weight:700;font-size:1.3rem;color:var(--text-bright)}
-    .prod-price s{font-size:.85rem;color:var(--text-dim);font-weight:400;margin-right:6px}
-    .prod-rating{font-size:.74rem;color:var(--amber);margin-top:3px}
-    .store-cta-row{text-align:center;margin-top:40px}
-    .empty-msg{grid-column:1/-1;text-align:center;padding:50px;color:var(--text-dim);font-size:.95rem;display:none}
-
-    /* ── How it works ───────────────────────────────────────────── */
-    .how{padding:104px 0}
+    .studio-note{font-size:.78rem;color:var(--muted);text-align:center;margin-top:18px}
+    .promo-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:38px}
+    .promo-img{border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--border);box-shadow:var(--sh-sm);transition:transform var(--spring),box-shadow var(--ease)}
+    .promo-img:hover{transform:translateY(-5px);box-shadow:var(--sh-lg)}
+    .promo-img img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/9}
+    .ceo{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
+    .ceo-photo{position:relative}
+    .ceo-photo img{width:100%;border-radius:var(--r-2xl);box-shadow:var(--sh-lg);border:1px solid var(--border);position:relative;z-index:1}
+    .ceo-photo::after{content:'';position:absolute;inset:-18px -18px 26px 26px;border-radius:var(--r-2xl);background:var(--grad);opacity:.14;filter:blur(20px);z-index:0}
+    .ceo-badge{position:absolute;left:18px;bottom:18px;z-index:2;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border:1px solid var(--border);border-radius:14px;padding:12px 16px;box-shadow:var(--sh);display:flex;align-items:center;gap:11px}
+    .ceo-badge .dot{width:9px;height:9px;border-radius:50%;background:var(--emerald);box-shadow:0 0 8px var(--emerald)}
+    .ceo-badge b{display:block;color:var(--navy);font-size:.86rem;font-family:var(--display)}
+    .ceo-badge span{font-size:.72rem;color:var(--muted)}
+    .ceo-content h2{font-size:clamp(1.8rem,3.4vw,2.6rem);margin-bottom:18px}
+    .ceo-content .lead{font-size:1.12rem;color:var(--navy);font-weight:600;margin-bottom:16px}
+    .ceo-content p{color:var(--slate);line-height:1.78;margin-bottom:16px}
+    .ceo-quote{border-left:3px solid var(--gold);padding:6px 0 6px 20px;font-family:var(--display);font-size:1.18rem;color:var(--navy);font-style:italic;margin:24px 0}
+    .ceo-sign{display:flex;align-items:center;gap:16px;margin-top:24px;flex-wrap:wrap}
+    .ceo-name{font-family:var(--display);font-weight:800;color:var(--navy);font-size:1.05rem}
+    .ceo-role{font-size:.84rem;color:var(--muted)}
+    .ceo-creds{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+    .cred{display:flex;align-items:center;gap:8px;font-size:.8rem;font-weight:600;color:var(--slate);background:var(--surface);border:1px solid var(--border);padding:8px 14px;border-radius:999px;box-shadow:var(--sh-sm)}
+    .cred svg{width:14px;height:14px;color:var(--cobalt)}
     .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;position:relative}
-    .steps::before{content:'';position:absolute;top:28px;left:12.5%;right:12.5%;height:1px;background:linear-gradient(90deg,transparent,var(--violet),var(--mint),transparent)}
+    .steps::before{content:'';position:absolute;top:28px;left:12.5%;right:12.5%;height:2px;background:var(--grad);opacity:.3}
     .step{text-align:center;position:relative}
-    .step-n{width:56px;height:56px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:1.15rem;font-weight:700;color:#06070f;margin:0 auto 18px;box-shadow:0 0 30px rgba(124,108,255,.45);position:relative;z-index:1}
-    .step h3{font-family:var(--display);font-size:1rem;font-weight:600;color:var(--text-bright);margin-bottom:9px}
-    .step p{font-size:.84rem;color:var(--text-muted);line-height:1.6}
-
-    /* ── Testimonials ───────────────────────────────────────────── */
-    .proof-sec{padding:104px 0}
-    .tm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-    .tm-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;transition:transform var(--spring),border-color var(--ease),box-shadow var(--ease)}
-    .tm-card:hover{border-color:var(--border-glow);transform:translateY(-4px);box-shadow:0 18px 50px rgba(0,0,0,.42)}
-    .tm-stars{color:var(--amber);font-size:.84rem;margin-bottom:13px;letter-spacing:2px}
-    .tm-card blockquote{font-size:.9rem;line-height:1.7;color:var(--text);margin-bottom:18px}
+    .step-n{width:56px;height:56px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:1.15rem;font-weight:800;color:#fff;margin:0 auto 18px;box-shadow:var(--sh-blue);position:relative;z-index:1}
+    .step h3{font-family:var(--display);font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:9px}
+    .step p{font-size:.84rem;color:var(--slate);line-height:1.6}
+    .tm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .tm-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;box-shadow:var(--sh-sm);transition:transform var(--spring),box-shadow var(--ease)}
+    .tm-card:hover{transform:translateY(-5px);box-shadow:var(--sh-lg)}
+    .tm-stars{color:var(--gold);font-size:.86rem;margin-bottom:13px;letter-spacing:2px}
+    .tm-card blockquote{font-size:.92rem;line-height:1.7;color:var(--navy);margin-bottom:18px}
     .tm-author{display:flex;align-items:center;gap:12px}
-    .tm-av{width:42px;height:42px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:.76rem;font-weight:700;color:#06070f;flex-shrink:0}
-    .tm-name{font-size:.89rem;font-weight:700;color:var(--text-bright)}
-    .tm-role{font-size:.76rem;color:var(--text-muted)}
-
-    /* ── Pricing ────────────────────────────────────────────────── */
-    .pricing-sec{padding:104px 0}
-    .pr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-    .pr-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:34px 28px;position:relative;overflow:hidden;transition:transform var(--spring)}
-    .pr-card.feat{background:linear-gradient(150deg,rgba(124,108,255,.13),rgba(0,230,184,.05));border-color:rgba(124,108,255,.38);box-shadow:var(--glow)}
-    .pr-card:hover{transform:translateY(-5px)}
-    .pr-badge{display:inline-block;margin-bottom:18px;font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#06070f;background:var(--grad);padding:5px 13px;border-radius:999px}
-    .pr-name{font-family:var(--display);font-size:1.1rem;font-weight:600;color:var(--text-bright);margin-bottom:6px}
-    .pr-price{font-family:var(--display);font-size:2.7rem;font-weight:700;color:var(--text-bright);line-height:1;margin-bottom:4px}
-    .pr-price span{font-size:.95rem;font-weight:400;color:var(--text-muted)}
-    .pr-desc{font-size:.84rem;color:var(--text-muted);margin-bottom:24px;line-height:1.6}
-    .pr-feats{display:flex;flex-direction:column;gap:12px;margin-bottom:28px}
-    .pf{display:flex;align-items:flex-start;gap:10px;font-size:.86rem;color:var(--text)}
-    .pf-check{width:18px;height:18px;border-radius:50%;flex-shrink:0;margin-top:1px;background:rgba(0,230,184,.12);border:1px solid rgba(0,230,184,.3);display:flex;align-items:center;justify-content:center}
-    .pf-check svg{width:9px;height:9px;color:var(--mint)}
-
-    /* ── CTA ────────────────────────────────────────────────────── */
-    .cta-sec{padding:104px 0}
-    .cta-glass{background:rgba(255,255,255,.045);backdrop-filter:blur(40px);-webkit-backdrop-filter:blur(40px);border:1px solid var(--border);border-radius:var(--r-2xl);padding:82px 60px;text-align:center;position:relative;overflow:hidden}
-    .cta-glass::before{content:'';position:absolute;inset:0;background:var(--grad-soft);z-index:0}
-    .cta-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:540px;height:320px;background:radial-gradient(ellipse,rgba(124,108,255,.24) 0%,transparent 70%);pointer-events:none;z-index:0}
-    .cta-glass>*{position:relative;z-index:1}
-    .cta-glass h2{font-family:var(--display);font-size:clamp(1.9rem,4.2vw,3.1rem);font-weight:700;color:var(--text-bright);letter-spacing:-.02em;margin-bottom:14px}
-    .cta-glass p{font-size:1.04rem;color:var(--text-muted);margin:0 auto 36px;max-width:520px}
-    .cta-btns{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
-
-    /* ── Footer ─────────────────────────────────────────────────── */
-    footer{border-top:1px solid var(--border);padding:60px 0 32px;position:relative;z-index:2}
-    .ft-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:44px;margin-bottom:46px}
-    .ft-brand .logo{margin-bottom:14px}
-    .ft-brand p{font-size:.86rem;color:var(--text-muted);line-height:1.7;margin:0 0 20px;max-width:280px}
-    .socials{display:flex;gap:10px}
-    .soc{width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;background:var(--surface);border:1px solid var(--border);color:var(--text-muted);transition:var(--ease)}
-    .soc:hover{background:var(--surface-hover);border-color:var(--border-glow);color:var(--text-bright);transform:translateY(-3px)}
-    .soc svg{width:18px;height:18px}
-    .ft-col h4{font-size:.8rem;font-weight:700;color:var(--text-bright);margin-bottom:15px;text-transform:uppercase;letter-spacing:.06em}
-    .ft-col ul{display:flex;flex-direction:column;gap:10px}
-    .ft-col ul a{font-size:.86rem;color:var(--text-muted);transition:color var(--ease)}
-    .ft-col ul a:hover{color:var(--text-bright)}
-    .ft-bottom{border-top:1px solid var(--border);padding-top:24px;display:flex;align-items:center;justify-content:space-between;font-size:.79rem;color:var(--text-muted)}
-    .ft-bottom a{color:var(--violet-2)}
-
-    /* ── Reveal ─────────────────────────────────────────────────── */
-    .rv{opacity:0;transform:translateY(28px);transition:opacity .6s cubic-bezier(.4,0,.2,1),transform .6s cubic-bezier(.4,0,.2,1)}
-    .rv.in{opacity:1;transform:translateY(0)}
-    .d1{transition-delay:90ms}.d2{transition-delay:180ms}.d3{transition-delay:270ms}.d4{transition-delay:360ms}.d5{transition-delay:450ms}
-
-    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
-
-    /* ── Responsive ─────────────────────────────────────────────── */
+    .tm-av{width:42px;height:42px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:.78rem;font-weight:700;color:#fff;flex-shrink:0}
+    .tm-name{font-size:.9rem;font-weight:700;color:var(--navy)}
+    .tm-role{font-size:.76rem;color:var(--muted)}
+    .pr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:start}
     @media(max-width:1024px){
-      .hero-inner{grid-template-columns:1fr}
-      .hero-visual{display:none}
-      .bento{grid-template-columns:repeat(2,1fr)}
-      .bento .sv-card.wide{grid-column:span 2}
-      .studio-body{grid-template-columns:1fr}
-      .studio-side{flex-direction:row;flex-wrap:wrap;align-items:center}
-      .side-group{display:none}.side-pro{display:none}
-      .side-item{flex:1;justify-content:center;min-width:120px}
-      .compose{grid-template-columns:1fr}
-      .prod-grid{grid-template-columns:repeat(2,1fr)}
-      .steps{grid-template-columns:repeat(2,1fr)}
-      .steps::before{display:none}
-      .tm-grid{grid-template-columns:1fr 1fr}
-      .pr-grid{grid-template-columns:1fr;max-width:420px;margin:0 auto}
-      .ft-grid{grid-template-columns:1fr 1fr}
-      .stats-row{grid-template-columns:repeat(2,1fr)}
-      .stat:nth-child(2){border-right:none}
-      .stat:nth-child(3){border-right:1px solid var(--border);border-top:1px solid var(--border)}
-      .stat:nth-child(4){border-top:1px solid var(--border)}
-      .asset-grid{grid-template-columns:repeat(3,1fr)}
+      .hero-inner{grid-template-columns:1fr}.hero-visual{display:none}
+      .bento{grid-template-columns:repeat(2,1fr)}.bento .sv-card.wide{grid-column:span 2}
+      .studio-body{grid-template-columns:1fr}.studio-side{flex-direction:row;flex-wrap:wrap;align-items:center}
+      .side-group,.side-pro{display:none}.side-item{flex:1;justify-content:center;min-width:120px}
+      .compose{grid-template-columns:1fr}.prod-grid,.promo-gallery{grid-template-columns:repeat(2,1fr)}
+      .steps{grid-template-columns:repeat(2,1fr)}.steps::before{display:none}
+      .tm-grid{grid-template-columns:1fr 1fr}.pr-grid{grid-template-columns:1fr;max-width:430px;margin:0 auto}
+      .ceo{grid-template-columns:1fr;gap:34px}.ceo-photo{max-width:420px}
     }
     @media(max-width:768px){
-      .nav-links,.nav-end{display:none}
-      .hamburger{display:flex}
-      .hero{padding:128px 0 60px}
-      .bento,.tm-grid,.prod-grid,.steps{grid-template-columns:1fr}
-      .bento .sv-card.wide{grid-column:span 1}
-      .ft-grid{grid-template-columns:1fr 1fr}
-      .cta-glass{padding:48px 24px}
-      .store-bar{flex-direction:column;align-items:stretch}
-      .asset-grid{grid-template-columns:repeat(2,1fr)}
+      .hero{padding:128px 0 50px}
+      .bento,.tm-grid,.prod-grid,.promo-gallery,.steps{grid-template-columns:1fr}.bento .sv-card.wide{grid-column:span 1}
+      .store-bar{flex-direction:column;align-items:stretch}.asset-grid{grid-template-columns:repeat(2,1fr)}.studio-side{flex-direction:column}
     }
-    @media(max-width:480px){
-      .stats-row{grid-template-columns:1fr}
-      .stat{border-right:none;border-bottom:1px solid var(--border)}
-      .stat:last-child{border-bottom:none}
-      .stat:nth-child(3){border-right:none}
-      .hero-actions .btn,.cta-btns .btn{width:100%}
-      .ft-grid{grid-template-columns:1fr}
-      .studio-side{flex-direction:column}
-      .side-item{width:100%}
-    }
+    @media(max-width:480px){.hero-actions .btn,.cta-btns .btn{width:100%}}
   </style>
 </head>
 <body>
 
 <a href="#services" class="skip">Skip to content</a>
-
 <div class="aurora" aria-hidden="true"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
-<div class="noise" aria-hidden="true"></div>
 
-<!-- ══ Navbar ════════════════════════════════════════════════ -->
 <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
     <a href="/" class="logo" aria-label="MyFlowMind home">
-      <span class="logo-icon" aria-hidden="true">
-        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#06070f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-      </span>
+      <span class="logo-icon" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>
       MyFlowMind
     </a>
     <ul class="nav-links" role="list">
       <li><a href="#services">Services</a></li>
-      <li><a href="#studio">Studio</a></li>
       <li><a href="#store">Products</a></li>
-      <li><a href="#how">Process</a></li>
+      <li><a href="#studio">Studio</a></li>
+      <li><a href="#founder">Founder</a></li>
       <li><a href="#pricing">Pricing</a></li>
     </ul>
     <div class="nav-end">
       <a href="/about.html" class="btn btn-ghost btn-sm">About</a>
       <a href="/contact.html" class="btn btn-primary btn-sm">Book a Call</a>
     </div>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
   <a href="#services">Services</a>
-  <a href="#studio">Content Studio</a>
   <a href="#store">Digital Products</a>
-  <a href="#how">Process</a>
+  <a href="#studio">Content Studio</a>
+  <a href="#founder">Meet the Founder</a>
   <a href="#pricing">Pricing</a>
   <a href="/about.html">About</a>
   <a href="/contact.html" class="btn btn-primary">Book a Free Call</a>
 </div>
 
-<!-- ══ Hero ══════════════════════════════════════════════════ -->
 <section class="hero" id="top">
   <div class="hero-grid" aria-hidden="true"></div>
   <div class="container">
     <div class="hero-inner">
-      <!-- Copy -->
       <div>
-        <div class="badge">
-          <span class="badge-dot" aria-hidden="true"></span>
-          AI Automation Studio · Built for creators &amp; brands
-        </div>
+        <div class="badge"><span class="badge-dot" aria-hidden="true"></span> AI Automation Studio · Built for growing brands</div>
         <h1>
           <span class="line"><span>Automate smarter.</span></span>
-          <span class="line"><span class="grad-text">Launch louder.</span></span>
-          <span class="line"><span>Scale faster.</span></span>
+          <span class="line"><span class="grad-text">Launch with polish.</span></span>
+          <span class="line"><span>Scale with confidence.</span></span>
         </h1>
-        <p class="hero-desc">MyFlowMind is your all-in-one studio to <strong>automate the busywork</strong>, launch <strong>promo campaigns</strong> in minutes, and sell <strong>ready-to-deploy digital products</strong> — all from one beautifully simple home base.</p>
+        <p class="hero-desc">MyFlowMind is your all-in-one studio to <strong>automate the busywork</strong>, launch <strong>promo campaigns</strong> in minutes, and sell <strong>ready-to-deploy digital products</strong> — all from one elegant home base.</p>
         <div class="hero-actions">
           <a href="/contact.html" class="btn btn-primary btn-lg">Book a Free Strategy Call
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
@@ -575,31 +334,18 @@
           <a href="#store" class="btn btn-outline btn-lg">Browse Products</a>
         </div>
         <div class="hero-proof" aria-label="Trusted by 200+ businesses with 5-star rating">
-          <div class="avatars" aria-hidden="true">
-            <div class="av">JM</div><div class="av">SR</div><div class="av">TK</div><div class="av">AL</div>
-          </div>
-          <div>
-            <div class="stars-gold" aria-hidden="true">★★★★★</div>
-            <p class="proof-text">Trusted by <strong>200+ businesses</strong> &amp; creators worldwide</p>
-          </div>
+          <div class="avatars" aria-hidden="true"><div class="av">JM</div><div class="av">SR</div><div class="av">TK</div><div class="av">AL</div></div>
+          <div><div class="stars-gold" aria-hidden="true">★★★★★</div><p class="proof-text">Trusted by <strong>200+ businesses</strong> &amp; creators worldwide</p></div>
         </div>
       </div>
-
-      <!-- Studio mock -->
       <div class="hero-visual" aria-hidden="true">
-        <div class="float-chip f1">
-          <div class="chip-label">Time Saved</div>
-          <div class="chip-val green">+18 hrs/wk</div>
-        </div>
+        <div class="float-chip f1"><div class="chip-label">Time Saved</div><div class="chip-val green">+18 hrs/wk</div></div>
         <div class="glass-card dash-card">
-          <div class="dash-head">
-            <span class="dash-title">MyFlowMind Studio</span>
-            <span class="live-badge"><span class="live-dot"></span>Live</span>
-          </div>
+          <div class="dash-head"><span class="dash-title">MyFlowMind Studio</span><span class="live-badge"><span class="live-dot"></span>Live</span></div>
           <div class="metric-row">
             <div class="mc"><div class="mc-val green">98%</div><div class="mc-label">Uptime</div></div>
-            <div class="mc"><div class="mc-val purple">1,847</div><div class="mc-label">Tasks/Day</div></div>
-            <div class="mc"><div class="mc-val pink">$4.2k</div><div class="mc-label">Saved</div></div>
+            <div class="mc"><div class="mc-val blue">1,847</div><div class="mc-label">Tasks/Day</div></div>
+            <div class="mc"><div class="mc-val gold">$4.2k</div><div class="mc-label">Saved</div></div>
           </div>
           <div class="wf-list">
             <div class="wf"><span class="wd on"></span><span class="wn">Lead Capture → CRM Sync</span><span class="wt">2s ago</span></div>
@@ -608,275 +354,80 @@
             <div class="wf"><span class="wd off"></span><span class="wn">Weekly Report Builder</span><span class="wt">Idle</span></div>
           </div>
         </div>
-        <div class="float-chip f2">
-          <div class="chip-label">Campaigns Live</div>
-          <div class="chip-val">12 running</div>
-        </div>
+        <div class="float-chip f2"><div class="chip-label">Campaigns Live</div><div class="chip-val">12 running</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ Logo marquee ══════════════════════════════════════════ -->
 <div class="marquee-wrap">
-  <div class="container"><p class="marquee-label">Built on the tools you already love</p></div>
+  <div class="container"><p class="marquee-label">Built on the tools you already trust</p></div>
   <div class="marquee" aria-hidden="true">
     <span>n8n</span><span>Zapier</span><span>Make</span><span>OpenAI</span><span>Claude</span><span>Shopify</span><span>HubSpot</span><span>Notion</span><span>Stripe</span><span>Slack</span><span>Gumroad</span><span>Airtable</span>
     <span>n8n</span><span>Zapier</span><span>Make</span><span>OpenAI</span><span>Claude</span><span>Shopify</span><span>HubSpot</span><span>Notion</span><span>Stripe</span><span>Slack</span><span>Gumroad</span><span>Airtable</span>
   </div>
 </div>
 
-<!-- ══ Stats ═════════════════════════════════════════════════ -->
-<div class="stats-bar">
+<div class="section" style="padding:56px 0">
   <div class="container">
-    <div class="stats-row" id="stats">
-      <div class="stat rv"><div class="stat-n">200+</div><div class="stat-l">Businesses Automated</div></div>
-      <div class="stat rv d1"><div class="stat-n">15hrs</div><div class="stat-l">Saved Per Week, Per Client</div></div>
-      <div class="stat rv d2"><div class="stat-n">98%</div><div class="stat-l">Client Satisfaction Rate</div></div>
-      <div class="stat rv d3"><div class="stat-n">48hr</div><div class="stat-l">Average Delivery Time</div></div>
+    <div class="stat-grid rv" id="stats">
+      <div class="stat-item"><div class="stat-number">200+</div><div class="stat-label">Businesses Automated</div></div>
+      <div class="stat-item"><div class="stat-number">15hrs</div><div class="stat-label">Saved Per Week, Per Client</div></div>
+      <div class="stat-item"><div class="stat-number">98%</div><div class="stat-label">Client Satisfaction</div></div>
+      <div class="stat-item"><div class="stat-number">48hr</div><div class="stat-label">Average Delivery Time</div></div>
     </div>
   </div>
 </div>
 
-<!-- ══ Services (bento) ══════════════════════════════════════ -->
-<section class="services" id="services">
+<section class="section" id="services">
   <div class="container">
-    <div class="sec-hdr rv">
+    <div class="section-header rv">
       <div class="s-label">What We Do</div>
       <h2 class="s-head">Automation built for growth</h2>
       <p class="s-sub">From lead capture to product launches, we automate the workflows that drain your team's time — so you can grow without hiring more staff.</p>
     </div>
-    <div class="bento" id="bento">
-
+    <div class="bento">
       <div class="sv-card wide rv">
-        <div class="sv-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#7c6cff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-        </div>
+        <div class="sv-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
         <h3>Workflow Automation</h3>
         <p>End-to-end n8n, Zapier &amp; Make flows that connect your tools, trigger on the right events, and run 24/7 without you. We map your busywork, then make it disappear.</p>
         <span class="sv-tag">n8n · Zapier · Make</span>
       </div>
-
       <div class="sv-card rv d1">
-        <div class="sv-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#7c6cff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-        </div>
+        <div class="sv-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
         <h3>AI Chatbots &amp; Assistants</h3>
         <p>Custom GPT &amp; Claude bots that handle support, qualify leads, and answer FAQs across web, WhatsApp, or Slack.</p>
         <span class="sv-tag">GPT · Claude · Voiceflow</span>
       </div>
-
       <div class="sv-card rv">
-        <div class="sv-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#7c6cff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        </div>
+        <div class="sv-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
         <h3>CRM &amp; Lead Automation</h3>
         <p>Capture, score, tag, and nurture every lead inside HubSpot, GoHighLevel, or Notion — zero manual entry.</p>
-        <span class="sv-tag">HubSpot · GoHighLevel · Notion</span>
+        <span class="sv-tag">HubSpot · GoHighLevel</span>
       </div>
-
       <div class="sv-card rv d1">
-        <div class="sv-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#7c6cff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3H8a2 2 0 0 0-2 2v2h12V5a2 2 0 0 0-2-2z"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
-        </div>
+        <div class="sv-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3H8a2 2 0 0 0-2 2v2h12V5a2 2 0 0 0-2-2z"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg></div>
         <h3>E-Commerce Automation</h3>
         <p>Order confirmations, inventory alerts, abandoned-cart flows, and review requests — automated and on brand.</p>
-        <span class="sv-tag">Shopify · WooCommerce · Stripe</span>
+        <span class="sv-tag">Shopify · Woo · Stripe</span>
       </div>
-
       <div class="sv-card wide rv d2">
-        <div class="sv-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#7c6cff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
-        </div>
+        <div class="sv-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div>
         <h3>Promo Campaigns &amp; Digital Products</h3>
         <p>Launch banners, schedule drops, and ship ready-to-deploy workflow bundles, AI prompt libraries &amp; templates — all from your Content Studio and storefront below. We handle the engine; you take the credit.</p>
         <span class="sv-tag">Content Studio · Storefront · Instant Download</span>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ══ CONTENT STUDIO (upload hub) ═══════════════════════════ -->
-<section class="studio" id="studio">
+<section class="section section--alt" id="store">
   <div class="container">
-    <div class="sec-hdr c rv">
-      <div class="s-label">Promo Content Studio</div>
-      <h2 class="s-head">Upload once. <span class="grad-text">Launch everywhere.</span></h2>
-      <p class="s-sub">A premium creator dashboard for your promo assets. Drop in images, videos, banners &amp; captions, compose a campaign, and push it live across every channel — without touching a spreadsheet.</p>
+    <div class="section-header rv" style="text-align:center">
+      <div class="s-label" style="justify-content:center">Digital Products</div>
+      <h2 class="s-head">Plug-and-play automation, ready to deploy</h2>
+      <p class="s-sub" style="margin:0 auto">Skip the build. Download battle-tested workflow bundles, AI prompt libraries &amp; templates — and put them to work in minutes.</p>
     </div>
-
-    <div class="studio-shell rv d1">
-      <!-- Topbar -->
-      <div class="studio-topbar">
-        <div class="traffic"><i></i><i></i><i></i></div>
-        <div class="studio-url">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          studio.myflowmind.com / campaigns / new
-        </div>
-        <span class="live-badge"><span class="live-dot"></span>Autosaved</span>
-      </div>
-
-      <div class="studio-body">
-        <!-- Sidebar -->
-        <aside class="studio-side">
-          <div class="side-group">Workspace</div>
-          <div class="side-item active">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
-            Media Library
-          </div>
-          <div class="side-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
-            Campaigns
-          </div>
-          <div class="side-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            Scheduler
-          </div>
-          <div class="side-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-            Insights
-          </div>
-          <div class="side-pro">
-            <p>Connect your storefront to publish drops automatically.</p>
-            <a href="/contact.html" class="btn btn-primary btn-sm" style="width:100%">Activate Studio</a>
-          </div>
-        </aside>
-
-        <!-- Main -->
-        <div class="studio-main">
-          <div class="studio-tabs" role="tablist">
-            <button class="stab active" data-tab="upload" role="tab">Upload Assets</button>
-            <button class="stab" data-tab="compose" role="tab">Compose Campaign</button>
-            <button class="stab" data-tab="schedule" role="tab">Schedule &amp; Publish</button>
-          </div>
-
-          <!-- Upload panel -->
-          <div class="spanel show" id="panel-upload">
-            <div class="dropzone" id="dropzone" role="button" tabindex="0" aria-label="Upload promotional assets">
-              <div class="dz-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-              </div>
-              <h4>Drag &amp; drop your promo content</h4>
-              <p>or <strong style="color:var(--violet-2)">click to browse</strong> — images, videos, banners &amp; campaign assets</p>
-              <div class="dz-types"><span>JPG / PNG</span><span>MP4 / MOV</span><span>GIF</span><span>PDF Banner</span><span>up to 50MB</span></div>
-              <input type="file" id="fileInput" multiple accept="image/*,video/*,.pdf,.gif" hidden />
-            </div>
-
-            <div class="asset-head">
-              <h4>Media Library</h4>
-              <span class="asset-count"><span id="assetCount">6</span> assets · auto-organized</span>
-            </div>
-            <div class="asset-grid" id="assetGrid">
-              <div class="asset"><div class="ph" style="background:var(--grad)">A1</div><div class="meta"><span class="tname">launch-hero.jpg</span><span class="ttype">img</span></div></div>
-              <div class="asset"><div class="ph" style="background:linear-gradient(135deg,#ff5db1,#7c6cff)">A2</div><div class="meta"><span class="tname">promo-reel.mp4</span><span class="ttype">vid</span></div></div>
-              <div class="asset"><div class="ph" style="background:linear-gradient(135deg,#00e6b8,#38d7ff)">A3</div><div class="meta"><span class="tname">sale-banner.png</span><span class="ttype">img</span></div></div>
-              <div class="asset"><div class="ph" style="background:linear-gradient(135deg,#ffb84d,#ff5db1)">A4</div><div class="meta"><span class="tname">story-ad.gif</span><span class="ttype">gif</span></div></div>
-              <div class="asset"><div class="ph" style="background:linear-gradient(135deg,#38d7ff,#7c6cff)">A5</div><div class="meta"><span class="tname">bundle-card.png</span><span class="ttype">img</span></div></div>
-              <div class="asset add" id="assetAdd" role="button" tabindex="0" aria-label="Add more assets">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-              </div>
-            </div>
-          </div>
-
-          <!-- Compose panel -->
-          <div class="spanel" id="panel-compose">
-            <div class="compose">
-              <div>
-                <span class="ai-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4"/></svg> AI caption assist</span>
-                <div class="field">
-                  <label for="campTitle">Campaign title</label>
-                  <input type="text" id="campTitle" value="Summer Automation Drop — 30% Off" />
-                </div>
-                <div class="field">
-                  <label for="campCap">Caption</label>
-                  <textarea id="campCap">🚀 Big news! Our best-selling n8n workflow bundles are 30% off this week only. Automate your busywork in minutes — link in bio. #automation #nocode</textarea>
-                </div>
-                <div class="field">
-                  <label>Publish to</label>
-                  <div class="chan-row">
-                    <button class="chan on" type="button">Instagram</button>
-                    <button class="chan on" type="button">TikTok</button>
-                    <button class="chan" type="button">Facebook</button>
-                    <button class="chan" type="button">Email List</button>
-                    <button class="chan on" type="button">Storefront</button>
-                  </div>
-                </div>
-                <div class="compose-actions">
-                  <button class="btn btn-primary" type="button">Generate Variations</button>
-                  <button class="btn btn-ghost" type="button">Save Draft</button>
-                </div>
-              </div>
-              <div class="preview-card">
-                <div class="pv-label">Live preview</div>
-                <div class="pv-banner"><span>30% OFF · This Week</span></div>
-                <p class="pv-cap">🚀 Big news! Our best-selling n8n workflow bundles are 30% off this week only. Automate your busywork in minutes — link in bio.</p>
-                <div class="pv-foot">
-                  <span class="live-dot"></span> Ready to publish · 3 channels selected
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Schedule panel -->
-          <div class="spanel" id="panel-schedule">
-            <div class="compose">
-              <div>
-                <div class="field">
-                  <label for="schDate">Go-live date</label>
-                  <input type="date" id="schDate" />
-                </div>
-                <div class="field">
-                  <label for="schTime">Best time (auto-optimized)</label>
-                  <select id="schTime">
-                    <option>6:30 PM — Peak engagement (recommended)</option>
-                    <option>12:00 PM — Lunch window</option>
-                    <option>9:00 AM — Morning scroll</option>
-                    <option>Custom time…</option>
-                  </select>
-                </div>
-                <div class="field">
-                  <label for="schCadence">Cadence</label>
-                  <select id="schCadence">
-                    <option>One-time drop</option>
-                    <option>Daily for 5 days</option>
-                    <option>Weekly · 4 weeks</option>
-                  </select>
-                </div>
-                <div class="compose-actions">
-                  <button class="btn btn-primary" type="button">Schedule Campaign
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                  </button>
-                  <button class="btn btn-ghost" type="button">Publish Now</button>
-                </div>
-              </div>
-              <div class="preview-card">
-                <div class="pv-label">Queue</div>
-                <div class="wf-list" style="gap:10px">
-                  <div class="wf"><span class="wd run"></span><span class="wn">Summer Drop · IG + TikTok</span><span class="wt">6:30 PM</span></div>
-                  <div class="wf"><span class="wd on"></span><span class="wn">Storefront banner</span><span class="wt">Live</span></div>
-                  <div class="wf"><span class="wd off"></span><span class="wn">Email blast · list</span><span class="wt">Queued</span></div>
-                </div>
-                <div class="pv-foot"><span class="live-dot"></span> Auto-publishing via your workflows</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p class="studio-note rv">✨ Studio preview shown above. Want it wired to your real channels &amp; storefront? <a href="/contact.html" style="color:var(--violet-2);font-weight:600">Activate your Studio →</a></p>
-  </div>
-</section>
-
-<!-- ══ DIGITAL PRODUCTS SHOWCASE ═════════════════════════════ -->
-<section class="store" id="store">
-  <div class="container">
-    <div class="sec-hdr c rv">
-      <div class="s-label">Digital Products</div>
-      <h2 class="s-head">Plug-and-play automation, <span class="grad-text-warm">ready to deploy</span></h2>
-      <p class="s-sub">Skip the build. Download battle-tested workflow bundles, AI prompt libraries &amp; templates — and put them to work in minutes.</p>
-    </div>
-
     <div class="store-bar rv">
       <div class="filters" id="filters" role="tablist" aria-label="Filter products">
         <button class="fchip active" data-filter="all">All Products</button>
@@ -890,423 +441,293 @@
         <input type="search" id="storeSearch" placeholder="Search products…" aria-label="Search products" />
       </label>
     </div>
-
     <div class="prod-grid" id="prodGrid">
-
-      <!-- Featured bundle -->
       <article class="prod rv" data-cat="bundle" data-name="ultimate automation vault n8n bundle">
-        <div class="prod-media pm-b">
-          <div class="prod-tagrow"><span class="ptag hot">Best Seller</span><span class="ptag">Bundle</span></div>
-          <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg>
-        </div>
-        <div class="prod-body">
-          <div class="prod-cat">Mega Bundle</div>
-          <h3>The Ultimate Automation Vault</h3>
-          <p>50+ ready-to-import n8n workflows, 200 AI prompts &amp; 12 Notion templates. Everything we use to save clients 15+ hrs/week.</p>
-          <div class="prod-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Instant download</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Lifetime updates</span></div>
-          <div class="prod-foot">
-            <div><div class="prod-price"><s>$199</s>$99</div><div class="prod-rating">★★★★★ <span style="color:var(--text-dim)">(312)</span></div></div>
-            <a href="https://raphealmind.gumroad.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Get Vault</a>
-          </div>
-        </div>
+        <div class="prod-media"><img src="/public/product-bundle.jpg" alt="The Automation Vault — mega bundle of n8n workflows, AI prompts and templates" loading="lazy" width="800" height="500" /><div class="prod-tagrow"><span class="ptag hot">Best Seller</span></div></div>
+        <div class="prod-body"><div class="prod-cat">Mega Bundle</div><h3>The Ultimate Automation Vault</h3><p>50+ ready-to-import n8n workflows, 200 AI prompts &amp; 12 Notion templates. Everything we use to save clients 15+ hrs/week.</p><div class="prod-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Instant download</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Lifetime updates</span></div><div class="prod-foot"><div><div class="prod-price"><s>$199</s>$99</div><div class="prod-rating">★★★★★ <span style="color:var(--muted)">(312)</span></div></div><a href="https://raphealmind.gumroad.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Get Vault</a></div></div>
       </article>
-
       <article class="prod rv d1" data-cat="workflow" data-name="lead capture crm sync workflow n8n">
-        <div class="prod-media pm-v">
-          <div class="prod-tagrow"><span class="ptag">n8n</span></div>
-          <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-        </div>
-        <div class="prod-body">
-          <div class="prod-cat">Workflow</div>
-          <h3>Lead Capture → CRM Sync</h3>
-          <p>Auto-route every form lead into your CRM, enrich it, tag it, and trigger instant follow-up. Import in one click.</p>
-          <div class="prod-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>n8n JSON</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Setup guide</span></div>
-          <div class="prod-foot">
-            <div><div class="prod-price">$29</div><div class="prod-rating">★★★★★ <span style="color:var(--text-dim)">(88)</span></div></div>
-            <a href="https://raphealmind.gumroad.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Buy Now</a>
-          </div>
-        </div>
+        <div class="prod-media"><img src="/public/product-workflow.jpg" alt="Lead Capture to CRM Sync n8n workflow" loading="lazy" width="800" height="500" /><div class="prod-tagrow"><span class="ptag">n8n</span></div></div>
+        <div class="prod-body"><div class="prod-cat">Workflow</div><h3>Lead Capture → CRM Sync</h3><p>Auto-route every form lead into your CRM, enrich it, tag it, and trigger instant follow-up. Import in one click.</p><div class="prod-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>n8n JSON</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Setup guide</span></div><div class="prod-foot"><div><div class="prod-price">$29</div><div class="prod-rating">★★★★★ <span style="color:var(--muted)">(88)</span></div></div><a href="https://raphealmind.gumroad.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Buy Now</a></div></div>
       </article>
-
       <article class="prod rv d2" data-cat="prompt" data-name="marketing ai prompt library gpt claude">
-        <div class="prod-media pm-p">
-          <div class="prod-tagrow"><span class="ptag hot">Trending</span><span class="ptag">Prompts</span></div>
-          <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-6 0v4"/><rect x="2" y="9" width="20" height="12" rx="2"/></svg>
-        </div>
-        <div class="prod-body">
-          <div class="prod-cat">AI Prompt Library</div>
-          <h3>300 Marketing Mega-Prompts</h3>
-          <p>Plug-and-play prompts for ads, emails, captions &amp; SEO — engineered for GPT &amp; Claude. Copy, paste, convert.</p>
-          <div class="prod-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Notion + PDF</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>GPT &amp; Claude</span></div>
-          <div class="prod-foot">
-            <div><div class="prod-price">$39</div><div class="prod-rating">★★★★★ <span style="color:var(--text-dim)">(154)</span></div></div>
-            <a href="https://raphealmind.gumroad.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Buy Now</a>
-          </div>
-        </div>
+        <div class="prod-media"><img src="/public/product-prompts.jpg" alt="300 Marketing AI Mega-Prompts library" loading="lazy" width="800" height="500" /><div class="prod-tagrow"><span class="ptag hot">Trending</span></div></div>
+        <div class="prod-body"><div class="prod-cat">AI Prompt Library</div><h3>300 Marketing Mega-Prompts</h3><p>Plug-and-play prompts for ads, emails, captions &amp; SEO — engineered for GPT &amp; Claude. Copy, paste, convert.</p><div class="prod-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Notion + PDF</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>GPT &amp; Claude</span></div><div class="prod-foot"><div><div class="prod-price">$39</div><div class="prod-rating">★★★★★ <span style="color:var(--muted)">(154)</span></div></div><a href="https://raphealmind.gumroad.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Buy Now</a></div></div>
       </article>
-
       <article class="prod rv" data-cat="template" data-name="content studio notion template creator dashboard">
-        <div class="prod-media pm-t">
-          <div class="prod-tagrow"><span class="ptag">Template</span></div>
-          <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
-        </div>
-        <div class="prod-body">
-          <div class="prod-cat">Notion Template</div>
-          <h3>Creator Content Studio OS</h3>
-          <p>The exact Notion system to plan, store &amp; schedule every promo asset and campaign in one beautiful hub.</p>
-          <div class="prod-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Notion duplicate</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Video walkthrough</span></div>
-          <div class="prod-foot">
-            <div><div class="prod-price">$19</div><div class="prod-rating">★★★★☆ <span style="color:var(--text-dim)">(67)</span></div></div>
-            <a href="https://raphealmind.gumroad.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Buy Now</a>
-          </div>
-        </div>
+        <div class="prod-media"><img src="/public/product-template.jpg" alt="Creator Content Studio OS Notion template" loading="lazy" width="800" height="500" /><div class="prod-tagrow"><span class="ptag">Template</span></div></div>
+        <div class="prod-body"><div class="prod-cat">Notion Template</div><h3>Creator Content Studio OS</h3><p>The exact Notion system to plan, store &amp; schedule every promo asset and campaign in one beautiful hub.</p><div class="prod-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Notion duplicate</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Walkthrough</span></div><div class="prod-foot"><div><div class="prod-price">$19</div><div class="prod-rating">★★★★☆ <span style="color:var(--muted)">(67)</span></div></div><a href="https://raphealmind.gumroad.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Buy Now</a></div></div>
       </article>
-
       <article class="prod rv d1" data-cat="workflow" data-name="abandoned cart recovery ecommerce shopify workflow">
-        <div class="prod-media pm-v">
-          <div class="prod-tagrow"><span class="ptag">n8n</span><span class="ptag">E-com</span></div>
-          <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-        </div>
-        <div class="prod-body">
-          <div class="prod-cat">Workflow</div>
-          <h3>Abandoned Cart Rescue</h3>
-          <p>Win back lost sales with a 3-step recovery flow for Shopify &amp; Woo — emails, SMS &amp; discount triggers built in.</p>
-          <div class="prod-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Shopify ready</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>SMS + Email</span></div>
-          <div class="prod-foot">
-            <div><div class="prod-price">$34</div><div class="prod-rating">★★★★★ <span style="color:var(--text-dim)">(102)</span></div></div>
-            <a href="https://raphealmind.gumroad.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Buy Now</a>
-          </div>
-        </div>
+        <div class="prod-media"><img src="/public/product-cart.jpg" alt="Abandoned Cart Rescue e-commerce workflow" loading="lazy" width="800" height="500" /><div class="prod-tagrow"><span class="ptag">n8n</span><span class="ptag">E-com</span></div></div>
+        <div class="prod-body"><div class="prod-cat">Workflow</div><h3>Abandoned Cart Rescue</h3><p>Win back lost sales with a 3-step recovery flow for Shopify &amp; Woo — emails, SMS &amp; discount triggers built in.</p><div class="prod-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Shopify ready</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>SMS + Email</span></div><div class="prod-foot"><div><div class="prod-price">$34</div><div class="prod-rating">★★★★★ <span style="color:var(--muted)">(102)</span></div></div><a href="https://raphealmind.gumroad.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Buy Now</a></div></div>
       </article>
-
       <article class="prod rv d2" data-cat="bundle" data-name="social media autopilot starter bundle creators">
-        <div class="prod-media pm-b">
-          <div class="prod-tagrow"><span class="ptag">Bundle</span><span class="ptag">Creator</span></div>
-          <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-        </div>
-        <div class="prod-body">
-          <div class="prod-cat">Starter Bundle</div>
-          <h3>Social Autopilot Starter</h3>
-          <p>10 workflows + 100 prompts to auto-schedule posts, repurpose content &amp; grow on autopilot. Perfect first kit.</p>
-          <div class="prod-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Beginner-friendly</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>10 workflows</span></div>
-          <div class="prod-foot">
-            <div><div class="prod-price"><s>$79</s>$49</div><div class="prod-rating">★★★★★ <span style="color:var(--text-dim)">(196)</span></div></div>
-            <a href="https://raphealmind.gumroad.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Get Bundle</a>
-          </div>
-        </div>
+        <div class="prod-media"><img src="/public/product-social.jpg" alt="Social Autopilot Starter bundle for creators" loading="lazy" width="800" height="500" /><div class="prod-tagrow"><span class="ptag">Bundle</span></div></div>
+        <div class="prod-body"><div class="prod-cat">Starter Bundle</div><h3>Social Autopilot Starter</h3><p>10 workflows + 100 prompts to auto-schedule posts, repurpose content &amp; grow on autopilot. Perfect first kit.</p><div class="prod-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Beginner-friendly</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>10 workflows</span></div><div class="prod-foot"><div><div class="prod-price"><s>$79</s>$49</div><div class="prod-rating">★★★★★ <span style="color:var(--muted)">(196)</span></div></div><a href="https://raphealmind.gumroad.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Get Bundle</a></div></div>
       </article>
-
       <div class="empty-msg" id="emptyMsg">No products match that search — try another keyword or filter.</div>
     </div>
+    <div class="store-cta-row rv"><a href="https://raphealmind.gumroad.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Visit the Full Store <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a></div>
+  </div>
+</section>
 
-    <div class="store-cta-row rv">
-      <a href="https://raphealmind.gumroad.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Visit the Full Store
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-      </a>
+<section class="section" id="studio">
+  <div class="container">
+    <div class="section-header rv" style="text-align:center">
+      <div class="s-label" style="justify-content:center">Promo Content Studio</div>
+      <h2 class="s-head">Upload once. Launch everywhere.</h2>
+      <p class="s-sub" style="margin:0 auto">A premium creator dashboard for your promo assets. Drop in images, videos, banners &amp; captions, compose a campaign, and push it live across every channel — without touching a spreadsheet.</p>
+    </div>
+    <div class="promo-gallery rv">
+      <div class="promo-img"><img src="/public/promo-launch.jpg" alt="Summer Automation Drop promotional campaign banner" loading="lazy" width="880" height="495" /></div>
+      <div class="promo-img"><img src="/public/promo-ai.jpg" alt="The AI Prompt Library promotional banner" loading="lazy" width="880" height="495" /></div>
+      <div class="promo-img"><img src="/public/promo-scale.jpg" alt="Automate and Scale promotional banner" loading="lazy" width="880" height="495" /></div>
+    </div>
+    <div class="studio-shell rv d1">
+      <div class="studio-topbar">
+        <div class="traffic"><i></i><i></i><i></i></div>
+        <div class="studio-url"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> studio.myflowmind.com / campaigns / new</div>
+        <span class="live-badge"><span class="live-dot"></span>Autosaved</span>
+      </div>
+      <div class="studio-body">
+        <aside class="studio-side">
+          <div class="side-group">Workspace</div>
+          <div class="side-item active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg> Media Library</div>
+          <div class="side-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg> Campaigns</div>
+          <div class="side-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Scheduler</div>
+          <div class="side-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> Insights</div>
+          <div class="side-pro"><p>Connect your storefront to publish drops automatically.</p><a href="/contact.html" class="btn btn-primary btn-sm" style="width:100%">Activate Studio</a></div>
+        </aside>
+        <div class="studio-main">
+          <div class="studio-tabs" role="tablist">
+            <button class="stab active" data-tab="upload" role="tab">Upload Assets</button>
+            <button class="stab" data-tab="compose" role="tab">Compose Campaign</button>
+            <button class="stab" data-tab="schedule" role="tab">Schedule &amp; Publish</button>
+          </div>
+          <div class="spanel show" id="panel-upload">
+            <div class="dropzone" id="dropzone" role="button" tabindex="0" aria-label="Upload promotional assets">
+              <div class="dz-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
+              <h4>Drag &amp; drop your promo content</h4>
+              <p>or <strong style="color:var(--cobalt)">click to browse</strong> — images, videos, banners &amp; campaign assets</p>
+              <div class="dz-types"><span>JPG / PNG</span><span>MP4 / MOV</span><span>GIF</span><span>PDF Banner</span><span>up to 50MB</span></div>
+              <input type="file" id="fileInput" multiple accept="image/*,video/*,.pdf,.gif" hidden />
+            </div>
+            <div class="asset-head"><h4>Media Library</h4><span class="asset-count"><span id="assetCount">4</span> assets · auto-organized</span></div>
+            <div class="asset-grid" id="assetGrid">
+              <div class="asset"><img src="/public/promo-launch.jpg" alt="" /><div class="meta"><span class="tname">summer-drop.jpg</span><span class="ttype">img</span></div></div>
+              <div class="asset"><img src="/public/promo-ai.jpg" alt="" /><div class="meta"><span class="tname">ai-library.jpg</span><span class="ttype">img</span></div></div>
+              <div class="asset"><img src="/public/promo-scale.jpg" alt="" /><div class="meta"><span class="tname">scale-banner.jpg</span><span class="ttype">img</span></div></div>
+              <div class="asset"><img src="/public/product-prompts.jpg" alt="" /><div class="meta"><span class="tname">prompt-card.jpg</span><span class="ttype">img</span></div></div>
+              <div class="asset add" id="assetAdd" role="button" tabindex="0" aria-label="Add more assets"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+            </div>
+          </div>
+          <div class="spanel" id="panel-compose">
+            <div class="compose">
+              <div>
+                <span class="ai-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4"/></svg> AI caption assist</span>
+                <div class="field"><label for="campTitle">Campaign title</label><input type="text" id="campTitle" value="Summer Automation Drop — 30% Off" /></div>
+                <div class="field"><label for="campCap">Caption</label><textarea id="campCap">🚀 Big news! Our best-selling n8n workflow bundles are 30% off this week only. Automate your busywork in minutes — link in bio. #automation #nocode</textarea></div>
+                <div class="field"><label>Publish to</label><div class="chan-row"><button class="chan on" type="button">Instagram</button><button class="chan on" type="button">TikTok</button><button class="chan" type="button">Facebook</button><button class="chan" type="button">Email List</button><button class="chan on" type="button">Storefront</button></div></div>
+                <div class="compose-actions"><button class="btn btn-primary" type="button">Generate Variations</button><button class="btn btn-ghost" type="button">Save Draft</button></div>
+              </div>
+              <div class="preview-card">
+                <div class="pv-label">Live preview</div>
+                <div class="pv-banner"><img src="/public/promo-launch.jpg" alt="Campaign preview" /></div>
+                <p class="pv-cap">🚀 Big news! Our best-selling n8n workflow bundles are 30% off this week only. Automate your busywork in minutes — link in bio.</p>
+                <div class="pv-foot"><span class="live-dot"></span> Ready to publish · 3 channels selected</div>
+              </div>
+            </div>
+          </div>
+          <div class="spanel" id="panel-schedule">
+            <div class="compose">
+              <div>
+                <div class="field"><label for="schDate">Go-live date</label><input type="date" id="schDate" /></div>
+                <div class="field"><label for="schTime">Best time (auto-optimized)</label><select id="schTime"><option>6:30 PM — Peak engagement (recommended)</option><option>12:00 PM — Lunch window</option><option>9:00 AM — Morning scroll</option><option>Custom time…</option></select></div>
+                <div class="field"><label for="schCadence">Cadence</label><select id="schCadence"><option>One-time drop</option><option>Daily for 5 days</option><option>Weekly · 4 weeks</option></select></div>
+                <div class="compose-actions"><button class="btn btn-primary" type="button">Schedule Campaign <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></button><button class="btn btn-ghost" type="button">Publish Now</button></div>
+              </div>
+              <div class="preview-card">
+                <div class="pv-label">Queue</div>
+                <div class="wf-list" style="gap:10px"><div class="wf"><span class="wd run"></span><span class="wn">Summer Drop · IG + TikTok</span><span class="wt">6:30 PM</span></div><div class="wf"><span class="wd on"></span><span class="wn">Storefront banner</span><span class="wt">Live</span></div><div class="wf"><span class="wd off"></span><span class="wn">Email blast · list</span><span class="wt">Queued</span></div></div>
+                <div class="pv-foot"><span class="live-dot"></span> Auto-publishing via your workflows</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="studio-note rv">✨ Studio preview shown above. Want it wired to your real channels &amp; storefront? <a href="/contact.html" style="color:var(--cobalt);font-weight:700">Activate your Studio →</a></p>
+  </div>
+</section>
+
+<section class="section section--alt" id="founder">
+  <div class="container">
+    <div class="ceo">
+      <div class="ceo-photo rv">
+        <img src="/public/ceo-rapheal.jpg" alt="Rapheal John, Founder &amp; CEO of MyFlowMind" width="820" height="1093" />
+        <div class="ceo-badge"><span class="dot"></span><div><b>Rapheal John</b><span>Founder &amp; CEO</span></div></div>
+      </div>
+      <div class="ceo-content rv d1">
+        <div class="s-label">Meet the Founder</div>
+        <h2>Built by someone who's been in the trenches</h2>
+        <p class="lead">Hi, I'm Rapheal John — Founder &amp; CEO of MyFlowMind, an AI automation studio based in Des Moines, Iowa.</p>
+        <p>With a background spanning <strong style="color:var(--navy)">cybersecurity, systems integration, and applied AI</strong>, I started MyFlowMind after watching talented teams lose thousands of hours a year to manual, repetitive work. I knew there was a better way — and I set out to build it.</p>
+        <p>Today I personally oversee every client engagement to make sure the automations we deliver are secure, scalable, and actually used. Every template, workflow, and prompt in our store comes straight from real client projects — battle-tested, refined, and built for non-technical business owners.</p>
+        <blockquote class="ceo-quote">“Give people back their time, and they'll do their best work. That's the whole mission.”</blockquote>
+        <div class="ceo-creds">
+          <span class="cred"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L3 7v6c0 5 3.8 8.5 9 11 5.2-2.5 9-6 9-11V7l-9-5z"/></svg>Cybersecurity &amp; AI background</span>
+          <span class="cred"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7h-9M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg>50+ businesses automated</span>
+          <span class="cred"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>120K+ hours saved / year</span>
+        </div>
+        <div class="ceo-sign">
+          <div><div class="ceo-name">Rapheal John</div><div class="ceo-role">Founder &amp; CEO · Des Moines, Iowa</div></div>
+          <a href="/about.html" class="btn btn-outline btn-sm">Read full story</a>
+          <a href="/contact.html" class="btn btn-primary btn-sm">Work with Rapheal</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ══ How it works ══════════════════════════════════════════ -->
-<section class="how" id="how">
+<section class="section" id="how">
   <div class="container">
-    <div class="sec-hdr c rv">
-      <div class="s-label">The Process</div>
+    <div class="section-header rv" style="text-align:center">
+      <div class="s-label" style="justify-content:center">The Process</div>
       <h2 class="s-head">From call to running in 4 steps</h2>
-      <p class="s-sub">Most clients have their first automation live within 48 hours of their strategy call.</p>
+      <p class="s-sub" style="margin:0 auto">Most clients have their first automation live within 48 hours of their strategy call.</p>
     </div>
     <div class="steps">
-      <div class="step rv"><div class="step-n" aria-label="Step 1">1</div><h3>Discovery Call</h3><p>We map your workflows, find the highest-leverage tasks to automate first, and define clear success metrics.</p></div>
-      <div class="step rv d1"><div class="step-n" aria-label="Step 2">2</div><h3>Custom Build</h3><p>We design and build your automation system, fully configured to your tools, data, and business logic.</p></div>
-      <div class="step rv d2"><div class="step-n" aria-label="Step 3">3</div><h3>Test &amp; Handoff</h3><p>We test every edge case, walk you through it live, and hand over full docs so you're always in control.</p></div>
-      <div class="step rv d3"><div class="step-n" aria-label="Step 4">4</div><h3>Ongoing Support</h3><p>Monthly check-ins, 48-hour support SLA, and proactive optimizations as your business scales.</p></div>
+      <div class="step rv"><div class="step-n">1</div><h3>Discovery Call</h3><p>We map your workflows, find the highest-leverage tasks to automate first, and define clear success metrics.</p></div>
+      <div class="step rv d1"><div class="step-n">2</div><h3>Custom Build</h3><p>We design and build your automation system, fully configured to your tools, data, and business logic.</p></div>
+      <div class="step rv d2"><div class="step-n">3</div><h3>Test &amp; Handoff</h3><p>We test every edge case, walk you through it live, and hand over full docs so you're always in control.</p></div>
+      <div class="step rv d3"><div class="step-n">4</div><h3>Ongoing Support</h3><p>Monthly check-ins, 48-hour support SLA, and proactive optimizations as your business scales.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ══ Testimonials ══════════════════════════════════════════ -->
-<section class="proof-sec" id="proof">
+<section class="section section--alt" id="proof">
   <div class="container">
-    <div class="sec-hdr c rv">
-      <div class="s-label">Real Results</div>
+    <div class="section-header rv" style="text-align:center">
+      <div class="s-label" style="justify-content:center">Real Results</div>
       <h2 class="s-head">Businesses that flow on autopilot</h2>
-      <p class="s-sub">Don't take our word for it — here's what clients say after we automate their operations.</p>
+      <p class="s-sub" style="margin:0 auto">Don't take our word for it — here's what clients say after we automate their operations.</p>
     </div>
     <div class="tm-grid">
-      <div class="tm-card rv">
-        <div class="tm-stars" aria-label="5 stars">★★★★★</div>
-        <blockquote>"MyFlowMind automated our entire onboarding. What used to take 3 hours per client now happens instantly. We've onboarded 4× more clients without hiring anyone."</blockquote>
-        <div class="tm-author"><div class="tm-av" aria-hidden="true">JM</div><div><div class="tm-name">James M.</div><div class="tm-role">Founder, SaaS Startup</div></div></div>
-      </div>
-      <div class="tm-card rv d1">
-        <div class="tm-stars" aria-label="5 stars">★★★★★</div>
-        <blockquote>"The lead automation pays for itself every week. Leads go from form to booked call in under 2 minutes, with zero manual work from my team."</blockquote>
-        <div class="tm-author"><div class="tm-av" aria-hidden="true">SR</div><div><div class="tm-name">Sarah R.</div><div class="tm-role">CEO, Digital Agency</div></div></div>
-      </div>
-      <div class="tm-card rv d2">
-        <div class="tm-stars" aria-label="5 stars">★★★★★</div>
-        <blockquote>"I bought the Automation Vault and launched my first promo from the Studio in an afternoon. Cut my admin from 15 hours a week to under 2. Best investment I've made."</blockquote>
-        <div class="tm-author"><div class="tm-av" aria-hidden="true">TK</div><div><div class="tm-name">Temi K.</div><div class="tm-role">E-Commerce Store Owner</div></div></div>
-      </div>
+      <div class="tm-card rv"><div class="tm-stars">★★★★★</div><blockquote>"MyFlowMind automated our entire onboarding. What used to take 3 hours per client now happens instantly. We've onboarded 4× more clients without hiring anyone."</blockquote><div class="tm-author"><div class="tm-av">JM</div><div><div class="tm-name">James M.</div><div class="tm-role">Founder, SaaS Startup</div></div></div></div>
+      <div class="tm-card rv d1"><div class="tm-stars">★★★★★</div><blockquote>"The lead automation pays for itself every week. Leads go from form to booked call in under 2 minutes, with zero manual work from my team."</blockquote><div class="tm-author"><div class="tm-av">SR</div><div><div class="tm-name">Sarah R.</div><div class="tm-role">CEO, Digital Agency</div></div></div></div>
+      <div class="tm-card rv d2"><div class="tm-stars">★★★★★</div><blockquote>"I bought the Automation Vault and launched my first promo from the Studio in an afternoon. Cut my admin from 15 hours a week to under 2. Best investment I've made."</blockquote><div class="tm-author"><div class="tm-av">TK</div><div><div class="tm-name">Temi K.</div><div class="tm-role">E-Commerce Store Owner</div></div></div></div>
     </div>
   </div>
 </section>
 
-<!-- ══ Pricing ═══════════════════════════════════════════════ -->
-<section class="pricing-sec" id="pricing">
+<section class="section" id="pricing">
   <div class="container">
-    <div class="sec-hdr c rv">
-      <div class="s-label">Pricing</div>
+    <div class="section-header rv" style="text-align:center">
+      <div class="s-label" style="justify-content:center">Pricing</div>
       <h2 class="s-head">Transparent, results-driven pricing</h2>
-      <p class="s-sub">No retainers you don't need. Pick the plan that matches where your business is right now.</p>
+      <p class="s-sub" style="margin:0 auto">No retainers you don't need. Pick the plan that matches where your business is right now.</p>
     </div>
     <div class="pr-grid">
-      <div class="pr-card rv">
-        <div class="pr-name">Starter</div>
-        <div class="pr-price">$497<span>/project</span></div>
-        <p class="pr-desc">Perfect for solopreneurs automating their first key workflow.</p>
-        <ul class="pr-feats">
-          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00e6b8" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>1 custom workflow built &amp; deployed</li>
-          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00e6b8" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>n8n or Zapier (your choice)</li>
-          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00e6b8" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>48-hour delivery</li>
-          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00e6b8" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>30-day support included</li>
-        </ul>
+      <div class="pricing-card rv">
+        <h3>Starter</h3><div class="price">$497<span>/project</span></div>
+        <p class="text-muted" style="font-size:.9rem">Perfect for solopreneurs automating their first key workflow.</p>
+        <ul class="pricing-features"><li>1 custom workflow built &amp; deployed</li><li>n8n or Zapier (your choice)</li><li>48-hour delivery</li><li>30-day support included</li></ul>
         <a href="/contact.html" class="btn btn-outline" style="width:100%">Get Started</a>
       </div>
-      <div class="pr-card feat rv d1">
-        <div class="pr-badge">Most Popular</div>
-        <div class="pr-name">Growth</div>
-        <div class="pr-price">$1,497<span>/month</span></div>
-        <p class="pr-desc">For growing businesses ready to automate across all core operations.</p>
-        <ul class="pr-feats">
-          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00e6b8" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>Up to 5 workflows per month</li>
-          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00e6b8" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>AI chatbot build included</li>
-          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00e6b8" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>Content Studio access</li>
-          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00e6b8" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>Weekly performance reports</li>
-          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00e6b8" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>48-hr priority support SLA</li>
-        </ul>
+      <div class="pricing-card featured rv d1">
+        <div class="pricing-badge">Most Popular</div>
+        <h3>Growth</h3><div class="price">$1,497<span>/month</span></div>
+        <p class="text-muted" style="font-size:.9rem">For growing businesses ready to automate across all core operations.</p>
+        <ul class="pricing-features"><li>Up to 5 workflows per month</li><li>AI chatbot build included</li><li>Content Studio access</li><li>Weekly performance reports</li><li>48-hr priority support SLA</li></ul>
         <a href="/contact.html" class="btn btn-primary" style="width:100%">Start Growing</a>
       </div>
-      <div class="pr-card rv d2">
-        <div class="pr-name">Scale</div>
-        <div class="pr-price" style="font-size:2rem">Custom</div>
-        <p class="pr-desc">Enterprise-grade automation for complex, multi-system teams.</p>
-        <ul class="pr-feats">
-          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00e6b8" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>Unlimited workflows</li>
-          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00e6b8" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>Dedicated automation engineer</li>
-          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00e6b8" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>Custom API integrations</li>
-          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00e6b8" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>4-hr emergency support SLA</li>
-          <li class="pf"><div class="pf-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00e6b8" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>Quarterly strategy sessions</li>
-        </ul>
+      <div class="pricing-card rv d2">
+        <h3>Scale</h3><div class="price" style="font-size:2rem">Custom</div>
+        <p class="text-muted" style="font-size:.9rem">Enterprise-grade automation for complex, multi-system teams.</p>
+        <ul class="pricing-features"><li>Unlimited workflows</li><li>Dedicated automation engineer</li><li>Custom API integrations</li><li>4-hr emergency support SLA</li><li>Quarterly strategy sessions</li></ul>
         <a href="/contact.html" class="btn btn-outline" style="width:100%">Contact Us</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ CTA ═══════════════════════════════════════════════════ -->
-<section class="cta-sec">
+<section class="section">
   <div class="container">
     <div class="cta-glass rv">
-      <div class="cta-glow" aria-hidden="true"></div>
       <div class="s-label" style="justify-content:center;margin-bottom:18px">Free Strategy Call</div>
       <h2>Ready to stop doing it manually?</h2>
       <p>Book a free 30-minute call. We'll map your biggest automation wins and show you exactly what's possible — no commitment, no pressure.</p>
-      <div class="cta-btns">
-        <a href="/contact.html" class="btn btn-primary btn-lg">Book Your Free Call</a>
-        <a href="#store" class="btn btn-outline btn-lg">Browse Products</a>
+      <div class="cta-btns" style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap">
+        <a href="/contact.html" class="btn btn-gold btn-lg">Book Your Free Call</a>
+        <a href="#store" class="btn btn-outline btn-lg" style="background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.3)">Browse Products</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ Footer ════════════════════════════════════════════════ -->
-<footer>
+<footer class="site-footer" aria-label="Site footer">
   <div class="container">
-    <div class="ft-grid">
-      <div class="ft-brand">
+    <div class="footer-inner">
+      <div class="footer-brand">
         <a href="/" class="logo" aria-label="MyFlowMind home">
-          <span class="logo-icon" aria-hidden="true">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06070f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-          </span>
+          <span class="logo-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>
           MyFlowMind
         </a>
         <p>Your AI automation studio — build workflows, launch promo campaigns, and sell digital products from one home base. Automate smarter. Scale faster.</p>
         <div class="socials">
-          <a href="https://www.facebook.com/Myflowmindautomation" class="soc" target="_blank" rel="noopener noreferrer" aria-label="Follow MyFlowMind on Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-          <a href="https://www.tiktok.com/@Myflowmindautomation" class="soc" target="_blank" rel="noopener noreferrer" aria-label="Follow MyFlowMind on TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.85a8.18 8.18 0 0 0 4.78 1.52V6.9a4.85 4.85 0 0 1-1.01-.21z"/></svg></a>
-          <a href="https://www.instagram.com/Myflowmindautomation" class="soc" target="_blank" rel="noopener noreferrer" aria-label="Follow MyFlowMind on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-          <a href="https://www.youtube.com/@Myflowmindautomation" class="soc" target="_blank" rel="noopener noreferrer" aria-label="Follow MyFlowMind on YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#06070f"/></svg></a>
+          <a href="https://www.facebook.com/Myflowmindautomation" class="soc" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/Myflowmindautomation" class="soc" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.tiktok.com/@Myflowmindautomation" class="soc" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 3.68-4.39V9.4a6.34 6.34 0 1 0 4.42 6.05V8.85a8.18 8.18 0 0 0 4.78 1.52V6.9a4.85 4.85 0 0 1-.46-.21z"/></svg></a>
+          <a href="https://www.youtube.com/@Myflowmindautomation" class="soc" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98" fill="#0b1a3b"/></svg></a>
         </div>
       </div>
-      <div class="ft-col">
-        <h4>Platform</h4>
-        <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#studio">Content Studio</a></li>
-          <li><a href="#store">Digital Products</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-        </ul>
-      </div>
-      <div class="ft-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="/about.html">About Us</a></li>
-          <li><a href="#proof">Results</a></li>
-          <li><a href="/services.html">All Services</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="ft-col">
-        <h4>Store</h4>
-        <ul>
-          <li><a href="https://raphealmind.gumroad.com" target="_blank" rel="noopener noreferrer">Gumroad Templates</a></li>
-          <li><a href="https://www.etsy.com/shop/Myflowmind" target="_blank" rel="noopener noreferrer">Etsy Shop</a></li>
-          <li><a href="mailto:contact@myflowmind.com">contact@myflowmind.com</a></li>
-        </ul>
-      </div>
+      <div class="footer-col"><h4>Platform</h4><ul role="list"><li><a href="#services">Services</a></li><li><a href="#studio">Content Studio</a></li><li><a href="#store">Digital Products</a></li><li><a href="#pricing">Pricing</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul role="list"><li><a href="/about.html">About Us</a></li><li><a href="#founder">Our Founder</a></li><li><a href="/services.html">All Services</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Store</h4><ul role="list"><li><a href="https://raphealmind.gumroad.com" target="_blank" rel="noopener noreferrer">Gumroad Templates</a></li><li><a href="https://www.etsy.com/shop/Myflowmind" target="_blank" rel="noopener noreferrer">Etsy Shop</a></li><li><a href="mailto:contact@myflowmind.com">contact@myflowmind.com</a></li></ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul role="list"><li><a href="/privacy.html">Privacy Policy</a></li><li><a href="/terms.html">Terms of Service</a></li></ul></div>
     </div>
-    <div class="ft-bottom">
-      <span>© 2024 MyFlowMind Automation Studio. All rights reserved.</span>
-      <span>Built with <a href="https://myflowmind.com">MyFlowMind</a> · <a href="/privacy.html">Privacy</a></span>
+    <div class="footer-bottom">
+      <span>© <span id="footer-year">2026</span> MyFlowMind Automation Studio. All rights reserved.</span>
+      <span>Automate smarter. Scale faster.</span>
     </div>
   </div>
 </footer>
 
 <script>
-  /* ── Navbar scroll ── */
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
   const nav = document.getElementById('nav');
   addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 40), { passive: true });
-
-  /* ── Mobile menu ── */
-  const burger = document.getElementById('hamburger');
-  const menu = document.getElementById('mobileMenu');
-  burger.addEventListener('click', () => {
-    const open = burger.classList.toggle('open');
-    menu.classList.toggle('show', open);
-    burger.setAttribute('aria-expanded', String(open));
-  });
-  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    burger.classList.remove('open'); menu.classList.remove('show'); burger.setAttribute('aria-expanded', 'false');
-  }));
-
-  /* ── Reveal on scroll ── */
-  const io = new IntersectionObserver(es => {
-    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  const burger = document.getElementById('hamburger'), menu = document.getElementById('mobileMenu');
+  burger.addEventListener('click', () => { const open = burger.classList.toggle('open'); menu.classList.toggle('show', open); burger.setAttribute('aria-expanded', String(open)); });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { burger.classList.remove('open'); menu.classList.remove('show'); burger.setAttribute('aria-expanded','false'); }));
+  const io = new IntersectionObserver(es => { es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
   document.querySelectorAll('.rv').forEach(el => io.observe(el));
-
-  /* ── Cursor-follow glow on bento cards ── */
-  document.querySelectorAll('.sv-card').forEach(card => {
-    card.addEventListener('pointermove', e => {
-      const r = card.getBoundingClientRect();
-      card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
-      card.style.setProperty('--my', (e.clientY - r.top) + 'px');
-    });
-  });
-
-  /* ── Animated stat counters ── */
-  function countTo(el, end, suffix, dur = 1800) {
-    const start = performance.now(), numEnd = parseFloat(end);
-    (function tick(now) {
-      const p = Math.min((now - start) / dur, 1), ease = 1 - Math.pow(1 - p, 3);
-      el.textContent = Math.round(ease * numEnd) + suffix;
-      if (p < 1) requestAnimationFrame(tick);
-    })(start);
-  }
-  const statsIo = new IntersectionObserver(es => {
-    es.forEach(e => {
-      if (!e.isIntersecting) return;
-      const cfg = [{ end: 200, s: '+' }, { end: 15, s: 'hrs' }, { end: 98, s: '%' }, { end: 48, s: 'hr' }];
-      e.target.querySelectorAll('.stat-n').forEach((el, i) => countTo(el, cfg[i].end, cfg[i].s));
-      statsIo.unobserve(e.target);
-    });
-  }, { threshold: 0.5 });
+  function countTo(el, end, suffix, dur=1800){ const start=performance.now(), numEnd=parseFloat(end); (function tick(now){ const p=Math.min((now-start)/dur,1), e=1-Math.pow(1-p,3); el.textContent=Math.round(e*numEnd)+suffix; if(p<1) requestAnimationFrame(tick); })(start); }
+  const statsIo = new IntersectionObserver(es => { es.forEach(e => { if(!e.isIntersecting) return; const cfg=[{e:200,s:'+'},{e:15,s:'hrs'},{e:98,s:'%'},{e:48,s:'hr'}]; e.target.querySelectorAll('.stat-number').forEach((el,i)=>countTo(el,cfg[i].e,cfg[i].s)); statsIo.unobserve(e.target); }); }, { threshold: 0.5 });
   const sg = document.getElementById('stats'); if (sg) statsIo.observe(sg);
-
-  /* ── Studio: tabs ── */
-  document.querySelectorAll('.stab').forEach(tab => {
-    tab.addEventListener('click', () => {
-      document.querySelectorAll('.stab').forEach(t => t.classList.remove('active'));
-      document.querySelectorAll('.spanel').forEach(p => p.classList.remove('show'));
-      tab.classList.add('active');
-      document.getElementById('panel-' + tab.dataset.tab).classList.add('show');
-    });
-  });
-
-  /* ── Studio: upload (client-side preview only) ── */
-  const dropzone = document.getElementById('dropzone');
-  const fileInput = document.getElementById('fileInput');
-  const assetGrid = document.getElementById('assetGrid');
-  const assetAdd = document.getElementById('assetAdd');
-  const assetCount = document.getElementById('assetCount');
-  let count = 5;
-
-  function typeLabel(f) {
-    if (f.type.startsWith('video')) return 'vid';
-    if (f.type === 'image/gif') return 'gif';
-    if (f.type === 'application/pdf') return 'pdf';
-    return 'img';
-  }
-  function addAsset(file) {
-    const tile = document.createElement('div');
-    tile.className = 'asset';
-    const isImg = file.type.startsWith('image');
-    const inner = document.createElement(isImg ? 'img' : 'div');
-    if (isImg) { inner.src = URL.createObjectURL(file); inner.alt = file.name; inner.onload = () => URL.revokeObjectURL(inner.src); }
-    else { inner.className = 'ph'; inner.style.background = 'var(--grad-warm)'; inner.textContent = typeLabel(file).toUpperCase(); }
-    const meta = document.createElement('div');
-    meta.className = 'meta';
-    meta.innerHTML = '<span class="tname"></span><span class="ttype">' + typeLabel(file) + '</span>';
-    meta.querySelector('.tname').textContent = file.name;
-    tile.append(inner, meta);
-    assetGrid.insertBefore(tile, assetAdd);
-    count++; assetCount.textContent = count;
-  }
-  function handleFiles(list) { [...list].slice(0, 12).forEach(addAsset); }
-
-  dropzone.addEventListener('click', () => fileInput.click());
-  dropzone.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); fileInput.click(); } });
-  assetAdd.addEventListener('click', () => fileInput.click());
-  assetAdd.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); fileInput.click(); } });
-  fileInput.addEventListener('change', e => handleFiles(e.target.files));
-  ['dragenter', 'dragover'].forEach(ev => dropzone.addEventListener(ev, e => { e.preventDefault(); dropzone.classList.add('drag'); }));
-  ['dragleave', 'drop'].forEach(ev => dropzone.addEventListener(ev, e => { e.preventDefault(); dropzone.classList.remove('drag'); }));
-  dropzone.addEventListener('drop', e => handleFiles(e.dataTransfer.files));
-
-  /* ── Studio: channel toggles ── */
-  document.querySelectorAll('.chan').forEach(c => c.addEventListener('click', () => c.classList.toggle('on')));
-
-  /* ── Studio: live caption preview ── */
-  const capInput = document.getElementById('campCap');
-  const pvCap = document.querySelector('.pv-cap');
-  if (capInput && pvCap) capInput.addEventListener('input', () => pvCap.textContent = capInput.value || 'Your caption preview…');
-
-  /* ── Store: filter + search ── */
-  const prods = [...document.querySelectorAll('.prod')];
-  const filters = document.getElementById('filters');
-  const search = document.getElementById('storeSearch');
-  const empty = document.getElementById('emptyMsg');
-  let activeFilter = 'all';
-
-  function applyStore() {
-    const q = search.value.trim().toLowerCase();
-    let shown = 0;
-    prods.forEach(p => {
-      const matchCat = activeFilter === 'all' || p.dataset.cat === activeFilter;
-      const matchQ = !q || p.dataset.name.includes(q) || p.textContent.toLowerCase().includes(q);
-      const show = matchCat && matchQ;
-      p.style.display = show ? '' : 'none';
-      if (show) shown++;
-    });
-    empty.style.display = shown ? 'none' : 'block';
-  }
-  filters.addEventListener('click', e => {
-    const chip = e.target.closest('.fchip'); if (!chip) return;
-    filters.querySelectorAll('.fchip').forEach(c => c.classList.remove('active'));
-    chip.classList.add('active'); activeFilter = chip.dataset.filter; applyStore();
-  });
-  search.addEventListener('input', applyStore);
+  document.querySelectorAll('.stab').forEach(tab => tab.addEventListener('click', () => { document.querySelectorAll('.stab').forEach(t=>t.classList.remove('active')); document.querySelectorAll('.spanel').forEach(p=>p.classList.remove('show')); tab.classList.add('active'); document.getElementById('panel-'+tab.dataset.tab).classList.add('show'); }));
+  const dropzone=document.getElementById('dropzone'), fileInput=document.getElementById('fileInput'), assetGrid=document.getElementById('assetGrid'), assetAdd=document.getElementById('assetAdd'), assetCount=document.getElementById('assetCount');
+  let count=4;
+  function typeLabel(f){ if(f.type.startsWith('video'))return'vid'; if(f.type==='image/gif')return'gif'; if(f.type==='application/pdf')return'pdf'; return'img'; }
+  function addAsset(file){ const tile=document.createElement('div'); tile.className='asset'; const isImg=file.type.startsWith('image'); const inner=document.createElement(isImg?'img':'div'); if(isImg){ inner.src=URL.createObjectURL(file); inner.alt=file.name; inner.onload=()=>URL.revokeObjectURL(inner.src); } else { inner.style.cssText='width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:var(--grad);color:#fff;font-weight:700;font-family:var(--display)'; inner.textContent=typeLabel(file).toUpperCase(); } const meta=document.createElement('div'); meta.className='meta'; meta.innerHTML='<span class="tname"></span><span class="ttype">'+typeLabel(file)+'</span>'; meta.querySelector('.tname').textContent=file.name; tile.append(inner,meta); assetGrid.insertBefore(tile,assetAdd); count++; assetCount.textContent=count; }
+  function handleFiles(list){ [...list].slice(0,12).forEach(addAsset); }
+  dropzone.addEventListener('click',()=>fileInput.click());
+  dropzone.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){e.preventDefault();fileInput.click();} });
+  assetAdd.addEventListener('click',()=>fileInput.click());
+  assetAdd.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){e.preventDefault();fileInput.click();} });
+  fileInput.addEventListener('change',e=>handleFiles(e.target.files));
+  ['dragenter','dragover'].forEach(ev=>dropzone.addEventListener(ev,e=>{e.preventDefault();dropzone.classList.add('drag');}));
+  ['dragleave','drop'].forEach(ev=>dropzone.addEventListener(ev,e=>{e.preventDefault();dropzone.classList.remove('drag');}));
+  dropzone.addEventListener('drop',e=>handleFiles(e.dataTransfer.files));
+  document.querySelectorAll('.chan').forEach(c=>c.addEventListener('click',()=>c.classList.toggle('on')));
+  const capInput=document.getElementById('campCap'), pvCap=document.querySelector('.pv-cap');
+  if(capInput&&pvCap) capInput.addEventListener('input',()=>pvCap.textContent=capInput.value||'Your caption preview…');
+  const prods=[...document.querySelectorAll('.prod')], filters=document.getElementById('filters'), search=document.getElementById('storeSearch'), empty=document.getElementById('emptyMsg');
+  let activeFilter='all';
+  function applyStore(){ const q=search.value.trim().toLowerCase(); let shown=0; prods.forEach(p=>{ const matchCat=activeFilter==='all'||p.dataset.cat===activeFilter; const matchQ=!q||p.dataset.name.includes(q)||p.textContent.toLowerCase().includes(q); const show=matchCat&&matchQ; p.style.display=show?'':'none'; if(show)shown++; }); empty.style.display=shown?'none':'block'; }
+  filters.addEventListener('click',e=>{ const chip=e.target.closest('.fchip'); if(!chip)return; filters.querySelectorAll('.fchip').forEach(c=>c.classList.remove('active')); chip.classList.add('active'); activeFilter=chip.dataset.filter; applyStore(); });
+  search.addEventListener('input',applyStore);
 </script>
 </body>
 </html>
