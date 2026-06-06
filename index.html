@@ -279,6 +279,33 @@
       .store-bar{flex-direction:column;align-items:stretch}.asset-grid{grid-template-columns:repeat(2,1fr)}.studio-side{flex-direction:column}
     }
     @media(max-width:480px){.hero-actions .btn,.cta-btns .btn{width:100%}}
+
+    /* Store availability badges */
+    .store-badges{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin:-16px 0 34px}
+    .sb-label{font-size:.8rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+    .sb{display:inline-flex;align-items:center;gap:9px;padding:10px 18px;border-radius:999px;background:var(--surface);border:1px solid var(--border);box-shadow:var(--sh-sm);font-weight:700;color:var(--navy);font-size:.92rem;transition:transform var(--spring),box-shadow var(--ease),border-color var(--ease)}
+    .sb:hover{transform:translateY(-3px);box-shadow:var(--sh);border-color:rgba(37,99,235,.35)}
+    .sb-dot{width:11px;height:11px;border-radius:50%;flex-shrink:0}
+    .sb-gumroad .sb-dot{background:#ff90e8}.sb-etsy .sb-dot{background:#f1641e}.sb-pinterest .sb-dot{background:#e60023}
+    .store-cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:40px}
+
+    /* Idea 1 — card tilt + cursor spotlight */
+    .prod,.sv-card{transform-style:preserve-3d}
+    .prod-media{cursor:pointer}
+    .sv-card::after,.prod::after{content:'';position:absolute;inset:0;border-radius:inherit;background:radial-gradient(360px circle at var(--mx,50%) var(--my,50%),rgba(37,99,235,.10),transparent 60%);opacity:0;transition:opacity .35s;pointer-events:none;z-index:3}
+    .sv-card:hover::after,.prod:hover::after{opacity:1}
+
+    /* Idea 2 — animated results band */
+    .stats-band{border:none;color:#fff;background:linear-gradient(120deg,#1f4fd6,#2563eb,#38bdf8,#1f4fd6);background-size:300% 300%;animation:bandShift 16s ease infinite;box-shadow:var(--sh-blue)}
+    @keyframes bandShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+    .stats-band .stat-item{border-color:rgba(255,255,255,.2)}
+    .stats-band .stat-number{background:none;-webkit-text-fill-color:#fff;color:#fff}
+    .stats-band .stat-label{color:rgba(255,255,255,.88)}
+
+    /* Idea 3 — hero word rotator */
+    .rotator{display:inline-block}
+    .rotator .w{display:inline-block;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;transition:opacity .4s,transform .4s}
+    .rotator .w.out{opacity:0;transform:translateY(-14px)}
   </style>
 </head>
 <body>
@@ -325,7 +352,7 @@
         <h1>
           <span class="line"><span>Automate smarter.</span></span>
           <span class="line"><span class="grad-text">Launch with polish.</span></span>
-          <span class="line"><span>Scale with confidence.</span></span>
+          <span class="line"><span>Scale with <span class="rotator" id="rotator"><span class="w">confidence.</span></span></span></span>
         </h1>
         <p class="hero-desc">MyFlowMind is your all-in-one studio to <strong>automate the busywork</strong>, launch <strong>promo campaigns</strong> in minutes, and sell <strong>ready-to-deploy digital products</strong> — all from one elegant home base.</p>
         <div class="hero-actions">
@@ -371,7 +398,7 @@
 
 <div class="section" style="padding:56px 0">
   <div class="container">
-    <div class="stat-grid rv" id="stats">
+    <div class="stat-grid stats-band rv" id="stats">
       <div class="stat-item"><div class="stat-number">200+</div><div class="stat-label">Businesses Automated</div></div>
       <div class="stat-item"><div class="stat-number">15hrs</div><div class="stat-label">Saved Per Week, Per Client</div></div>
       <div class="stat-item"><div class="stat-number">98%</div><div class="stat-label">Client Satisfaction</div></div>
@@ -429,6 +456,12 @@
       <h2 class="s-head">Plug-and-play automation, ready to deploy</h2>
       <p class="s-sub" style="margin:0 auto">Skip the build. Download battle-tested workflow bundles, AI prompt libraries &amp; templates — and put them to work in minutes.</p>
     </div>
+    <div class="store-badges rv" aria-label="Where to buy our products">
+      <span class="sb-label">Shop on</span>
+      <a class="sb sb-gumroad" href="https://raphealmind.gumroad.com" target="_blank" rel="noopener noreferrer"><span class="sb-dot" aria-hidden="true"></span>Gumroad</a>
+      <a class="sb sb-etsy" href="https://www.etsy.com/shop/Myflowmind" target="_blank" rel="noopener noreferrer"><span class="sb-dot" aria-hidden="true"></span>Etsy</a>
+      <a class="sb sb-pinterest" href="https://www.pinterest.com/Myflowmindautomation/" target="_blank" rel="noopener noreferrer"><span class="sb-dot" aria-hidden="true"></span>Pinterest</a>
+    </div>
     <div class="store-bar rv">
       <div class="filters" id="filters" role="tablist" aria-label="Filter products">
         <button class="fchip active" data-filter="all">All Products</button>
@@ -469,7 +502,10 @@
       </article>
       <div class="empty-msg" id="emptyMsg">No products match that search — try another keyword or filter.</div>
     </div>
-    <div class="store-cta-row rv"><a href="https://raphealmind.gumroad.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Visit the Full Store <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a></div>
+    <div class="store-cta-row rv">
+      <a href="https://raphealmind.gumroad.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Shop on Gumroad <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+      <a href="https://www.etsy.com/shop/Myflowmind" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">Browse on Etsy</a>
+    </div>
   </div>
 </section>
 
@@ -681,11 +717,12 @@
           <a href="https://www.instagram.com/Myflowmindautomation" class="soc" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
           <a href="https://www.tiktok.com/@Myflowmindautomation" class="soc" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 3.68-4.39V9.4a6.34 6.34 0 1 0 4.42 6.05V8.85a8.18 8.18 0 0 0 4.78 1.52V6.9a4.85 4.85 0 0 1-.46-.21z"/></svg></a>
           <a href="https://www.youtube.com/@Myflowmindautomation" class="soc" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98" fill="#0b1a3b"/></svg></a>
+          <a href="https://www.pinterest.com/Myflowmindautomation/" class="soc" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.08 2.45 7.58 5.96 9.12-.08-.78-.16-1.97.03-2.82.18-.78 1.13-4.97 1.13-4.97s-.29-.58-.29-1.43c0-1.34.78-2.34 1.74-2.34.82 0 1.22.62 1.22 1.36 0 .83-.53 2.07-.8 3.22-.23.96.48 1.75 1.43 1.75 1.72 0 3.04-1.81 3.04-4.43 0-2.32-1.66-3.94-4.04-3.94-2.75 0-4.37 2.06-4.37 4.19 0 .83.32 1.72.72 2.2.08.1.09.19.07.28-.07.31-.24.95-.27 1.08-.04.18-.14.22-.33.13-1.23-.57-2-2.37-2-3.81 0-3.1 2.25-5.95 6.5-5.95 3.41 0 6.06 2.43 6.06 5.68 0 3.39-2.14 6.12-5.1 6.12-1 0-1.93-.52-2.25-1.13 0 0-.49 1.87-.61 2.33-.22.85-.82 1.92-1.22 2.57.92.28 1.9.44 2.91.44 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a>
         </div>
       </div>
       <div class="footer-col"><h4>Platform</h4><ul role="list"><li><a href="#services">Services</a></li><li><a href="#studio">Content Studio</a></li><li><a href="#store">Digital Products</a></li><li><a href="#pricing">Pricing</a></li></ul></div>
       <div class="footer-col"><h4>Company</h4><ul role="list"><li><a href="/about.html">About Us</a></li><li><a href="#founder">Our Founder</a></li><li><a href="/services.html">All Services</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
-      <div class="footer-col"><h4>Store</h4><ul role="list"><li><a href="https://raphealmind.gumroad.com" target="_blank" rel="noopener noreferrer">Gumroad Templates</a></li><li><a href="https://www.etsy.com/shop/Myflowmind" target="_blank" rel="noopener noreferrer">Etsy Shop</a></li><li><a href="mailto:contact@myflowmind.com">contact@myflowmind.com</a></li></ul></div>
+      <div class="footer-col"><h4>Store</h4><ul role="list"><li><a href="https://raphealmind.gumroad.com" target="_blank" rel="noopener noreferrer">Gumroad Store</a></li><li><a href="https://www.etsy.com/shop/Myflowmind" target="_blank" rel="noopener noreferrer">Etsy Shop</a></li><li><a href="https://www.pinterest.com/Myflowmindautomation/" target="_blank" rel="noopener noreferrer">Pinterest</a></li><li><a href="mailto:contact@myflowmind.com">contact@myflowmind.com</a></li></ul></div>
       <div class="footer-col"><h4>Legal</h4><ul role="list"><li><a href="/privacy.html">Privacy Policy</a></li><li><a href="/terms.html">Terms of Service</a></li></ul></div>
     </div>
     <div class="footer-bottom">
@@ -729,6 +766,38 @@
   function applyStore(){ const q=search.value.trim().toLowerCase(); let shown=0; prods.forEach(p=>{ const matchCat=activeFilter==='all'||p.dataset.cat===activeFilter; const matchQ=!q||p.dataset.name.includes(q)||p.textContent.toLowerCase().includes(q); const show=matchCat&&matchQ; p.style.display=show?'':'none'; if(show)shown++; }); empty.style.display=shown?'none':'block'; }
   filters.addEventListener('click',e=>{ const chip=e.target.closest('.fchip'); if(!chip)return; filters.querySelectorAll('.fchip').forEach(c=>c.classList.remove('active')); chip.classList.add('active'); activeFilter=chip.dataset.filter; applyStore(); });
   search.addEventListener('input',applyStore);
+
+  /* ── Visual enhancements ── */
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Idea 3: hero word rotator
+  (function(){
+    var el=document.querySelector('#rotator .w'); if(!el||reduceMotion) return;
+    var words=['confidence.','clarity.','momentum.','ease.'], i=0;
+    setInterval(function(){
+      el.classList.add('out');
+      setTimeout(function(){ i=(i+1)%words.length; el.textContent=words[i]; el.classList.remove('out'); }, 400);
+    }, 2600);
+  })();
+
+  // Idea 1: card tilt + cursor spotlight (desktop, motion-ok)
+  if(!reduceMotion && innerWidth>=900){
+    document.querySelectorAll('.prod,.sv-card').forEach(function(card){
+      card.addEventListener('pointermove', function(e){
+        var r=card.getBoundingClientRect();
+        var px=(e.clientX-r.left)/r.width, py=(e.clientY-r.top)/r.height;
+        card.style.setProperty('--mx',(px*100)+'%'); card.style.setProperty('--my',(py*100)+'%');
+        card.style.transform='perspective(900px) rotateX('+((0.5-py)*5).toFixed(2)+'deg) rotateY('+((px-0.5)*5).toFixed(2)+'deg) translateY(-6px)';
+      });
+      card.addEventListener('pointerleave', function(){ card.style.transform=''; });
+    });
+  }
+
+  // Whole product card opens its store link
+  document.querySelectorAll('.prod').forEach(function(card){
+    var link=card.querySelector('.prod-foot a'), media=card.querySelector('.prod-media');
+    if(link&&media) media.addEventListener('click', function(){ window.open(link.href,'_blank','noopener'); });
+  });
 </script>
 </body>
 </html>
