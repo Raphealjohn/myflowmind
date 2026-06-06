@@ -288,6 +288,20 @@
     .sb-dot{width:11px;height:11px;border-radius:50%;flex-shrink:0}
     .sb-gumroad .sb-dot{background:#ff90e8}.sb-etsy .sb-dot{background:#f1641e}.sb-pinterest .sb-dot{background:#e60023}
     .store-cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:40px}
+    .membership{margin-top:34px;background:var(--navy);border-radius:var(--r-2xl);padding:40px 44px;display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap;position:relative;overflow:hidden;box-shadow:var(--sh-lg)}
+    .membership::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 90% at 12% 0%,rgba(37,99,235,.5),transparent 60%),radial-gradient(ellipse 50% 90% at 100% 100%,rgba(56,189,248,.35),transparent 60%);z-index:0}
+    .membership>*{position:relative;z-index:1}
+    .mb-badge{display:inline-flex;align-items:center;gap:8px;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#0b1a3b;background:var(--grad-gold);padding:5px 13px;border-radius:999px;margin-bottom:14px}
+    .membership h3{font-family:var(--display);font-size:clamp(1.5rem,3vw,2.1rem);color:#fff;margin-bottom:10px;font-weight:800}
+    .membership .mb-sub{color:rgba(255,255,255,.82);font-size:.98rem;max-width:560px;line-height:1.6}
+    .mb-feats{display:flex;gap:18px;flex-wrap:wrap;margin-top:14px}
+    .mb-feats span{display:flex;align-items:center;gap:7px;font-size:.84rem;color:rgba(255,255,255,.9);font-weight:600}
+    .mb-feats svg{width:15px;height:15px;color:var(--sky)}
+    .mb-right{text-align:center;flex-shrink:0}
+    .mb-price{font-family:var(--display);font-size:2.6rem;font-weight:800;color:#fff;line-height:1}
+    .mb-price span{font-size:1rem;font-weight:500;color:rgba(255,255,255,.7)}
+    .mb-cancel{font-size:.76rem;color:rgba(255,255,255,.65);margin:6px 0 14px}
+    @media(max-width:768px){.membership{padding:30px 24px}.mb-right{text-align:left;width:100%}}
 
     /* Idea 1 — card tilt + cursor spotlight */
     .prod,.sv-card{transform-style:preserve-3d}
@@ -506,6 +520,25 @@
       </article>
       <div class="empty-msg" id="emptyMsg">No products match that search — try another keyword or filter.</div>
     </div>
+
+    <div class="membership rv">
+      <div>
+        <span class="mb-badge">★ Membership</span>
+        <h3>Monthly Automation Club</h3>
+        <p class="mb-sub">Fresh n8n workflows &amp; AI prompts delivered every month, plus live Q&amp;A with Rapheal — so your automations always stay ahead.</p>
+        <div class="mb-feats">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>New workflows monthly</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>AI prompt drops</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Live Q&amp;A sessions</span>
+        </div>
+      </div>
+      <div class="mb-right">
+        <div class="mb-price">$29<span>/month</span></div>
+        <div class="mb-cancel">Cancel anytime</div>
+        <a href="https://raphealmind.gumroad.com/l/qqubw" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-lg">Join the Club</a>
+      </div>
+    </div>
+
     <div class="store-cta-row rv">
       <a href="https://raphealmind.gumroad.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Shop on Gumroad <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
       <a href="https://www.etsy.com/shop/Myflowmind" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">Browse on Etsy</a>
