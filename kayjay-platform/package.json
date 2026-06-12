@@ -1,0 +1,38 @@
+{
+  "name": "kayjay-platform",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Kayjay Holding — multi-company platform with CRM-managed lead pipeline",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "setup:hubspot": "tsx scripts/setup-hubspot.ts"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.9.1",
+    "@react-email/components": "^0.0.31",
+    "@sanity/client": "^6.24.1",
+    "@vercel/analytics": "^2.0.1",
+    "framer-motion": "^11.15.0",
+    "next": "^14.2.21",
+    "next-auth": "^4.24.11",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.54.2",
+    "resend": "^4.0.1",
+    "server-only": "^0.0.1",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.10",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
