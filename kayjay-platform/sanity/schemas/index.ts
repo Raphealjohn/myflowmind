@@ -47,6 +47,33 @@ const company = {
       ],
     },
     {
+      name: "products",
+      title: "Packaged Products",
+      type: "array",
+      of: [
+        {
+          type: "object",
+          fields: [
+            { name: "name", title: "Name", type: "string" },
+            { name: "price", title: "Price (e.g. $497)", type: "string" },
+            {
+              name: "cadence",
+              title: "Cadence",
+              type: "string",
+              options: { list: ["one-time", "monthly", "per-visit"] },
+            },
+            { name: "pitch", title: "Pitch", type: "text", rows: 3 },
+            {
+              name: "includes",
+              title: "What's included",
+              type: "array",
+              of: [{ type: "string" }],
+            },
+          ],
+        },
+      ],
+    },
+    {
       name: "testimonials",
       title: "Testimonials",
       type: "array",

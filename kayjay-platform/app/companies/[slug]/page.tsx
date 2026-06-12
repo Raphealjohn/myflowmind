@@ -6,6 +6,7 @@ import { Reveal } from "@/components/sections/reveal";
 import { MeridianLine } from "@/components/sections/meridian-line";
 import { FaqSection } from "@/components/sections/faq-section";
 import { ServicesGrid } from "@/components/subsidiary/services-grid";
+import { ProductsGrid } from "@/components/subsidiary/products-grid";
 import { ButtonLink } from "@/components/ui/button";
 import { COMPANIES, getCompany, type SubsidiarySlug } from "@/lib/content";
 import { siteUrl } from "@/lib/site";
@@ -108,6 +109,23 @@ export default function CompanyPage({ params }: Props) {
           <ServicesGrid services={company.services} />
         </Container>
       </section>
+
+      {/* packaged offers */}
+      {company.products.length > 0 ? (
+        <section className="pb-16 sm:pb-24" aria-labelledby="products-heading">
+          <Container>
+            <Reveal>
+              <h2 id="products-heading" className="mb-3 font-serif text-display-md font-medium">
+                Packages &amp; pricing
+              </h2>
+              <p className="mb-10 max-w-xl text-muted">
+                Fixed scope, fixed price, no discovery-call required to see a number.
+              </p>
+            </Reveal>
+            <ProductsGrid products={company.products} slug={company.slug} />
+          </Container>
+        </section>
+      ) : null}
 
       {/* testimonial */}
       {company.testimonials.length > 0 ? (

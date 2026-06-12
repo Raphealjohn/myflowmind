@@ -88,12 +88,23 @@ Set `NEXTAUTH_SECRET` (`openssl rand -base64 32`), `NEXTAUTH_URL`,
 subsidiary, leads this week vs last, hot leads with one-click email, and
 revenue pace against the $1M annual goal.
 
-### 6. Deploy (Vercel)
+### 6. "Ask Kayjay" assistant (Anthropic API)
+
+Set `ANTHROPIC_API_KEY` to enable the site chatbot. It answers service
+questions from the same typed content that renders the pages
+(`lib/chat.ts` builds the grounding from `lib/content.ts`), qualifies leads
+conversationally, and — only after the visitor shares an email and agrees to
+be contacted — calls a `capture_lead` tool that writes the contact + deal into
+the CRM with a need summary and alerts the founder. Without the key, the
+widget degrades to a pointer at `/contact`.
+
+### 7. Deploy (Vercel)
 
 1. Import the repo in Vercel, set **Root Directory** to `kayjay-platform`.
 2. Add every variable from `.env.example`.
-3. `vercel.json` registers the daily nurture cron (`/api/cron/nurture`,
-   14:00 UTC). Set `CRON_SECRET` so only Vercel can invoke it.
+3. `vercel.json` registers two crons: daily nurture (`/api/cron/nurture`,
+   14:00 UTC) and the Monday ops digest (`/api/cron/weekly-digest`, 13:00 UTC).
+   Set `CRON_SECRET` so only Vercel can invoke them.
 
 ## How the CRM layer works
 
@@ -129,6 +140,24 @@ property, consent-gated, one-click unsubscribe):
 - **Revenue tracker** — add one `revenueEntry` per company per month.
 - **Gated downloads** — drop the real PDFs over the placeholders in
   `public/resources/` (keep the filenames in `lib/resources.ts`).
+
+## Operating the business with agents
+
+`.claude/agents/` (repo root) defines Claude Code agents for running the
+platform day-to-day — invoke them from any Claude Code session on this repo:
+
+- **site-content-manager** — add/update products, services, FAQs, articles,
+  ticker metrics; knows where every piece of content lives and verifies the
+  build.
+- **product-launcher** — designs and ships a new offer end-to-end: pricing
+  ladder, content entry, funnel wiring (intent → pipeline), supporting
+  resource/article, build verification.
+- **ops-analyst** — audits scoring weights, nurture timing, pipeline stages,
+  and SLAs against `docs/OPERATIONS.md` and proposes ranked optimizations.
+
+Supporting docs: `docs/OPERATIONS.md` (the ops playbook: SLAs, weekly/monthly
+rhythm, KPIs) and `docs/BUSINESS-IDEAS.md` (ranked expansion pipeline with
+revenue math and validation gates).
 
 ## Compliance
 

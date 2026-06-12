@@ -24,6 +24,15 @@ export interface TickerMetric {
   value: string;
 }
 
+/** A fixed-scope, fixed-price productized offering (vs. open-ended services). */
+export interface Product {
+  name: string;
+  price: string;
+  cadence?: "one-time" | "monthly" | "per-visit";
+  pitch: string;
+  includes: string[];
+}
+
 export interface Company {
   slug: SubsidiarySlug;
   name: string;
@@ -37,6 +46,8 @@ export interface Company {
   /** CRM pipeline this company's leads flow into. */
   pipeline: string;
   services: Service[];
+  /** Packaged offers with fixed scope and price — the storefront layer. */
+  products: Product[];
   testimonials: Testimonial[];
   faq: FaqItem[];
   externalUrl?: string;
@@ -73,6 +84,44 @@ export const COMPANIES: Company[] = [
         description: "Practical AI inside your existing tools, not a new app to learn.",
         detail:
           "Email triage, proposal drafting, meeting summaries — we wire AI into the tools your team already uses and set guardrails so output stays on-brand.",
+      },
+    ],
+    products: [
+      {
+        name: "Automation Audit Sprint",
+        price: "$497",
+        cadence: "one-time",
+        pitch:
+          "A prioritized 90-day automation roadmap delivered in five business days — credited toward any build that follows.",
+        includes: [
+          "Workflow inventory across your whole business",
+          "Hours-saved vs. effort score for every workflow",
+          "Top-3 build recommendations with tool picks",
+        ],
+      },
+      {
+        name: "Lead-Response Machine",
+        price: "$1,250",
+        cadence: "one-time",
+        pitch:
+          "Every inbound lead gets a reply in under five minutes, around the clock — built on the tools you already pay for.",
+        includes: [
+          "Instant lead routing and first-touch automation",
+          "Follow-up sequence for unanswered leads",
+          "Owner dashboard with response-time tracking",
+        ],
+      },
+      {
+        name: "Monthly Automation Club",
+        price: "$197",
+        cadence: "monthly",
+        pitch:
+          "Your automations monitored and maintained, plus one new automation shipped every month.",
+        includes: [
+          "Monitoring and same-week fixes for existing workflows",
+          "One new automation built each month",
+          "Priority email support",
+        ],
       },
     ],
     testimonials: [
@@ -132,6 +181,44 @@ export const COMPANIES: Company[] = [
           "Pre-offer walkthroughs, rental market analysis, and listing prep for owners who want professional eyes without a full-service commission.",
       },
     ],
+    products: [
+      {
+        name: "Investor Walkthrough Pack",
+        price: "$349",
+        cadence: "per-visit",
+        pitch:
+          "A diligence-grade walkthrough with full video, photo documentation, and a line-item repair budget — built for remote investors.",
+        includes: [
+          "60–90 minute on-site walkthrough with live video option",
+          "Annotated photo report within 24 hours",
+          "Contractor-grade repair estimate by category",
+        ],
+      },
+      {
+        name: "Remote Investor Concierge",
+        price: "$499",
+        cadence: "monthly",
+        pitch:
+          "Local eyes on your Des Moines portfolio every month — checks, photos, and contractor coordination without flying in.",
+        includes: [
+          "Monthly property check with photo report",
+          "Contractor bid collection and supervision",
+          "Tenant-turn walkthroughs included",
+        ],
+      },
+      {
+        name: "Listing Prep Blueprint",
+        price: "$249",
+        cadence: "one-time",
+        pitch:
+          "Know exactly what to fix, stage, and price before you list — without committing to a full-service commission.",
+        includes: [
+          "Room-by-room prep checklist with ROI ranking",
+          "Comparable analysis for pricing",
+          "Vendor shortlist for repairs and staging",
+        ],
+      },
+    ],
     testimonials: [
       {
         quote: "Their walkthrough caught a foundation issue two inspections missed.",
@@ -181,6 +268,44 @@ export const COMPANIES: Company[] = [
         description: "NNA-certified loan signing for lenders and title companies.",
         detail:
           "Error-free, on-time loan package execution with same-day scan-backs and direct status updates to your closer.",
+      },
+    ],
+    products: [
+      {
+        name: "RON Anywhere",
+        price: "$45",
+        cadence: "per-visit",
+        pitch:
+          "Same-day remote online notarization from anywhere in the US — identity-verified, recorded, and legally valid.",
+        includes: [
+          "Video notarization session, often same-day",
+          "Tamper-evident digital certificate delivered immediately",
+          "Help preparing documents before the session",
+        ],
+      },
+      {
+        name: "Loan Signing Complete",
+        price: "$150",
+        cadence: "per-visit",
+        pitch:
+          "NNA-certified loan package execution for lenders and title companies, with same-day scan-backs.",
+        includes: [
+          "Full loan package signing at the borrower's location",
+          "Same-day scan-backs to your closer",
+          "Direct status updates throughout",
+        ],
+      },
+      {
+        name: "Business Notary Plan",
+        price: "$99",
+        cadence: "monthly",
+        pitch:
+          "Priority notarization for law firms, title companies, and clinics — a notary on call without hiring one.",
+        includes: [
+          "Four notarization sessions included monthly",
+          "Priority same-day scheduling window",
+          "Monthly usage summary for your records",
+        ],
       },
     ],
     testimonials: [
@@ -237,6 +362,44 @@ export const COMPANIES: Company[] = [
         description: "Access reviews, certification, and least-privilege cleanup.",
         detail:
           "Quarterly access certification, privileged account inventory, and remediation of over-provisioned access with evidence packs for auditors.",
+      },
+    ],
+    products: [
+      {
+        name: "Identity Baseline Sprint",
+        price: "$2,500",
+        cadence: "one-time",
+        pitch:
+          "The 30-day identity baseline: SSO, enforced MFA, shared credentials retired, and the documentation insurers ask for.",
+        includes: [
+          "SSO rollout on Okta, Entra ID, or Google Workspace",
+          "MFA enforced by policy across the team",
+          "Joiner/mover/leaver checklist your office manager can run",
+        ],
+      },
+      {
+        name: "Cyber-Insurance Readiness Pack",
+        price: "$750",
+        cadence: "one-time",
+        pitch:
+          "Your renewal questionnaire answered with evidence — controls verified, gaps listed, premiums defended.",
+        includes: [
+          "Questionnaire walkthrough with evidence pack",
+          "Gap list ranked by premium impact",
+          "30-minute review call before you submit",
+        ],
+      },
+      {
+        name: "Access Review Autopilot",
+        price: "$350",
+        cadence: "monthly",
+        pitch:
+          "Quarterly access certifications run for you, with an audit trail that's always inspection-ready.",
+        includes: [
+          "Quarterly access review and certification",
+          "Privileged account inventory kept current",
+          "Remediation of over-provisioned access",
+        ],
       },
     ],
     testimonials: [

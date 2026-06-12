@@ -11,6 +11,7 @@
     "setup:hubspot": "tsx scripts/setup-hubspot.ts"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.104.1",
     "@hookform/resolvers": "^3.9.1",
     "@react-email/components": "^0.0.31",
     "@sanity/client": "^6.24.1",
