@@ -55,7 +55,7 @@ export default function PrivacyPage() {
         <section>
           <h2 className="font-serif text-2xl font-medium">Contact</h2>
           <p className="mt-3 text-muted">
-            Kalevant Group, West Des Moines, Iowa. Reach us via the contact page for
+            Kalevant Group LLC, West Des Moines, Iowa. Reach us via the contact page for
             any privacy question or request.
           </p>
         </section>

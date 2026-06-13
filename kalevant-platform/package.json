@@ -1,8 +1,8 @@
 {
-  "name": "kayjay-platform",
+  "name": "kalevant-platform",
   "version": "0.1.0",
   "private": true,
-  "description": "Kayjay Holding — multi-company platform with CRM-managed lead pipeline",
+  "description": "Kalevant Group LLC — multi-company platform with CRM-managed lead pipeline",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

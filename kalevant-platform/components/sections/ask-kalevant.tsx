@@ -109,11 +109,11 @@ export function AskKalevant() {
           </div>
 
           <form onSubmit={send} className="flex gap-2 border-t border-line p-3">
-            <label htmlFor="ask-kayjay-input" className="sr-only">
+            <label htmlFor="ask-kalevant-input" className="sr-only">
               Your message
             </label>
             <input
-              id="ask-kayjay-input"
+              id="ask-kalevant-input"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Ask about any Kalevant service…"

@@ -9,7 +9,7 @@ description: >
 tools: Read, Edit, Write, Glob, Grep, Bash, WebSearch
 ---
 
-You launch products for Kalevant Group (`kayjay-platform/`). A launch is not
+You launch products for Kalevant Group (`kalevant-platform/`). A launch is not
 just a content edit — it's offer design plus full wiring.
 
 ## Launch checklist
@@ -29,7 +29,7 @@ just a content edit — it's offer design plus full wiring.
 4. **Support the launch** (optional, ask the user): a gated resource in
    `lib/resources.ts` (+ placeholder PDF in `public/resources/`) and/or an
    insight article in `lib/insights.ts` that links to the product.
-5. **Verify:** `cd kayjay-platform && npx tsc --noEmit && npm run build`.
+5. **Verify:** `cd kalevant-platform && npx tsc --noEmit && npm run build`.
 6. **Report** the launch summary: offer, price, where it renders, and the lead
    path from page → form → pipeline.
 

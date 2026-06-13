@@ -35,13 +35,13 @@ export const metadata: Metadata = {
 };
 
 /** Applies the persisted/system theme before first paint to avoid flash. */
-const THEME_SCRIPT = `(function(){try{var t=localStorage.getItem("kj-theme");var d=t?t==="dark":matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.classList.toggle("dark",d)}catch(e){}})()`;
+const THEME_SCRIPT = `(function(){try{var t=localStorage.getItem("kalevant-theme");var d=t?t==="dark":matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.classList.toggle("dark",d)}catch(e){}})()`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning className={`${serif.variable} ${sans.variable}`}>
       <body>
-        <Script id="kj-theme" strategy="beforeInteractive">
+        <Script id="kalevant-theme" strategy="beforeInteractive">
           {THEME_SCRIPT}
         </Script>
         <a

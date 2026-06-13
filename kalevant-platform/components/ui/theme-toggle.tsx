@@ -16,7 +16,7 @@ export function ThemeToggle() {
   function toggle() {
     const next = !document.documentElement.classList.contains("dark");
     document.documentElement.classList.toggle("dark", next);
-    localStorage.setItem("kj-theme", next ? "dark" : "light");
+    localStorage.setItem("kalevant-theme", next ? "dark" : "light");
     setDark(next);
   }
 

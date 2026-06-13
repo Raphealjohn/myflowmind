@@ -1,7 +1,7 @@
 import type { UtmParams } from "@/lib/crm/types";
 
-export const UTM_COOKIE = "kj_utm";
-export const RETURN_VISIT_COOKIE = "kj_seen";
+export const UTM_COOKIE = "kv_utm";
+export const RETURN_VISIT_COOKIE = "kv_seen";
 
 const UTM_KEYS = [
   "utm_source",

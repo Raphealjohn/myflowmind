@@ -25,7 +25,7 @@ Security Consulting (architecture scales to N subsidiaries — add an entry to
 ## Quick start
 
 ```bash
-cd kayjay-platform
+cd kalevant-platform
 npm install
 cp .env.example .env.local   # fill in what you have; everything degrades gracefully
 npm run dev
@@ -76,7 +76,7 @@ its secret to `CALCOM_WEBHOOK_SECRET`. Each booking upserts the contact
 The site works without Sanity. To make content editable:
 
 1. `npm create sanity@latest` in a sibling folder, choose a clean project.
-2. Import the schema types from `kayjay-platform/sanity/schemas`.
+2. Import the schema types from `kalevant-platform/sanity/schemas`.
 3. Set `NEXT_PUBLIC_SANITY_PROJECT_ID` / `NEXT_PUBLIC_SANITY_DATASET`.
 4. Seed documents for the four companies, ticker metrics, articles, and
    monthly `revenueEntry` documents (these power the $1M pace tracker).
@@ -100,7 +100,7 @@ widget degrades to a pointer at `/contact`.
 
 ### 7. Deploy (Vercel)
 
-1. Import the repo in Vercel, set **Root Directory** to `kayjay-platform`.
+1. Import the repo in Vercel, set **Root Directory** to `kalevant-platform`.
 2. Add every variable from `.env.example`.
 3. `vercel.json` registers two crons: daily nurture (`/api/cron/nurture`,
    14:00 UTC) and the Monday ops digest (`/api/cron/weekly-digest`, 13:00 UTC).
@@ -109,9 +109,9 @@ widget degrades to a pointer at `/contact`.
    in Vercel → Domains; point `kalevantgroup.com` at `kalevant.com` so Vercel
    issues the 301. `next.config.mjs` also carries a host redirect as a backstop.
 
-> Note: the project directory is still named `kayjay-platform/` (internal path
+> Note: the project directory is still named `kalevant-platform/` (internal path
 > only — not user-visible). Rename it to `kalevant-platform/` if you prefer; if
-> you do, update the Vercel root directory and the `kayjay-platform` references
+> you do, update the Vercel root directory and the `kalevant-platform` references
 > in the agent files and docs.
 
 ## How the CRM layer works

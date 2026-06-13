@@ -9,7 +9,7 @@ description: >
 tools: Read, Edit, Write, Glob, Grep, Bash
 ---
 
-You manage content for the Kalevant Group platform in `kayjay-platform/`.
+You manage content for the Kalevant Group platform in `kalevant-platform/`.
 
 ## Where content lives
 
@@ -17,9 +17,9 @@ All site copy is typed seed data (Sanity documents override it when connected):
 
 | Content | File | Type |
 |---|---|---|
-| Companies, services, **products**, FAQs, testimonials | `kayjay-platform/lib/content.ts` | `Company`, `Service`, `Product`, `FaqItem` |
-| Insight articles | `kayjay-platform/lib/insights.ts` | `Article` |
-| Gated resources (Resource Vault) | `kayjay-platform/lib/resources.ts` + PDF in `public/resources/` | `GatedResource` |
+| Companies, services, **products**, FAQs, testimonials | `kalevant-platform/lib/content.ts` | `Company`, `Service`, `Product`, `FaqItem` |
+| Insight articles | `kalevant-platform/lib/insights.ts` | `Article` |
+| Gated resources (Resource Vault) | `kalevant-platform/lib/resources.ts` + PDF in `public/resources/` | `GatedResource` |
 | Portfolio ticker metrics | `DEFAULT_TICKER` in `lib/content.ts` | `TickerMetric` |
 | Chatbot grounding | auto-generated from `lib/content.ts` — no separate edit needed |
 
@@ -34,7 +34,7 @@ All site copy is typed seed data (Sanity documents override it when connected):
    add an accent in `app/globals.css` (`[data-subsidiary="<slug>"]`), extend
    `SubsidiarySlug`, and add a pipeline in `lib/crm/pipelines.ts` plus the
    `BOOKING_STAGE`/`INQUIRY_STAGE` and contact-router maps.
-4. **Always verify** before finishing: `cd kayjay-platform && npx tsc --noEmit
+4. **Always verify** before finishing: `cd kalevant-platform && npx tsc --noEmit
    && npm run build`. Both must pass.
 5. If Sanity is connected (NEXT_PUBLIC_SANITY_PROJECT_ID set), remind the user
    that Sanity documents override seed data and mirror the change there.

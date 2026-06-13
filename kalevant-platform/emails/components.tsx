@@ -39,7 +39,7 @@ export function EmailShell({
           <Section>{children}</Section>
           <Hr style={styles.hr} />
           <Text style={styles.footer}>
-            Kalevant Group · West Des Moines, Iowa
+            Kalevant Group LLC · West Des Moines, Iowa
             {unsubscribeUrl ? (
               <>
                 {" · "}

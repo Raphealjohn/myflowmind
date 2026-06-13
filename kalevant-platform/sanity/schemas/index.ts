@@ -3,7 +3,7 @@
  * Written as plain schema objects so this package doesn't depend on the
  * `sanity` studio toolkit — drop the array into a studio's schema config:
  *
- *   import { schemaTypes } from "../kayjay-platform/sanity/schemas";
+ *   import { schemaTypes } from "../kalevant-platform/sanity/schemas";
  *   export default defineConfig({ ..., schema: { types: schemaTypes } });
  */
 

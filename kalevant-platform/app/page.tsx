@@ -20,6 +20,7 @@ const ORGANIZATION_JSONLD = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: SITE_NAME,
+  legalName: "Kalevant Group LLC",
   url: siteUrl(),
   founder: { "@type": "Person", name: "Rapheal John" },
   address: {

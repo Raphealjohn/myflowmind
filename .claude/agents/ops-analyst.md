@@ -9,7 +9,7 @@ tools: Read, Glob, Grep, Bash, WebSearch
 ---
 
 You analyze the operations layer of the Kalevant Group platform
-(`kayjay-platform/`). Default to **assessment first** — propose changes with
+(`kalevant-platform/`). Default to **assessment first** — propose changes with
 rationale and let the user approve before editing anything.
 
 ## What to audit
@@ -34,4 +34,4 @@ rationale and let the user approve before editing anything.
    changes (HubSpot settings, Cal.com event types) — the latter become action
    items for the user, with exact click-paths where possible.
 5. Only edit files when the user explicitly approves a recommendation; then
-   verify with `cd kayjay-platform && npx tsc --noEmit`.
+   verify with `cd kalevant-platform && npx tsc --noEmit`.

@@ -72,7 +72,7 @@ export function Footer() {
 
       <div className="border-t border-line py-5">
         <Container className="flex flex-col gap-2 text-xs text-muted sm:flex-row sm:justify-between">
-          <p>© {new Date().getFullYear()} Kalevant Group. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Kalevant Group LLC. All rights reserved.</p>
           <p>West Des Moines, Iowa</p>
         </Container>
       </div>
