@@ -26,7 +26,7 @@ export default function ResourceFollowup({
         stuck. I&apos;ll point you in the right direction whether or not we end up
         working together.
       </P>
-      <P>— Rapheal John, Founder, Kayjay Holding</P>
+      <P>— Rapheal John, Founder, Kalevant Group</P>
     </EmailShell>
   );
 }

@@ -1,10 +1,10 @@
-# Kayjay Holding Platform (v2 — CRM Edition)
+# Kalevant Group Platform (v2 — CRM Edition)
 
-Multi-company platform for **Kayjay Holding** (West Des Moines, Iowa): a parent
+Multi-company platform for **Kalevant Group** (West Des Moines, Iowa): a parent
 brand site, four subsidiary microsites, and a CRM-managed lead pipeline — every
 form on the site captures, scores, and routes visitors into HubSpot.
 
-**Companies:** MyFlowMind · Kayjay Realty · Kayjay Notary Services · Kayjay
+**Companies:** MyFlowMind · Kalevant Realty · Kalevant Notary Services · Kalevant
 Security Consulting (architecture scales to N subsidiaries — add an entry to
 `lib/content.ts` or a `company` document in Sanity).
 
@@ -88,7 +88,7 @@ Set `NEXTAUTH_SECRET` (`openssl rand -base64 32`), `NEXTAUTH_URL`,
 subsidiary, leads this week vs last, hot leads with one-click email, and
 revenue pace against the $1M annual goal.
 
-### 6. "Ask Kayjay" assistant (Anthropic API)
+### 6. "Ask Kalevant" assistant (Anthropic API)
 
 Set `ANTHROPIC_API_KEY` to enable the site chatbot. It answers service
 questions from the same typed content that renders the pages
@@ -105,6 +105,14 @@ widget degrades to a pointer at `/contact`.
 3. `vercel.json` registers two crons: daily nurture (`/api/cron/nurture`,
    14:00 UTC) and the Monday ops digest (`/api/cron/weekly-digest`, 13:00 UTC).
    Set `CRON_SECRET` so only Vercel can invoke them.
+4. **Domains:** add `kalevant.com` (primary) and `kalevantgroup.com` (secondary)
+   in Vercel → Domains; point `kalevantgroup.com` at `kalevant.com` so Vercel
+   issues the 301. `next.config.mjs` also carries a host redirect as a backstop.
+
+> Note: the project directory is still named `kayjay-platform/` (internal path
+> only — not user-visible). Rename it to `kalevant-platform/` if you prefer; if
+> you do, update the Vercel root directory and the `kayjay-platform` references
+> in the agent files and docs.
 
 ## How the CRM layer works
 

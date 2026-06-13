@@ -17,7 +17,7 @@ export default function PrivacyPage() {
         <section>
           <h2 className="font-serif text-2xl font-medium">What we collect</h2>
           <p className="mt-3 text-muted">
-            When you submit a form, book an appointment, subscribe to The Kayjay
+            When you submit a form, book an appointment, subscribe to The Kalevant
             Brief, or download a gated resource, we collect the information you
             provide: name, email address, phone number, company, and your message.
             We also record the page you submitted from and, if you arrived from a
@@ -55,7 +55,7 @@ export default function PrivacyPage() {
         <section>
           <h2 className="font-serif text-2xl font-medium">Contact</h2>
           <p className="mt-3 text-muted">
-            Kayjay Holding, West Des Moines, Iowa. Reach us via the contact page for
+            Kalevant Group, West Des Moines, Iowa. Reach us via the contact page for
             any privacy question or request.
           </p>
         </section>

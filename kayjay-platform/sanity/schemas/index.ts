@@ -1,5 +1,5 @@
 /**
- * Sanity schema definitions for the Kayjay Studio.
+ * Sanity schema definitions for the Kalevant Studio.
  * Written as plain schema objects so this package doesn't depend on the
  * `sanity` studio toolkit — drop the array into a studio's schema config:
  *
@@ -10,9 +10,9 @@
 const SUBSIDIARY_OPTIONS = {
   list: [
     { title: "MyFlowMind", value: "myflowmind" },
-    { title: "Kayjay Realty", value: "realty" },
-    { title: "Kayjay Notary", value: "notary" },
-    { title: "Kayjay Security", value: "security" },
+    { title: "Kalevant Realty", value: "realty" },
+    { title: "Kalevant Notary", value: "notary" },
+    { title: "Kalevant Security", value: "security" },
     { title: "General / Parent", value: "general" },
   ],
 };

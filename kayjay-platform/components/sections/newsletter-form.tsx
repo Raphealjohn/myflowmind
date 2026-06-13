@@ -75,7 +75,7 @@ export function NewsletterForm() {
           className="mt-0.5 h-3.5 w-3.5 rounded border-line"
         />
         <label htmlFor="newsletter-consent" className="text-xs text-muted">
-          I agree to receive The Kayjay Brief. Unsubscribe anytime.
+          I agree to receive The Kalevant Brief. Unsubscribe anytime.
         </label>
       </div>
       {error ? (

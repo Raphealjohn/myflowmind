@@ -20,7 +20,7 @@ export const PIPELINES: PipelineDefinition[] = [
   },
   {
     key: "realty",
-    label: "Kayjay Realty",
+    label: "Kalevant Realty",
     stages: [
       { id: "re_inquiry", label: "Inquiry" },
       { id: "re_qualification", label: "Qualification" },
@@ -31,7 +31,7 @@ export const PIPELINES: PipelineDefinition[] = [
   },
   {
     key: "notary",
-    label: "Kayjay Notary",
+    label: "Kalevant Notary",
     stages: [
       { id: "no_request", label: "Request" },
       { id: "no_scheduled", label: "Scheduled" },
@@ -41,7 +41,7 @@ export const PIPELINES: PipelineDefinition[] = [
   },
   {
     key: "security",
-    label: "Kayjay Security",
+    label: "Kalevant Security",
     stages: [
       { id: "sec_inquiry", label: "Inquiry" },
       { id: "sec_scoping", label: "Scoping Call" },

@@ -19,7 +19,7 @@ const HUBSPOT_BASE = "https://api.hubapi.com";
  * `npm run setup:hubspot` — see scripts/setup-hubspot.ts.
  */
 export const CUSTOM_CONTACT_PROPERTIES = [
-  "kayjay_subsidiary",
+  "kalevant_subsidiary",
   "lead_source_page",
   "lead_intent",
   "lead_score",
@@ -59,7 +59,7 @@ async function hubspotRequest<T>(
 function leadToProperties(lead: ScoredLead): Record<string, string> {
   const props: Record<string, string> = {
     email: lead.email,
-    kayjay_subsidiary: lead.subsidiary,
+    kalevant_subsidiary: lead.subsidiary,
     lead_source_page: lead.sourcePage,
     lead_intent: lead.intent,
     lead_score: String(lead.score),
@@ -189,7 +189,7 @@ export class HubspotCrm implements CrmProvider {
         email: string;
         firstname?: string;
         lead_score?: string;
-        kayjay_subsidiary?: string;
+        kalevant_subsidiary?: string;
         createdate?: string;
       }>
     >("/crm/v3/objects/contacts/search", {
@@ -206,7 +206,7 @@ export class HubspotCrm implements CrmProvider {
             ],
           },
         ],
-        properties: ["email", "firstname", "lead_score", "kayjay_subsidiary", "createdate"],
+        properties: ["email", "firstname", "lead_score", "kalevant_subsidiary", "createdate"],
         sorts: [{ propertyName: "createdate", direction: "DESCENDING" }],
         limit: 100,
       }),
@@ -215,7 +215,7 @@ export class HubspotCrm implements CrmProvider {
       email: r.properties.email,
       firstName: r.properties.firstname,
       score: Number(r.properties.lead_score) || 0,
-      subsidiary: (r.properties.kayjay_subsidiary as CrmContactSummary["subsidiary"]) ?? "general",
+      subsidiary: (r.properties.kalevant_subsidiary as CrmContactSummary["subsidiary"]) ?? "general",
       createdAt: r.properties.createdate ?? r.createdAt ?? "",
     }));
   }
@@ -230,7 +230,7 @@ export class HubspotCrm implements CrmProvider {
   async getNurtureCandidates(query: NurtureQuery): Promise<NurtureCandidate[]> {
     const now = Date.now();
     const baseFilters = [
-      { propertyName: "kayjay_subsidiary", operator: "EQ", value: query.subsidiary },
+      { propertyName: "kalevant_subsidiary", operator: "EQ", value: query.subsidiary },
       ...(query.intent
         ? [{ propertyName: "lead_intent", operator: "EQ", value: query.intent }]
         : []),

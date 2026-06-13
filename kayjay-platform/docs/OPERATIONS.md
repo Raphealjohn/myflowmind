@@ -1,4 +1,4 @@
-# Kayjay Holding — Operations Playbook
+# Kalevant Group — Operations Playbook
 
 One owner, four companies. This playbook makes the platform run the operations
 so the founder runs the businesses. It is the reference the `ops-analyst`
@@ -54,7 +54,7 @@ agent audits against.
   Realty walkthrough offer. Security onboarding clients → MyFlowMind audit
   (access cleanup always surfaces process mess). Add these as manual HubSpot
   tasks on deal close until volume justifies automation.
-- **Chatbot as tier-0 support.** Ask Kayjay answers service questions from the
+- **Chatbot as tier-0 support.** Ask Kalevant answers service questions from the
   same content that renders the site — keeping `lib/content.ts` accurate IS
   the support knowledge base.
 

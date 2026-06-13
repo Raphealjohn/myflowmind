@@ -6,7 +6,7 @@ import { Reveal } from "@/components/sections/reveal";
 export const metadata: Metadata = {
   title: "Companies",
   description:
-    "The Kayjay Holding portfolio: MyFlowMind, Kayjay Realty, Kayjay Notary Services, and Kayjay Security Consulting.",
+    "The Kalevant Group portfolio: MyFlowMind, Kalevant Realty, Kalevant Notary Services, and Kalevant Security Consulting.",
   alternates: { canonical: "/companies" },
 };
 
@@ -19,7 +19,7 @@ export default function CompaniesPage() {
           Companies built to be kept, not flipped.
         </h1>
         <p className="mt-6 max-w-xl text-lg text-muted">
-          Each Kayjay company serves its own customers under its own brand — and is
+          Each Kalevant company serves its own customers under its own brand — and is
           held to the parent standard for responsiveness, transparency, and craft.
         </p>
       </Reveal>

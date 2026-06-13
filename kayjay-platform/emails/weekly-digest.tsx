@@ -26,7 +26,7 @@ export default function WeeklyDigest({
   return (
     <EmailShell preview={`Week in review: ${leadsThisWeek} leads, ${usd.format(totalValue)} in pipeline`}>
       <P>
-        <strong>Kayjay week in review</strong>
+        <strong>Kalevant week in review</strong>
       </P>
       <P>
         Leads: <strong>{leadsThisWeek}</strong> this week vs. {leadsLastWeek} last week

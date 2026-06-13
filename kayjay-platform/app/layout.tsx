@@ -4,7 +4,7 @@ import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import { Nav } from "@/components/sections/nav";
 import { Footer } from "@/components/sections/footer";
-import { AskKayjay } from "@/components/sections/ask-kayjay";
+import { AskKalevant } from "@/components/sections/ask-kalevant";
 import { SITE_DESCRIPTION, SITE_NAME, siteUrl } from "@/lib/site";
 import "./globals.css";
 
@@ -53,7 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Nav />
         <main id="main">{children}</main>
         <Footer />
-        <AskKayjay />
+        <AskKalevant />
         <Analytics />
       </body>
     </html>

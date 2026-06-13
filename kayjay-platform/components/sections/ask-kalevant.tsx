@@ -10,10 +10,10 @@ interface ChatMessage {
 const OPENER: ChatMessage = {
   role: "assistant",
   content:
-    "Hi — I'm Ask Kayjay. I can answer questions about workflow automation, real estate, notarization, or security consulting, and connect you with Rapheal if you'd like. What brings you here?",
+    "Hi — I'm Ask Kalevant. I can answer questions about workflow automation, real estate, notarization, or security consulting, and connect you with Rapheal if you'd like. What brings you here?",
 };
 
-export function AskKayjay() {
+export function AskKalevant() {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([OPENER]);
   const [input, setInput] = useState("");
@@ -72,12 +72,12 @@ export function AskKayjay() {
     <div className="fixed bottom-5 right-5 z-50">
       {open ? (
         <section
-          aria-label="Ask Kayjay chat"
+          aria-label="Ask Kalevant chat"
           className="mb-3 flex h-[28rem] w-[calc(100vw-2.5rem)] max-w-sm flex-col overflow-hidden rounded-2xl border border-line bg-surface shadow-xl"
         >
           <header className="flex items-center justify-between border-b border-line px-4 py-3">
             <p className="font-serif text-base font-semibold">
-              Ask Kayjay<span className="text-gold">.</span>
+              Ask Kalevant<span className="text-gold">.</span>
             </p>
             <button
               type="button"
@@ -116,7 +116,7 @@ export function AskKayjay() {
               id="ask-kayjay-input"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="Ask about any Kayjay service…"
+              placeholder="Ask about any Kalevant service…"
               maxLength={2000}
               className="w-full rounded-full border border-line bg-paper px-4 py-2 text-sm placeholder:text-muted"
             />
@@ -142,7 +142,7 @@ export function AskKayjay() {
         className="ml-auto flex items-center gap-2 rounded-full bg-ink px-5 py-3 text-sm font-medium text-paper shadow-lg transition-transform hover:-translate-y-0.5 dark:bg-paper dark:text-ink"
       >
         <span aria-hidden="true" className="inline-block h-2 w-2 rounded-full bg-gold" />
-        Ask Kayjay
+        Ask Kalevant
       </button>
     </div>
   );

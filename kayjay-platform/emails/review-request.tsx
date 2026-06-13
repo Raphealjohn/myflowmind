@@ -13,12 +13,12 @@ export default function ReviewRequest({
 }) {
   return (
     <EmailShell
-      preview="Thanks for choosing Kayjay Notary — one quick favor"
+      preview="Thanks for choosing Kalevant Notary — one quick favor"
       unsubscribeUrl={unsubscribeUrl}
     >
       <P>Hi {firstName ?? "there"},</P>
       <P>
-        Thanks for trusting Kayjay Notary with your documents. If everything went
+        Thanks for trusting Kalevant Notary with your documents. If everything went
         smoothly, a short Google review helps other people in the Des Moines area
         find us — it takes about a minute.
       </P>

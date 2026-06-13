@@ -42,7 +42,7 @@ export function BentoGrid() {
         <div className="flex h-full min-h-[14rem] flex-col justify-center rounded-2xl border border-dashed border-line p-6 text-center sm:p-8">
           <p className="font-serif text-xl text-muted">What&apos;s next</p>
           <p className="mt-2 text-sm text-muted">
-            The next Kayjay company is already in diligence.
+            The next Kalevant company is already in diligence.
           </p>
         </div>
       </Reveal>

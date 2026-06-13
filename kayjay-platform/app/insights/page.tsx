@@ -90,7 +90,7 @@ export default async function InsightsPage({ searchParams }: Props) {
         ) : null}
       </div>
 
-      {/* The Kayjay Brief */}
+      {/* The Kalevant Brief */}
       <Reveal>
         <section
           aria-labelledby="brief-heading"
@@ -99,7 +99,7 @@ export default async function InsightsPage({ searchParams }: Props) {
           <div className="grid items-center gap-8 md:grid-cols-2">
             <div>
               <h2 id="brief-heading" className="font-serif text-display-md font-medium">
-                The Kayjay Brief
+                The Kalevant Brief
               </h2>
               <p className="mt-3 max-w-md text-muted">
                 One email a month: what we automated, bought, fixed, or learned across

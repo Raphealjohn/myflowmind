@@ -48,7 +48,7 @@ export default function CompanyPage({ params }: Props) {
     name: company.name,
     description: company.summary,
     url: `${siteUrl()}/companies/${company.slug}`,
-    parentOrganization: { "@type": "Organization", name: "Kayjay Holding" },
+    parentOrganization: { "@type": "Organization", name: "Kalevant Group" },
     address: {
       "@type": "PostalAddress",
       addressLocality: "West Des Moines",
@@ -70,7 +70,7 @@ export default function CompanyPage({ params }: Props) {
           <Reveal>
             <p className="eyebrow flex items-center gap-2">
               <span aria-hidden="true" className="inline-block h-2 w-2 rounded-full bg-accent" />
-              A Kayjay Holding company
+              A Kalevant Company
             </p>
             <h1 className="mt-6 max-w-4xl font-serif text-display-lg font-medium">
               {company.name}

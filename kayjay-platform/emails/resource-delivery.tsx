@@ -31,7 +31,7 @@ export default function ResourceDelivery({
         Questions while working through it? Reply to this email — it goes straight
         to me.
       </P>
-      <P>— Rapheal John, Founder, Kayjay Holding</P>
+      <P>— Rapheal John, Founder, Kalevant Group</P>
     </EmailShell>
   );
 }

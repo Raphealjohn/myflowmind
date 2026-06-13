@@ -96,7 +96,7 @@ export default function HomePage() {
               “I build companies I&apos;d want to be a customer of.”
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted">
-              Kayjay Holding exists because small businesses deserve operators who
+              Kalevant Group exists because small businesses deserve operators who
               answer their own phone. Every company in this portfolio is run with the
               same rule: do the work as if the client can see everything — because
               here, they can.

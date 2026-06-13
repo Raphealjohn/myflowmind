@@ -1,4 +1,4 @@
-# Kayjay Holding — Business Opportunity Pipeline
+# Kalevant Group — Business Opportunity Pipeline
 
 Researched expansion ideas, ranked by fit with existing assets (CRM machinery,
 Des Moines presence, the four operating companies) and by revenue-per-founder-
@@ -18,7 +18,7 @@ the MRR base that makes the $1M goal a math problem instead of a hunt.
 **Revenue math:** 20 recurring clients across the four plans ≈ $5.6k MRR ≈
 $67k/yr before any one-time engagements.
 
-### 2. ✅ "Ask Kayjay" AI concierge as a 24/7 sales rep
+### 2. ✅ "Ask Kalevant" AI concierge as a 24/7 sales rep
 **Idea:** Site chatbot grounded in real service data that qualifies leads and
 writes them into the CRM with a summary (implemented: `/api/chat` + widget).
 **Why lucrative:** After-hours visitors currently bounce; the bot converts
@@ -76,10 +76,10 @@ MyFlowMind's automation pipeline.
 **Validate:** 3 paying pilots from the existing MyFlowMind client base before
 productizing.
 
-### 8. 🧭 Mid-term rental arm under Kayjay Realty
+### 8. 🧭 Mid-term rental arm under Kalevant Realty
 **Idea:** Furnished 1–6 month rentals targeting traveling nurses (Des Moines
 has three major hospital systems) and insurance-relocation placements, managed
-on properties Kayjay acquires or co-manages.
+on properties Kalevant acquires or co-manages.
 **Why lucrative:** Mid-term rents typically run 1.5–2× unfurnished long-term
 rent with lower turnover than short-term; insurance placements pay premium
 rates. Synergy: notary handles leases, security handles smart-lock/access

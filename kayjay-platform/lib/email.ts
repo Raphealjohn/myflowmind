@@ -15,7 +15,7 @@ function getResend(): Resend {
 }
 
 export const FROM_ADDRESS =
-  process.env.EMAIL_FROM ?? "Kayjay Holding <hello@kayjayholding.com>";
+  process.env.EMAIL_FROM ?? "Kalevant Group <hello@kalevant.com>";
 
 export const FOUNDER_EMAIL = process.env.FOUNDER_EMAIL ?? "raphealjohn77@gmail.com";
 

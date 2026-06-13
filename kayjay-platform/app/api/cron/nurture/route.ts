@@ -43,7 +43,7 @@ const SEQUENCES: SequenceConfig[] = [
       minAgeHours: 24,
       maxAgeHours: 24 * 14,
     },
-    subject: "Thanks for choosing Kayjay Notary — one quick favor",
+    subject: "Thanks for choosing Kalevant Notary — one quick favor",
     render: (c) =>
       ReviewRequest({
         firstName: c.firstName,

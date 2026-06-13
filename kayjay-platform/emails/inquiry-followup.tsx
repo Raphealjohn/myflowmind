@@ -29,7 +29,7 @@ export default function InquiryFollowup({
         I&apos;ll tell you whether automation is worth it for your workflows — honestly,
         including when it isn&apos;t.
       </P>
-      <P>— Rapheal John, Founder, Kayjay Holding</P>
+      <P>— Rapheal John, Founder, Kalevant Group</P>
     </EmailShell>
   );
 }

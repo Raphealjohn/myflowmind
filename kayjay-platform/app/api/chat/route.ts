@@ -36,7 +36,7 @@ const captureLeadInputSchema = z.object({
 const CAPTURE_LEAD_TOOL: Anthropic.Tool = {
   name: "capture_lead",
   description:
-    "Write a qualified lead into the Kayjay CRM. Call this ONLY after the visitor has explicitly shared their email address in this conversation AND agreed to be contacted. The summary should capture what they need, in one or two sentences, so the founder can reply usefully.",
+    "Write a qualified lead into the Kalevant CRM. Call this ONLY after the visitor has explicitly shared their email address in this conversation AND agreed to be contacted. The summary should capture what they need, in one or two sentences, so the founder can reply usefully.",
   input_schema: {
     type: "object",
     properties: {
@@ -45,7 +45,7 @@ const CAPTURE_LEAD_TOOL: Anthropic.Tool = {
       subsidiary: {
         type: "string",
         enum: ["myflowmind", "realty", "notary", "security", "general"],
-        description: "Which Kayjay company the need belongs to",
+        description: "Which Kalevant company the need belongs to",
       },
       summary: {
         type: "string",
@@ -92,14 +92,14 @@ async function executeCaptureLead(rawInput: unknown, sourcePage: string): Promis
         contactEmail: input.email,
         pipeline: input.subsidiary,
         stageId: INQUIRY_STAGE[input.subsidiary],
-        name: `Ask Kayjay lead — ${input.name ?? input.email}`,
+        name: `Ask Kalevant lead — ${input.name ?? input.email}`,
       });
     }
     // Chat leads always alert the founder — a visitor who talked to the bot
     // and left an email is warm regardless of score.
     await sendEmail({
       to: FOUNDER_EMAIL,
-      subject: `💬 Ask Kayjay lead: ${input.email} (${input.subsidiary})`,
+      subject: `💬 Ask Kalevant lead: ${input.email} (${input.subsidiary})`,
       react: HotLeadAlert({ lead: { ...scored, message: input.summary } }),
     });
     return `Lead captured successfully for ${input.email}. Tell the visitor Rapheal will reply within one business day.`;

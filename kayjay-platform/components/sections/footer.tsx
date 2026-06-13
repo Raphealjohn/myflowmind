@@ -9,7 +9,7 @@ export function Footer() {
       <Container className="grid gap-12 py-14 md:grid-cols-[2fr_1fr_1fr_2fr]">
         <div>
           <p className="font-serif text-lg font-semibold">
-            Kayjay<span className="text-gold">.</span>
+            Kalevant<span className="text-gold">.</span>
           </p>
           <p className="mt-3 max-w-xs text-sm text-muted">
             A holding company in West Des Moines, Iowa — operating businesses in
@@ -31,7 +31,7 @@ export function Footer() {
         </nav>
 
         <nav aria-label="Company">
-          <p className="eyebrow mb-3">Kayjay</p>
+          <p className="eyebrow mb-3">Kalevant</p>
           <ul className="space-y-2 text-sm">
             <li>
               <Link href="/about" className="text-muted hover:text-ink">
@@ -62,7 +62,7 @@ export function Footer() {
         </nav>
 
         <div>
-          <p className="eyebrow mb-3">The Kayjay Brief</p>
+          <p className="eyebrow mb-3">The Kalevant Brief</p>
           <p className="mb-4 text-sm text-muted">
             One email a month on building and operating small companies. No noise.
           </p>
@@ -72,7 +72,7 @@ export function Footer() {
 
       <div className="border-t border-line py-5">
         <Container className="flex flex-col gap-2 text-xs text-muted sm:flex-row sm:justify-between">
-          <p>© {new Date().getFullYear()} Kayjay Holding. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Kalevant Group. All rights reserved.</p>
           <p>West Des Moines, Iowa</p>
         </Container>
       </div>

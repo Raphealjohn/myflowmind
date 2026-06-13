@@ -16,9 +16,9 @@ export default function TermsPage() {
         <section>
           <h2 className="font-serif text-2xl font-medium">Who we are</h2>
           <p className="mt-3 text-muted">
-            This website is operated by Kayjay Holding of West Des Moines, Iowa, on
-            behalf of its operating companies: MyFlowMind, Kayjay Realty, Kayjay
-            Notary Services, and Kayjay Security Consulting. Services are provided
+            This website is operated by Kalevant Group of West Des Moines, Iowa, on
+            behalf of its operating companies: MyFlowMind, Kalevant Realty, Kalevant
+            Notary Services, and Kalevant Security Consulting. Services are provided
             by the individual operating company you engage, under its own service
             agreement.
           </p>
@@ -37,7 +37,7 @@ export default function TermsPage() {
           <h2 className="font-serif text-2xl font-medium">Intellectual property</h2>
           <p className="mt-3 text-muted">
             All content, branding, and downloadable resources on this site belong to
-            Kayjay Holding or its operating companies. Gated resources are licensed
+            Kalevant Group or its operating companies. Gated resources are licensed
             for your internal business use and may not be resold or redistributed.
           </p>
         </section>
@@ -45,7 +45,7 @@ export default function TermsPage() {
           <h2 className="font-serif text-2xl font-medium">Limitation of liability</h2>
           <p className="mt-3 text-muted">
             The site is provided as-is. To the maximum extent permitted by Iowa law,
-            Kayjay Holding is not liable for indirect or consequential damages
+            Kalevant Group is not liable for indirect or consequential damages
             arising from use of this website. Engagements with operating companies
             are governed by their individual agreements.
           </p>

@@ -152,12 +152,12 @@ export const COMPANIES: Company[] = [
   },
   {
     slug: "realty",
-    name: "Kayjay Realty",
+    name: "Kalevant Realty",
     tagline: "Real estate development and property services",
     summary:
       "Acquisition, development, and property services across the Des Moines metro.",
     positioning:
-      "Kayjay Realty acquires, improves, and manages residential property in central Iowa — and offers the same diligence-grade walkthroughs and market analysis to clients buying or selling on their own.",
+      "Kalevant Realty acquires, improves, and manages residential property in central Iowa — and offers the same diligence-grade walkthroughs and market analysis to clients buying or selling on their own.",
     accentHex: "#2D6A4F",
     ctaLabel: "Request a consultation",
     pipeline: "realty",
@@ -241,12 +241,12 @@ export const COMPANIES: Company[] = [
   },
   {
     slug: "notary",
-    name: "Kayjay Notary Services",
+    name: "Kalevant Notary Services",
     tagline: "Mobile and remote online notarization",
     summary:
       "Same-week mobile notary visits and remote online notarization, evenings and weekends included.",
     positioning:
-      "Loan signings, estate documents, power of attorney — notarized where you are. Kayjay Notary serves the Des Moines metro in person and all of Iowa via remote online notarization.",
+      "Loan signings, estate documents, power of attorney — notarized where you are. Kalevant Notary serves the Des Moines metro in person and all of Iowa via remote online notarization.",
     accentHex: "#1B3A6B",
     ctaLabel: "Book a notarization",
     pipeline: "notary",
@@ -335,12 +335,12 @@ export const COMPANIES: Company[] = [
   },
   {
     slug: "security",
-    name: "Kayjay Security Consulting",
+    name: "Kalevant Security Consulting",
     tagline: "IAM, identity governance, and SMB security onboarding",
     summary:
       "Identity and access management for small businesses that have outgrown shared passwords.",
     positioning:
-      "Most breaches start with identity. Kayjay Security designs and implements IAM and identity governance for small and mid-size businesses — least-privilege access, clean joiner/mover/leaver processes, and an audit trail you can actually show an insurer.",
+      "Most breaches start with identity. Kalevant Security designs and implements IAM and identity governance for small and mid-size businesses — least-privilege access, clean joiner/mover/leaver processes, and an audit trail you can actually show an insurer.",
     accentHex: "#5E6E82",
     ctaLabel: "Schedule a scoping call",
     pipeline: "security",

@@ -35,11 +35,11 @@ export function EmailShell({
       <Preview>{preview}</Preview>
       <Body style={styles.body}>
         <Container style={styles.container}>
-          <Text style={styles.brand}>Kayjay Holding</Text>
+          <Text style={styles.brand}>Kalevant Group</Text>
           <Section>{children}</Section>
           <Hr style={styles.hr} />
           <Text style={styles.footer}>
-            Kayjay Holding · West Des Moines, Iowa
+            Kalevant Group · West Des Moines, Iowa
             {unsubscribeUrl ? (
               <>
                 {" · "}

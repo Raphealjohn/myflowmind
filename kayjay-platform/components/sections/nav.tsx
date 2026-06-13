@@ -44,7 +44,7 @@ export function Nav() {
     >
       <Container className="flex items-center justify-between gap-4">
         <Link href="/" className="font-serif text-lg font-semibold tracking-tight">
-          Kayjay<span className="text-accent">.</span>
+          Kalevant<span className="text-accent">.</span>
         </Link>
 
         <nav aria-label="Primary" className="hidden items-center gap-7 md:flex">

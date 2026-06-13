@@ -41,8 +41,8 @@ async function api<T>(
 
 const CONTACT_PROPERTIES = [
   {
-    name: "kayjay_subsidiary",
-    label: "Kayjay Subsidiary",
+    name: "kalevant_subsidiary",
+    label: "Kalevant Subsidiary",
     type: "enumeration",
     fieldType: "select",
     options: [
@@ -55,7 +55,7 @@ const CONTACT_PROPERTIES = [
   },
   { name: "lead_source_page", label: "Lead Source Page", type: "string", fieldType: "text" },
   { name: "lead_intent", label: "Lead Intent", type: "string", fieldType: "text" },
-  { name: "lead_score", label: "Kayjay Lead Score", type: "number", fieldType: "number" },
+  { name: "lead_score", label: "Kalevant Lead Score", type: "number", fieldType: "number" },
   {
     name: "marketing_consent",
     label: "Marketing Consent",

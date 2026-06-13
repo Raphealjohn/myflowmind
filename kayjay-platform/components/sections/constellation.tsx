@@ -14,7 +14,7 @@ const NODE_POSITIONS = [
 ];
 
 /**
- * Interactive company constellation: each subsidiary orbits the Kayjay
+ * Interactive company constellation: each subsidiary orbits the Kalevant
  * center. Hover/focus shows a summary card; click/Enter navigates.
  */
 export function Constellation() {
@@ -27,7 +27,7 @@ export function Constellation() {
       <svg
         viewBox="0 0 600 440"
         role="group"
-        aria-label="Kayjay company structure: four subsidiaries connected to the Kayjay Holding center"
+        aria-label="Kalevant company structure: four subsidiaries connected to the Kalevant Group center"
         className="w-full"
       >
         {/* connecting lines */}
@@ -56,7 +56,7 @@ export function Constellation() {
           className="fill-paper font-serif"
           fontSize="16"
         >
-          Kayjay
+          Kalevant
         </text>
 
         {/* subsidiary nodes */}

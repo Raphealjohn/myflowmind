@@ -5,6 +5,6 @@ export function siteUrl(): string {
   );
 }
 
-export const SITE_NAME = "Kayjay Holding";
+export const SITE_NAME = "Kalevant Group";
 export const SITE_DESCRIPTION =
-  "Kayjay Holding is a West Des Moines, Iowa holding company operating MyFlowMind, Kayjay Realty, Kayjay Notary Services, and Kayjay Security Consulting.";
+  "Kalevant Group is a West Des Moines, Iowa holding company operating MyFlowMind, Kalevant Realty, Kalevant Notary Services, and Kalevant Security Consulting.";

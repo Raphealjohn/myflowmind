@@ -21,7 +21,7 @@ export function Hero() {
     <section className="relative overflow-hidden pb-10 pt-20 sm:pt-28">
       <Container>
         <motion.p {...stagger(0)} className="eyebrow">
-          Kayjay Holding · West Des Moines, Iowa
+          Kalevant Group · West Des Moines, Iowa
         </motion.p>
 
         <motion.h1
