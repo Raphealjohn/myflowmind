@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------------------------------------------------------------------
+   Token layer.
+   Parent identity: near-black ink, warm off-white, deep gold.
+   Subsidiaries override --accent via [data-subsidiary] so every component
+   that uses `accent` re-themes automatically.
+--------------------------------------------------------------------------- */
+:root {
+  --ink: 14 14 18; /* #0E0E12 */
+  --paper: 250 248 244; /* #FAF8F4 */
+  --gold: 201 162 39; /* #C9A227 */
+  --accent: 201 162 39;
+  --muted: 110 108 100;
+  --line: 224 220 210;
+  --surface: 255 255 255;
+}
+
+.dark {
+  --ink: 250 248 244;
+  --paper: 16 16 21;
+  --muted: 158 156 148;
+  --line: 46 46 56;
+  --surface: 24 24 31;
+}
+
+[data-subsidiary="myflowmind"] { --accent: 0 245 160; }
+[data-subsidiary="realty"] { --accent: 45 106 79; }
+.dark [data-subsidiary="realty"] { --accent: 116 198 157; }
+[data-subsidiary="notary"] { --accent: 27 58 107; }
+.dark [data-subsidiary="notary"] { --accent: 122 162 224; }
+[data-subsidiary="security"] { --accent: 94 110 130; }
+.dark [data-subsidiary="security"] { --accent: 154 173 196; }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-gold/30;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-paper;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply text-eyebrow font-sans uppercase text-muted;
+  }
+
+  .meridian-path {
+    stroke: rgb(var(--gold));
+    fill: none;
+    stroke-width: 1.5;
+  }
+
+  .skeleton {
+    @apply animate-shimmer rounded bg-line/60;
+    background-image: linear-gradient(
+      90deg,
+      rgb(var(--line) / 0.4) 25%,
+      rgb(var(--line) / 0.9) 50%,
+      rgb(var(--line) / 0.4) 75%
+    );
+    background-size: 200% 100%;
+  }
+}
