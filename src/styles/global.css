@@ -224,6 +224,7 @@ h1,h2,h3,h4{font-family:var(--display);color:var(--navy);letter-spacing:-.02em;l
 .footer-inner{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr 1fr;gap:36px;margin-bottom:44px}
 .footer-brand .logo,.footer-brand .nav-logo{margin-bottom:14px;color:#fff}
 .footer-brand p{font-size:.88rem;color:rgba(255,255,255,.62);line-height:1.7;max-width:280px}
+.footer-brand h4{font-size:.78rem;font-weight:800;color:#fff;margin:22px 0 10px;text-transform:uppercase;letter-spacing:.08em;font-family:var(--font)}
 .footer-col h4{font-size:.78rem;font-weight:800;color:#fff;margin-bottom:15px;text-transform:uppercase;letter-spacing:.08em;font-family:var(--font)}
 .footer-col ul{display:flex;flex-direction:column;gap:10px}
 .footer-col ul a{font-size:.88rem;color:rgba(255,255,255,.66);transition:color var(--ease)}
@@ -235,6 +236,12 @@ h1,h2,h3,h4{font-family:var(--display);color:var(--navy);letter-spacing:-.02em;l
 .site-footer .soc:hover{background:rgba(255,255,255,.16);transform:translateY(-3px)}
 .site-footer .soc svg{width:18px;height:18px}
 .socials{display:flex;gap:10px}
+.newsletter-form{display:flex;gap:8px;margin:18px 0 6px;max-width:320px}
+.newsletter-form input[type=email]{flex:1;min-width:0;background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.16);border-radius:10px;padding:11px 13px;color:#fff;font-family:var(--font);font-size:.86rem}
+.newsletter-form input[type=email]::placeholder{color:rgba(255,255,255,.4)}
+.newsletter-form input[type=email]:focus{outline:none;border-color:var(--sky);background:rgba(255,255,255,.12)}
+.newsletter-form button{white-space:nowrap}
+.newsletter-msg{font-size:.78rem;color:rgba(255,255,255,.62);margin-top:8px;max-width:320px}
 
 .rv{opacity:0;transform:translateY(26px);transition:opacity .6s cubic-bezier(.4,0,.2,1),transform .6s cubic-bezier(.4,0,.2,1)}
 .rv.in{opacity:1;transform:translateY(0)}
@@ -268,4 +275,5 @@ h1,h2,h3,h4{font-family:var(--display);color:var(--navy);letter-spacing:-.02em;l
   .stat-item{border-right:none;border-bottom:1px solid var(--border)}
   .stat-item:last-child{border-bottom:none}
   .footer-inner{grid-template-columns:1fr}
+  .newsletter-form{flex-wrap:wrap}
 }
