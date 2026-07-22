@@ -73,6 +73,7 @@ ErrorDocument 403 /404.html
     AddType application/xml             .xml
     AddType text/plain                  .txt
     AddType application/font-woff2      .woff2
+    AddType video/mp4                   .mp4
 </IfModule>
 
 # ── Compression ───────────────────────────────────────────────
